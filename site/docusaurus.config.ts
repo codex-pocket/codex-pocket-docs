@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const repoOwner = 'ryusei-mogi';
+const repoOwner = 'codex-pocket';
 const repoName = 'codex-pocket-docs';
 
 const config: Config = {

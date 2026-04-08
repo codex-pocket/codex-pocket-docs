@@ -25,11 +25,11 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/ryusei-mogi/codex-pocket-docs"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/codex-pocket/codex-pocket-docs"
   },
   "link.item.label.Issues": {
     "message": "Issues",
-    "description": "The label of footer link with label=Issues linking to https://github.com/ryusei-mogi/codex-pocket-docs/issues"
+    "description": "The label of footer link with label=Issues linking to https://github.com/codex-pocket/codex-pocket-docs/issues"
   },
   "link.item.label.Docusaurus": {
     "message": "Docusaurus",

@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="48" x2="1020" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17181B"/>
+      <stop offset="1" stop-color="#08090B"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242 182) rotate(49.6113) scale(321.935)">
+      <stop stop-color="#FF8A3D" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#FF8A3D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(990 530) rotate(-137.859) scale(292.704)">
+      <stop stop-color="#F05A23" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#F05A23" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="941" y1="150" x2="941" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAB5E"/>
+      <stop offset="1" stop-color="#E85422"/>
+    </linearGradient>
+    <linearGradient id="pocket" x1="941" y1="355" x2="941" y2="527" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1DE"/>
+      <stop offset="1" stop-color="#E5C19A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="36" fill="url(#glow1)"/>
+  <rect width="1200" height="630" rx="36" fill="url(#glow2)"/>
+  <path d="M96 588L274 462H431L193 588H96Z" fill="#E46D2B" fill-opacity="0.45"/>
+  <path d="M0 72L118 0H274L0 168V72Z" fill="#FF9B3F" fill-opacity="0.85"/>
+  <text x="104" y="228" fill="#FFF7EF" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="84" font-weight="700" letter-spacing="-3">CodexPocket Docs</text>
+  <text x="104" y="306" fill="#DCC8B4" font-family="Noto Sans JP, sans-serif" font-size="34" font-weight="500">Versioned and bilingual documentation foundation</text>
+  <rect x="104" y="362" width="164" height="48" rx="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="138" y="393" fill="#FFD5AE" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="24" font-weight="700">stable 0.1.0</text>
+  <rect x="286" y="362" width="120" height="48" rx="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="324" y="393" fill="#F6E7D5" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="24" font-weight="700">ja / en</text>
+  <rect x="770" y="150" width="342" height="258" rx="70" fill="url(#card)"/>
+  <path d="M886 230L968 289L886 348" stroke="#FFF8EE" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="998" y="271" width="86" height="34" rx="17" fill="#FFF8EE"/>
+  <path d="M682 355C682 306.399 721.399 267 770 267H1112C1160.6 267 1200 306.399 1200 355V479C1200 527.601 1160.6 567 1112 567H770C721.399 567 682 527.601 682 479V355Z" fill="url(#pocket)"/>
+  <path d="M737 345C796.333 307 855.667 288 915 288C974.333 288 1033.67 307 1093 345" stroke="#8A5A31" stroke-opacity="0.28" stroke-width="16" stroke-linecap="round"/>
+</svg>

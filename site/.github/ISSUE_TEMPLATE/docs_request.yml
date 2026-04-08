@@ -1,0 +1,25 @@
+name: ドキュメント改善
+description: 説明追加や修正を提案する
+title: "[Docs] "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: どこが足りないか
+      description: 困った点や分かりにくかった点を書いてください
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: どう直したいか
+      description: 追加したい説明や修正案があれば書いてください
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: 関連ページ
+      description: URL やファイル名が分かれば書いてください

@@ -1,0 +1,23 @@
+{
+  "docsSidebar": [
+    "intro",
+    {
+      "type": "category",
+      "label": "ガイド",
+      "items": [
+        "guides/getting-started",
+        "guides/pairing-and-bridge",
+        "guides/thread-workflow"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "リファレンス",
+      "items": [
+        "reference/architecture",
+        "reference/release-policy",
+        "reference/localization"
+      ]
+    }
+  ]
+}

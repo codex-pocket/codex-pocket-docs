@@ -1,0 +1,42 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Project": {
+    "message": "Project",
+    "description": "The title of the footer links column with title=Project in the footer"
+  },
+  "link.title.Build": {
+    "message": "Build",
+    "description": "The title of the footer links column with title=Build in the footer"
+  },
+  "link.item.label.最新リリース": {
+    "message": "Latest release",
+    "description": "The label of footer link with label=最新リリース linking to /docs/"
+  },
+  "link.item.label.next": {
+    "message": "next",
+    "description": "The label of footer link with label=next linking to /docs/next/"
+  },
+  "link.item.label.多言語運用": {
+    "message": "Localization",
+    "description": "The label of footer link with label=多言語運用 linking to /docs/reference/localization"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ryusei-mogi/codex-pocket-docs"
+  },
+  "link.item.label.Issues": {
+    "message": "Issues",
+    "description": "The label of footer link with label=Issues linking to https://github.com/ryusei-mogi/codex-pocket-docs/issues"
+  },
+  "link.item.label.Docusaurus": {
+    "message": "Docusaurus",
+    "description": "The label of footer link with label=Docusaurus linking to https://docusaurus.io/"
+  },
+  "link.item.label.公開フロー": {
+    "message": "Release workflow",
+    "description": "The label of footer link with label=公開フロー linking to /docs/reference/release-policy"
+  }
+}

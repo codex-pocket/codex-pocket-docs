@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "0.1.0",
+    "description": "The label for version 0.1.0"
+  },
+  "sidebar.docsSidebar.category.ガイド": {
+    "message": "Guide",
+    "description": "The label for category 'ガイド' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.リファレンス": {
+    "message": "Reference",
+    "description": "The label for category 'リファレンス' in sidebar 'docsSidebar'"
+  }
+}

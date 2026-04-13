@@ -7,7 +7,7 @@ const repoName = 'codex-pocket-docs';
 
 const config: Config = {
   title: 'CodexPocket',
-  tagline: 'Control the Codex environment running on your Mac from your iPhone.',
+  tagline: 'A same-LAN iPhone companion for the Codex environment running on your Mac.',
   favicon: 'img/codex-pocket-icon.png',
 
   future: {
@@ -87,7 +87,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'CodexPocket turns your iPhone into a lightweight control surface for the Codex environment running on your Mac.',
+          'CodexPocket is a same-LAN iPhone companion for the Codex environment running on your Mac, with support for starting new threads from iPhone.',
       },
       {
         name: 'keywords',
@@ -99,7 +99,7 @@ const config: Config = {
       {
         property: 'og:description',
         content:
-          'Pair once, pick a project, and continue threads on your iPhone while Codex keeps running on your Mac.',
+          'Today CodexPocket works on the same LAN, starts new threads from iPhone, and is planned to move closer to real-time sync over time.',
       },
       {name: 'twitter:card', content: 'summary_large_image'},
     ],

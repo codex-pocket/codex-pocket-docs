@@ -46,7 +46,7 @@ export default function Home(): ReactNode {
     name: 'CodexPocket',
     url: canonicalUrl,
     description:
-      'Control the Codex environment running on your Mac from your iPhone. Pair once, pick a project, and continue threads from anywhere.',
+      'Use your iPhone with the Codex environment running on your Mac. Today it works on the same LAN and lets you start new threads from iPhone.',
     inLanguage: ['ja-JP', 'en-US'],
     publisher: {
       '@type': 'Organization',
@@ -60,16 +60,16 @@ export default function Home(): ReactNode {
       tone: 'ember',
       eyebrow: translate({
         id: 'home.benefit.remote.eyebrow',
-        message: 'Anywhere',
+        message: 'What works now',
       }),
       title: translate({
         id: 'home.benefit.remote.title',
-        message: '机に戻らず thread を続けられる',
+        message: 'iPhone から新しい thread を始められる',
       }),
       body: translate({
         id: 'home.benefit.remote.body',
         message:
-          '既存 transcript を読み返し、そのまま follow-up を送る流れを iPhone 側で回せます。',
+          '同じ LAN で接続している状態なら、iPhone 側から新しい thread を始める導線を持てます。',
       }),
     },
     {
@@ -106,6 +106,42 @@ export default function Home(): ReactNode {
     },
   ];
 
+  const limitations: ScenarioItem[] = [
+    {
+      title: translate({
+        id: 'home.limitations.lan.title',
+        message: '同一 LAN からのアクセスのみ',
+      }),
+      body: translate({
+        id: 'home.limitations.lan.body',
+        message:
+          '現時点では、Mac と iPhone が同じネットワークにいる前提で使います。',
+      }),
+    },
+    {
+      title: translate({
+        id: 'home.limitations.realtime.title',
+        message: 'PC の thread をリアルタイムに iPhone へ持ち出すことはまだできない',
+      }),
+      body: translate({
+        id: 'home.limitations.realtime.body',
+        message:
+          'PC 側で進めている thread を、そのままリアルタイム同期のように iPhone へ持ってくる機能は未対応です。',
+      }),
+    },
+    {
+      title: translate({
+        id: 'home.limitations.future.title',
+        message: '将来的には同期をもっと近づけていく予定',
+      }),
+      body: translate({
+        id: 'home.limitations.future.body',
+        message:
+          '今は制約がありますが、将来的にはリアルタイム同期に近い体験へ寄せていく予定です。',
+      }),
+    },
+  ];
+
   const setupSteps: StepItem[] = [
     {
       step: '01',
@@ -135,12 +171,12 @@ export default function Home(): ReactNode {
       step: '03',
       title: translate({
         id: 'home.step.resume.title',
-        message: 'Project を開いて続きを送る',
+        message: 'Project を開いて新しい thread を始める',
       }),
       body: translate({
         id: 'home.step.resume.body',
         message:
-          'Thread を再開し、Composer から follow-up、skills、exec を続きの文脈で送れます。',
+          'Project を開き、Composer から新しい thread、skills、exec を始められます。',
       }),
     },
   ];
@@ -149,23 +185,23 @@ export default function Home(): ReactNode {
     {
       title: translate({
         id: 'home.scenario.commute.title',
-        message: '移動中に確認だけしたい',
+        message: '同じネットワーク内で手元から確認したい',
       }),
       body: translate({
         id: 'home.scenario.commute.body',
         message:
-          'thread の流れを追って、ひとこと返すために Mac を開き直さなくて済みます。',
+          'Mac の前に座り直さなくても、同じ LAN にいる範囲で iPhone から状態を見にいけます。',
       }),
     },
     {
       title: translate({
         id: 'home.scenario.away.title',
-        message: '離席中でも flow を切らしたくない',
+        message: 'iPhone から新しい thread を始めたい',
       }),
       body: translate({
         id: 'home.scenario.away.body',
         message:
-          '手元の iPhone から Project を開いて、今の branch や transcript を見ながら続きを投げられます。',
+          'PC 側のリアルタイム持ち出しではなく、iPhone 側から新しい thread を立ち上げたいときに向いています。',
       }),
     },
     {
@@ -177,6 +213,17 @@ export default function Home(): ReactNode {
         id: 'home.scenario.split.body',
         message:
           'bridge、logs、Project 管理は Mac に寄せ、日常操作は iPhone に寄せる使い分けができます。',
+      }),
+    },
+    {
+      title: translate({
+        id: 'home.scenario.codexApp.title',
+        message: 'Codex App と一緒に使いたい',
+      }),
+      body: translate({
+        id: 'home.scenario.codexApp.body',
+        message:
+          'Mac 側では Codex App の流れを使いながら、iPhone 側では確認や新しい thread 開始だけを軽く持ち出せます。',
       }),
     },
   ];
@@ -273,7 +320,7 @@ export default function Home(): ReactNode {
       description={translate({
         id: 'home.meta.description',
         message:
-          'CodexPocket turns your iPhone into a lightweight control surface for the Codex environment running on your Mac.',
+          'CodexPocket is a same-LAN iPhone companion for the Codex environment running on your Mac.',
       })}
       wrapperClassName={styles.homepage}>
       <Head>
@@ -301,8 +348,14 @@ export default function Home(): ReactNode {
                   </span>
                   <span className={styles.badge}>
                     {translate({
-                      id: 'home.badge.surface',
-                      message: 'iPhone control surface',
+                      id: 'home.badge.sameLan',
+                      message: 'Same LAN only',
+                    })}
+                  </span>
+                  <span className={styles.badge}>
+                    {translate({
+                      id: 'home.badge.codexApp',
+                      message: 'Best with Codex App',
                     })}
                   </span>
                   <span className={styles.badge}>
@@ -314,14 +367,15 @@ export default function Home(): ReactNode {
                 </div>
                 <Heading as="h1" className={styles.heroTitle}>
                   <Translate id="home.hero.title">
-                    Mac に置いた Codex を、iPhone から軽く連れていく。
+                    Mac に置いた Codex を、iPhone から軽く触れる。
                   </Translate>
                 </Heading>
                 <p className={styles.heroLead}>
                   <Translate id="home.hero.lead">
                     CodexPocket は、Mac 側の Codex 実行環境をそのままに、Host / Project /
-                    Thread / Composer の操作を iPhone に持ち出すためのプロダクトです。
-                    pairing を済ませれば、机に戻らなくても続きを投げられます。
+                    Thread / Composer の操作を iPhone に持ち出すためのプロダクトです。今は同一
+                    LAN 前提で、PC の thread をリアルタイムにそのまま持ち出すことはできません。
+                    その代わり、iPhone から新しい thread を始める導線と、Codex App と相性のいい使い方を先に整えています。
                   </Translate>
                 </p>
                 <div className={styles.heroActions}>
@@ -336,18 +390,18 @@ export default function Home(): ReactNode {
                 </div>
                 <p className={styles.heroMeta}>
                   <Translate id="home.hero.meta" values={{releaseVersion}}>
-                    {`現在の安定版は {releaseVersion}。最短セットアップと iPhone / Mac / shared の入口をここから追えます。`}
+                    {`現在の安定版は {releaseVersion}。今は同一 LAN 前提ですが、将来的にはリアルタイム同期に近づけていく予定です。`}
                   </Translate>
                 </p>
                 <div className={styles.heroNotes}>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.host">Host を追加</Translate>
+                    <Translate id="home.hero.note.lan">同一 LAN のみ</Translate>
                   </span>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.project">Project を選ぶ</Translate>
+                    <Translate id="home.hero.note.newThread">iPhone で新規 thread 開始可</Translate>
                   </span>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.thread">Thread を続ける</Translate>
+                    <Translate id="home.hero.note.sync">リアルタイム持ち出しは未対応</Translate>
                   </span>
                 </div>
               </div>
@@ -410,7 +464,7 @@ export default function Home(): ReactNode {
                           <Translate id="home.visual.action.label">Action</Translate>
                         </span>
                         <strong className={styles.visualValue}>
-                          <Translate id="home.visual.action.value">Composer で続きから</Translate>
+                          <Translate id="home.visual.action.value">Composer から新規 thread</Translate>
                         </strong>
                       </div>
                     </div>
@@ -418,7 +472,7 @@ export default function Home(): ReactNode {
                 </div>
                 <div className={styles.carryPanel}>
                   <p className={styles.carryPanelTitle}>
-                    <Translate id="home.visual.panelTitle">What moves with you</Translate>
+                    <Translate id="home.visual.panelTitle">What iPhone can access</Translate>
                   </p>
                   <div className={styles.carryRow}>
                     <span className={styles.carryLabel}>
@@ -458,10 +512,33 @@ export default function Home(): ReactNode {
           <div className="container">
             <div className={styles.sectionHeading}>
               <span className={styles.sectionEyebrow}>
-                <Translate id="home.section.benefits.eyebrow">Why it feels easy</Translate>
+                <Translate id="home.section.limits.eyebrow">Current limits</Translate>
               </span>
               <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.benefits.title">こんなに楽になる</Translate>
+                <Translate id="home.section.limits.title">まず知っておきたいこと</Translate>
+              </Heading>
+            </div>
+            <div className={styles.scenarioGrid}>
+              {limitations.map((item) => (
+                <article key={item.title} className={styles.scenarioCard}>
+                  <Heading as="h3" className={styles.scenarioTitle}>
+                    {item.title}
+                  </Heading>
+                  <p className={styles.scenarioBody}>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeading}>
+              <span className={styles.sectionEyebrow}>
+                <Translate id="home.section.benefits.eyebrow">What you can do now</Translate>
+              </span>
+              <Heading as="h2" className={styles.sectionTitle}>
+                <Translate id="home.section.benefits.title">今できること</Translate>
               </Heading>
             </div>
             <div className={styles.benefitGrid}>
@@ -509,7 +586,7 @@ export default function Home(): ReactNode {
                 <Translate id="home.section.scenarios.eyebrow">Use cases</Translate>
               </span>
               <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.scenarios.title">こういう場面で効く</Translate>
+                <Translate id="home.section.scenarios.title">こういう使い方に向く</Translate>
               </Heading>
             </div>
             <div className={styles.scenarioGrid}>

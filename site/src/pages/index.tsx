@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -31,6 +32,21 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   const iconUrl = useBaseUrl('/img/codex-pocket-icon.png');
   const releaseVersion = String(siteConfig.customFields?.releaseVersion ?? '0.1.0');
+  const canonicalUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'CodexPocket Docs',
+    url: canonicalUrl,
+    description:
+      'Official documentation for CodexPocket, the iPhone app and macOS companion bridge for Codex pairing, threads, and remote workflows.',
+    inLanguage: ['ja-JP', 'en-US'],
+    publisher: {
+      '@type': 'Organization',
+      name: 'CodexPocket',
+      url: 'https://github.com/codex-pocket',
+    },
+  };
 
   const highlights: HighlightItem[] = [
     {
@@ -177,14 +193,24 @@ export default function Home(): ReactNode {
     <Layout
       title={translate({
         id: 'home.meta.title',
-        message: 'Pocket-first documentation foundation',
+        message: 'Official docs for the iPhone app and macOS companion bridge',
       })}
       description={translate({
         id: 'home.meta.description',
         message:
-          'Versioned, bilingual Docusaurus foundation for CodexPocket with a custom landing page and release-ready docs structure.',
+          'Official documentation for CodexPocket, covering the iPhone client, macOS companion app, pairing, bridge, and thread workflows.',
       })}
       wrapperClassName={styles.homepage}>
+      <Head>
+        <link rel="canonical" href={canonicalUrl} />
+        <meta
+          name="keywords"
+          content="CodexPocket, Codex, iPhone app, macOS companion app, bridge, pairing, thread workflow, remote coding assistant"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
       <main>
         <section className={styles.hero}>
           <div className="container">
@@ -213,14 +239,14 @@ export default function Home(): ReactNode {
                 </div>
                 <Heading as="h1" className={styles.heroTitle}>
                   <Translate id="home.hero.title">
-                    CodexPocket の docs を、リリース対応と多言語対応込みで先に整える。
+                    CodexPocket の iPhone app と macOS companion bridge の公式ドキュメント。
                   </Translate>
                 </Heading>
                 <p className={styles.heroLead}>
                   <Translate id="home.hero.lead">
-                    iPhone クライアントと macOS companion app / bridge のドキュメントを、
-                    安定版と next の両方で運用できる基盤にしています。本文がまだ空でも、
-                    導線と世界観はこの段階で成立させています。
+                    CodexPocket は、Codex を iPhone から扱うためのクライアントと、
+                    macOS 上で動く companion app / bridge で構成されています。このサイトでは、
+                    pairing、bridge、thread workflow、release 運用を安定版と next の両方で追えるようにしています。
                   </Translate>
                 </p>
                 <div className={styles.heroActions}>

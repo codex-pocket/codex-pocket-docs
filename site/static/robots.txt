@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codex-pocket.github.io/codex-pocket-docs/sitemap.xml

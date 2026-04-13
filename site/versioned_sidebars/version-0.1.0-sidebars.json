@@ -3,45 +3,93 @@
     "intro",
     {
       "type": "category",
-      "label": "iPhone",
+      "label": "準備と前提",
       "link": {
         "type": "doc",
-        "id": "iphone/overview"
+        "id": "setup/overview"
       },
       "items": [
-        "iphone/getting-started"
+        "setup/requirements",
+        "setup/supported-environments"
       ]
     },
     {
       "type": "category",
-      "label": "Mac",
+      "label": "Mac アプリ",
       "link": {
         "type": "doc",
         "id": "mac/overview"
       },
       "items": [
-        "mac/getting-started"
+        "mac/getting-started",
+        "mac/install-codex-cli",
+        "mac/install-git",
+        "mac/register-project",
+        "mac/start-bridge"
       ]
     },
     {
       "type": "category",
-      "label": "Mac と iPhone を一緒に使う",
+      "label": "iPhone アプリ",
+      "link": {
+        "type": "doc",
+        "id": "iphone/overview"
+      },
+      "items": [
+        "iphone/getting-started",
+        "iphone/first-launch",
+        "iphone/add-host"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mac と iPhone の連携",
       "link": {
         "type": "doc",
         "id": "shared/overview"
       },
       "items": [
         "shared/pairing-and-bridge",
-        "shared/thread-workflow"
+        "shared/check-connection",
+        "shared/network-requirements"
       ]
     },
     {
       "type": "category",
-      "label": "リファレンス",
+      "label": "使い方",
+      "link": {
+        "type": "doc",
+        "id": "usage/overview"
+      },
+      "items": [
+        "usage/with-codex-app",
+        "usage/open-project",
+        "usage/threads",
+        "usage/composer",
+        "usage/branch-skill-exec"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "困ったとき",
+      "link": {
+        "type": "doc",
+        "id": "troubleshooting/overview"
+      },
+      "items": [
+        "troubleshooting/cannot-pair",
+        "troubleshooting/cannot-see-projects",
+        "troubleshooting/check-logs",
+        "troubleshooting/reconnect-host"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "補足",
       "items": [
         "reference/architecture",
-        "reference/release-policy",
-        "reference/localization"
+        "reference/limitations",
+        "reference/glossary"
       ]
     }
   ]

@@ -3,20 +3,32 @@
     "message": "next",
     "description": "The label for version current"
   },
-  "sidebar.docsSidebar.category.iPhone": {
-    "message": "iPhone",
-    "description": "The label for category 'iPhone' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.準備と前提": {
+    "message": "Setup & Requirements",
+    "description": "The label for category '準備と前提' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.Mac": {
-    "message": "Mac",
-    "description": "The label for category 'Mac' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.Mac アプリ": {
+    "message": "Mac App",
+    "description": "The label for category 'Mac アプリ' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.Mac と iPhone を一緒に使う": {
-    "message": "Use Mac and iPhone Together",
-    "description": "The label for category 'Mac と iPhone を一緒に使う' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.iPhone アプリ": {
+    "message": "iPhone App",
+    "description": "The label for category 'iPhone アプリ' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.リファレンス": {
-    "message": "Reference",
-    "description": "The label for category 'リファレンス' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.Mac と iPhone の連携": {
+    "message": "Mac and iPhone Integration",
+    "description": "The label for category 'Mac と iPhone の連携' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.使い方": {
+    "message": "Usage",
+    "description": "The label for category '使い方' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.困ったとき": {
+    "message": "Troubleshooting",
+    "description": "The label for category '困ったとき' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.補足": {
+    "message": "Additional Info",
+    "description": "The label for category '補足' in sidebar 'docsSidebar'"
   }
 }

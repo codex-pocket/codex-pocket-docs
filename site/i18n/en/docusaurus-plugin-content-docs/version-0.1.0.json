@@ -3,9 +3,17 @@
     "message": "0.1.0",
     "description": "The label for version 0.1.0"
   },
-  "sidebar.docsSidebar.category.ガイド": {
-    "message": "Guide",
-    "description": "The label for category 'ガイド' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.iPhone": {
+    "message": "iPhone",
+    "description": "The label for category 'iPhone' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mac": {
+    "message": "Mac",
+    "description": "The label for category 'Mac' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mac と iPhone を一緒に使う": {
+    "message": "Use Mac and iPhone Together",
+    "description": "The label for category 'Mac と iPhone を一緒に使う' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.リファレンス": {
     "message": "Reference",

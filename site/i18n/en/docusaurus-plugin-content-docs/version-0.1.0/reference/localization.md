@@ -4,9 +4,9 @@ title: Localization
 
 # Localization
 
-This site is configured with `ja` as the default locale and `en` as an additional locale.
+This site uses `ja` as the default locale and `en` as the additional locale. The `iPhone`, `Mac`, `shared`, and `reference` structure stays aligned across both languages so the starting paths do not drift.
 
-## Where translations live
+## Where content lives
 
 - Japanese source docs
   `docs/`
@@ -16,19 +16,22 @@ This site is configured with `ja` as the default locale and `en` as an additiona
   `i18n/en/code.json`
   `i18n/en/docusaurus-theme-classic/`
 
-## Development commands
+## Commands to check each locale
 
 ```bash
 npm run start:ja
 npm run start:en
 ```
 
-## Refreshing translation catalogs
+## Update translation scaffolding
 
 ```bash
 npm run write-translations -- --locale en
 ```
 
-## Editing note
+## Rules for the platform-first structure
 
-Markdown and MDX pages stay as translated content files, while React and themeConfig strings are managed through translation catalogs.
+- keep `docs/iphone/` and `i18n/en/.../iphone/` in the same shape
+- do the same for `docs/mac/` and `i18n/en/.../mac/`
+- keep `shared` limited to flows that involve both devices
+- keep sidebar category ordering aligned across locales

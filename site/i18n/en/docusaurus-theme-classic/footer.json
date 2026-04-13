@@ -11,17 +11,17 @@
     "message": "Build",
     "description": "The title of the footer links column with title=Build in the footer"
   },
-  "link.item.label.最新リリース": {
-    "message": "Latest release",
-    "description": "The label of footer link with label=最新リリース linking to /docs/"
+  "link.item.label.iPhone を始める": {
+    "message": "Start on iPhone",
+    "description": "The label of footer link with label=iPhone を始める linking to /docs/iphone/"
   },
-  "link.item.label.next": {
-    "message": "next",
-    "description": "The label of footer link with label=next linking to /docs/next/"
+  "link.item.label.Mac を始める": {
+    "message": "Start on Mac",
+    "description": "The label of footer link with label=Mac を始める linking to /docs/mac/"
   },
-  "link.item.label.多言語運用": {
-    "message": "Localization",
-    "description": "The label of footer link with label=多言語運用 linking to /docs/reference/localization"
+  "link.item.label.ペアリングと bridge": {
+    "message": "Pairing and bridge",
+    "description": "The label of footer link with label=ペアリングと bridge linking to /docs/shared/pairing-and-bridge"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

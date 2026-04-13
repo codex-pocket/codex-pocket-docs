@@ -1,0 +1,231 @@
+name: Codex Translate EN Docs
+
+on:
+  push:
+    paths:
+      - "site/docs/**/*.md"
+      - "site/versioned_docs/**/*.md"
+      - ".github/workflows/codex-translate-en-docs.yml"
+      - ".github/codex/prompts/translate-ja-docs-to-en.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: codex-translate-en-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  translate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Collect changed Japanese docs
+        id: changes
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          python3 <<'PY'
+          import os
+          import pathlib
+          import subprocess
+
+          zero = "0" * 40
+          event_name = os.environ["EVENT_NAME"]
+          before_sha = os.environ.get("BEFORE_SHA", "")
+          head_sha = os.environ["HEAD_SHA"]
+
+          def run(*args: str) -> str:
+              return subprocess.check_output(args, text=True).strip()
+
+          if event_name == "workflow_dispatch" or not before_sha or before_sha == zero:
+              try:
+                  base_sha = run("git", "rev-parse", f"{head_sha}^")
+              except subprocess.CalledProcessError:
+                  base_sha = run("git", "rev-list", "--max-parents=0", head_sha)
+          else:
+              base_sha = before_sha
+
+          diff_output = subprocess.check_output(
+              [
+                  "git",
+                  "diff",
+                  "--name-status",
+                  "--find-renames",
+                  base_sha,
+                  head_sha,
+                  "--",
+                  "site/docs",
+                  "site/versioned_docs",
+              ],
+              text=True,
+          )
+
+          def map_target(path: str) -> str | None:
+              p = pathlib.PurePosixPath(path)
+              parts = p.parts
+              if len(parts) >= 3 and parts[:2] == ("site", "docs") and p.suffix == ".md":
+                  return str(
+                      pathlib.PurePosixPath(
+                          "site/i18n/en/docusaurus-plugin-content-docs/current"
+                      ).joinpath(*parts[2:])
+                  )
+              if len(parts) >= 4 and parts[:2] == ("site", "versioned_docs") and p.suffix == ".md":
+                  version = parts[2]
+                  return str(
+                      pathlib.PurePosixPath(
+                          "site/i18n/en/docusaurus-plugin-content-docs", version
+                      ).joinpath(*parts[3:])
+                  )
+              return None
+
+          updates: list[tuple[str, str]] = []
+          deletes: list[tuple[str, str]] = []
+          seen_updates = set()
+          seen_deletes = set()
+
+          for raw_line in diff_output.splitlines():
+              if not raw_line.strip():
+                  continue
+
+              parts = raw_line.split("\t")
+              status = parts[0]
+
+              if status.startswith("R") and len(parts) == 3:
+                  old_path, new_path = parts[1], parts[2]
+                  old_target = map_target(old_path)
+                  new_target = map_target(new_path)
+                  if old_target and old_target != new_target and (old_path, old_target) not in seen_deletes:
+                      deletes.append((old_path, old_target))
+                      seen_deletes.add((old_path, old_target))
+                  if new_target and (new_path, new_target) not in seen_updates:
+                      updates.append((new_path, new_target))
+                      seen_updates.add((new_path, new_target))
+                  continue
+
+              if len(parts) != 2:
+                  continue
+
+              path = parts[1]
+              target = map_target(path)
+              if not target:
+                  continue
+
+              if status == "D":
+                  if (path, target) not in seen_deletes:
+                      deletes.append((path, target))
+                      seen_deletes.add((path, target))
+              else:
+                  if (path, target) not in seen_updates:
+                      updates.append((path, target))
+                      seen_updates.add((path, target))
+
+          runtime_dir = pathlib.Path(".github/codex/runtime")
+          runtime_dir.mkdir(parents=True, exist_ok=True)
+          runtime_file = runtime_dir / "translate-ja-docs.md"
+
+          lines = [
+              "# English documentation sync context",
+              "",
+              f"- Base commit: `{base_sha}`",
+              f"- Head commit: `{head_sha}`",
+              "",
+          ]
+
+          if updates:
+              lines.extend(["## Translate or update these files", ""])
+              for source, target in updates:
+                  lines.append(f"- Source: `{source}`")
+                  lines.append(f"  Target: `{target}`")
+              lines.append("")
+
+          if deletes:
+              lines.extend(["## Delete these English targets", ""])
+              for source, target in deletes:
+                  lines.append(f"- Removed Japanese source: `{source}`")
+                  lines.append(f"  Delete target: `{target}`")
+              lines.append("")
+
+          if not updates and not deletes:
+              lines.extend(["## No work", "", "There are no Japanese Markdown doc changes to sync."])
+
+          runtime_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+          github_output = pathlib.Path(os.environ["GITHUB_OUTPUT"])
+          with github_output.open("a", encoding="utf-8") as fh:
+              fh.write(f"base_sha={base_sha}\n")
+              fh.write(f"runtime_file={runtime_file.as_posix()}\n")
+              fh.write(f"has_work={'true' if updates or deletes else 'false'}\n")
+          PY
+
+      - name: Require OpenAI API key
+        if: steps.changes.outputs.has_work == 'true' && secrets.OPENAI_API_KEY == ''
+        run: |
+          echo "OPENAI_API_KEY secret is required for Codex translation workflow." >&2
+          exit 1
+
+      - name: Run Codex translation
+        if: steps.changes.outputs.has_work == 'true'
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          prompt-file: .github/codex/prompts/translate-ja-docs-to-en.md
+          codex-args: '["--full-auto"]'
+          safety-strategy: drop-sudo
+          sandbox: workspace-write
+
+      - name: Setup Node.js
+        if: steps.changes.outputs.has_work == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install site dependencies
+        if: steps.changes.outputs.has_work == 'true'
+        working-directory: site
+        run: npm ci
+
+      - name: Verify docs build
+        if: steps.changes.outputs.has_work == 'true'
+        working-directory: site
+        run: npm run build
+
+      - name: Commit translated docs
+        id: commit
+        if: steps.changes.outputs.has_work == 'true'
+        run: |
+          rm -rf .github/codex/runtime
+
+          if [ -z "$(git status --porcelain -- site/i18n/en/docusaurus-plugin-content-docs)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A site/i18n/en/docusaurus-plugin-content-docs
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore(docs): sync English docs from Japanese"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push translated docs
+        if: steps.commit.outputs.changed == 'true'
+        run: git push

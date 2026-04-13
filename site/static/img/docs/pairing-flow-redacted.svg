@@ -1,0 +1,124 @@
+<svg width="1600" height="1160" viewBox="0 0 1600 1160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CodexPocket pairing flow redacted</title>
+  <desc id="desc">A redacted illustration of the Mac pairing screen and the iPhone QR add screen shown side by side.</desc>
+  <defs>
+    <linearGradient id="bg" x1="128" y1="96" x2="1472" y2="884" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1115"/>
+      <stop offset="1" stop-color="#181B22"/>
+    </linearGradient>
+    <linearGradient id="macPanel" x1="60" y1="90" x2="800" y2="910" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C1C1F"/>
+      <stop offset="1" stop-color="#232327"/>
+    </linearGradient>
+    <linearGradient id="phoneShell" x1="1110" y1="60" x2="1530" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C0D11"/>
+      <stop offset="1" stop-color="#191A1F"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="1134" y1="168" x2="1518" y2="874" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#232326"/>
+      <stop offset="1" stop-color="#1F1F22"/>
+    </linearGradient>
+    <linearGradient id="camera" x1="1178" y1="470" x2="1466" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B1A094"/>
+      <stop offset="0.55" stop-color="#C3B0A1"/>
+      <stop offset="1" stop-color="#8E7E74"/>
+    </linearGradient>
+    <linearGradient id="arrowGlow" x1="872" y1="372" x2="1080" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6B14A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#F6B14A"/>
+      <stop offset="1" stop-color="#F6B14A" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="qrPattern" width="42" height="42" patternUnits="userSpaceOnUse">
+      <rect width="42" height="42" fill="#FCFCFC"/>
+      <rect x="2" y="2" width="12" height="12" fill="#151515"/>
+      <rect x="18" y="2" width="6" height="6" fill="#151515"/>
+      <rect x="28" y="2" width="10" height="10" fill="#151515"/>
+      <rect x="4" y="18" width="8" height="8" fill="#151515"/>
+      <rect x="14" y="12" width="6" height="6" fill="#151515"/>
+      <rect x="22" y="16" width="8" height="8" fill="#151515"/>
+      <rect x="32" y="18" width="6" height="6" fill="#151515"/>
+      <rect x="10" y="28" width="10" height="10" fill="#151515"/>
+      <rect x="24" y="28" width="6" height="6" fill="#151515"/>
+      <rect x="32" y="30" width="8" height="8" fill="#151515"/>
+    </pattern>
+    <filter id="shadow" x="0" y="0" width="1600" height="1160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="softBlur" x="0" y="0" width="1600" height="1160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="0.9"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1160" rx="36" fill="url(#bg)"/>
+
+  <g opacity="0.18">
+    <circle cx="248" cy="146" r="120" fill="#F6B14A"/>
+    <circle cx="1362" cy="842" r="162" fill="#60D0C8"/>
+  </g>
+
+  <text x="82" y="58" fill="#F5F1EA" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Mac</text>
+  <text x="1140" y="58" fill="#F5F1EA" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">iPhone</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="90" width="740" height="820" rx="34" fill="url(#macPanel)" stroke="#4A4A51" stroke-width="2"/>
+    <rect x="60" y="90" width="740" height="56" rx="34" fill="#26262B"/>
+    <circle cx="96" cy="118" r="11" fill="#FF5F57"/>
+    <circle cx="128" cy="118" r="11" fill="#FFBD2E"/>
+    <circle cx="160" cy="118" r="11" fill="#28C840"/>
+    <rect x="298" y="104" width="182" height="22" rx="11" fill="#6D6D76" opacity="0.35"/>
+
+    <rect x="104" y="182" width="180" height="28" rx="14" fill="#F3F0E9"/>
+    <rect x="104" y="226" width="328" height="18" rx="9" fill="#7F7F89" opacity="0.52"/>
+
+    <rect x="104" y="278" width="652" height="500" rx="24" fill="#2C2C30"/>
+    <rect x="132" y="306" width="596" height="404" rx="22" fill="#FAFAF9"/>
+    <rect x="164" y="338" width="532" height="340" rx="12" fill="url(#qrPattern)"/>
+    <rect x="268" y="474" width="324" height="64" rx="32" fill="#111214" fill-opacity="0.84"/>
+    <text x="430" y="515" text-anchor="middle" fill="#FAF7EF" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="28" font-weight="600">QR redacted</text>
+
+    <rect x="124" y="736" width="200" height="44" rx="14" fill="#4A4A4F"/>
+    <rect x="342" y="736" width="210" height="44" rx="14" fill="#4A4A4F"/>
+    <rect x="124" y="792" width="160" height="44" rx="14" fill="#4A4A4F"/>
+    <rect x="578" y="792" width="150" height="44" rx="14" fill="#4A4A4F"/>
+
+    <rect x="104" y="856" width="188" height="18" rx="9" fill="#F3F0E9"/>
+    <rect x="104" y="890" width="214" height="28" rx="14" fill="#7F7F89" opacity="0.68"/>
+    <rect x="104" y="946" width="142" height="18" rx="9" fill="#F3F0E9"/>
+    <rect x="104" y="978" width="472" height="40" rx="20" fill="#3A3B40"/>
+    <rect x="126" y="989" width="250" height="18" rx="9" fill="#A2A3AA" opacity="0.68"/>
+    <rect x="590" y="978" width="144" height="40" rx="20" fill="#4B4C51"/>
+    <rect x="622" y="989" width="78" height="18" rx="9" fill="#DBDCE0" opacity="0.65"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1110" y="60" width="420" height="860" rx="56" fill="url(#phoneShell)"/>
+    <rect x="1268" y="78" width="106" height="34" rx="17" fill="#090A0D"/>
+    <circle cx="1321" cy="95" r="10" fill="#48D86D"/>
+    <rect x="1134" y="126" width="372" height="752" rx="42" fill="url(#sheet)"/>
+    <rect x="1166" y="190" width="122" height="64" rx="32" fill="#2C2C31" stroke="#5B5C63" stroke-width="2"/>
+    <rect x="1196" y="214" width="62" height="16" rx="8" fill="#E7E3DC"/>
+
+    <rect x="1180" y="314" width="206" height="30" rx="15" fill="#F4F1EA"/>
+    <rect x="1180" y="382" width="278" height="24" rx="12" fill="#F4F1EA"/>
+    <rect x="1180" y="428" width="288" height="18" rx="9" fill="#7F7F89" opacity="0.72"/>
+    <rect x="1180" y="456" width="300" height="18" rx="9" fill="#7F7F89" opacity="0.72"/>
+    <rect x="1180" y="484" width="214" height="18" rx="9" fill="#7F7F89" opacity="0.72"/>
+
+    <rect x="1178" y="534" width="290" height="316" rx="40" fill="url(#camera)"/>
+    <g filter="url(#softBlur)" opacity="0.28">
+      <path d="M1216 592C1264 560 1288 588 1322 554C1352 524 1402 522 1438 550C1470 576 1472 614 1440 638C1412 658 1360 648 1330 674C1306 694 1272 730 1230 706C1188 682 1178 622 1216 592Z" fill="#796B63"/>
+      <path d="M1206 748C1244 720 1280 728 1314 706C1362 676 1414 700 1444 742C1468 776 1456 820 1410 836C1356 854 1294 850 1246 830C1208 814 1168 776 1206 748Z" fill="#6E615A"/>
+    </g>
+
+    <rect x="1180" y="900" width="198" height="22" rx="11" fill="#F4F1EA"/>
+    <rect x="1180" y="944" width="292" height="84" rx="18" fill="#202126" stroke="#404148" stroke-width="2"/>
+    <rect x="1208" y="974" width="206" height="22" rx="11" fill="#7F7F89" opacity="0.44"/>
+    <rect x="1180" y="1060" width="152" height="58" rx="29" fill="#3E3F46"/>
+    <rect x="1216" y="1081" width="78" height="16" rx="8" fill="#9A9CA4" opacity="0.58"/>
+  </g>
+
+  <rect x="874" y="354" width="204" height="36" rx="18" fill="url(#arrowGlow)"/>
+  <path d="M880 372H1034" stroke="#F6B14A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1018 332L1072 372L1018 412" stroke="#F6B14A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="972" y="448" text-anchor="middle" fill="#E8D7B7" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="24" font-weight="600">scan and continue</text>
+</svg>

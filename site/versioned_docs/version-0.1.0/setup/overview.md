@@ -4,54 +4,46 @@ slug: /setup/
 description: Mac の準備から iPhone の接続までをまとめた入口ページです。
 ---
 
-CodexPocket は、Mac の前にいなくても、Mac 上でふだん使っている Codex を iPhone から開き直したり、続きの指示を送ったりするためのアプリです。実際に処理を動かすのは Mac 側で、iPhone 側はその操作画面として使います。
+CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で読み取る」「そのまま続きを触る」の 3 段階です。Mac で使っている Codex を、iPhone から触れるようにする準備だと考えると分かりやすくなります。
 
-Mac で Codex をすでに使えている人なら、準備で押さえることは多くありません。最初に必要なものと対応環境を確認し、そのあと Mac と iPhone を順番に用意するとスムーズです。
+1. Mac 側を整える
+2. iPhone で Mac を取り込む
+3. Project と Thread が見えることを確かめる
 
-> TODO(画像): 「Mac が実行側、iPhone が操作側」という役割分担を示す図。Mac 側には `CodexPocketMac`、Project、Codex を、iPhone 側には Project 一覧、スレッド、Composer を配置すると伝わりやすくなります。
+## 1. Mac 側を整える
 
-## 先に押さえること
+最初に Mac で次を済ませます。ここで実行環境そのものを作るので、iPhone 側はあとからつなぐだけです。
 
-- Mac 側が本体です。Project の一覧、スレッド、Codex の実行は Mac 側で管理します。
-- iPhone 側は、外出先や席を離れたときに確認と操作を続けるための画面です。
-- 現在は、同じローカルネットワークにある Mac と iPhone の組み合わせを前提にしています。
-- 最初の設定では、Mac 側で Pairing 用の QR を表示し、iPhone で読み取ります。
+- `CodexPocketMac` を起動する
+- `codex` が使えることを確認する
+- 使いたい workspace を Codex App に入れる
+- Bridge が動いていることを確認する
 
-## セットアップの流れ
+Codex App を使わない場合だけ、`CodexPocketMac` の `プロジェクト` から手動で追加します。
 
-1. [はじめる前に必要なもの](./requirements) を確認する
-2. [対応環境](./supported-environments) を確認する
-3. Mac に CodexPocketMac を入れて、Bridge を使える状態にする
-4. Mac 側で少なくとも 1 件の Project を追加する
-5. iPhone に CodexPocket を入れて、Mac の QR を読み取る
-6. iPhone で Project を開き、スレッドを参照したり続きの指示を送ったりする
+## 2. iPhone で Mac を取り込む
 
-## Mac と iPhone の役割
+おすすめは QR での追加です。Mac の `ペアリング` に出る QR を iPhone で読み取ると、接続先と認証情報をまとめて取り込めます。
 
-### Mac 側
+取り込み後は、iPhone 側で次の初回処理が自動で進みます。
 
-- Codex の実行環境を持つ
-- Project 一覧を管理する
-- スレッドの一覧と内容を保持する
-- Pairing 用の QR を表示する
+- Bridge の接続確認
+- Project 一覧の取得
+- 最初の workspace の準備
+- Host の保存
 
-### iPhone 側
+## 3. 使えることを確かめる
 
-- Mac に登録された Project を開く
-- スレッドの一覧と内容を確認する
-- 新しい指示や follow-up を送る
-- 移動中でも進行中の作業を追いかける
+セットアップが終わったら、iPhone で次を確認します。
 
-## このあと何を読むか
+- `ホーム` に Host が見える
+- `プロジェクト` に Mac の workspace が見える
+- Project を開くと Thread を作成または再開できる
 
-- 「何を用意すればいいか」を先に確認したい場合は [はじめる前に必要なもの](./requirements)
-- 自分の端末が対象かを先に確認したい場合は [対応環境](./supported-environments)
-- 手順をそのまま進めたい場合は、サイドバーの `Mac アプリ` と `iPhone アプリ` を上から順に読む
+## 先に読むページ
 
-## 迷ったときの判断基準
+- 何をそろえるかは [はじめる前に必要なもの](./requirements)
+- 対象の端末かどうかは [対応環境](./supported-environments)
+- Mac 側の手順はサイドバーの `Mac アプリ` を上から順に読む
 
-次の 3 つがそろっていれば、たいていそのまま始められます。
-
-- Mac で Codex を普段どおり使えている
-- Mac と iPhone が同じネットワークにいる
-- iPhone で QR を読み取れる、またはペアリングコードを貼り付けられる
+接続で詰まったときは、先に Mac 側の `一般`、`プロジェクト`、`ペアリング` を見ると切り分けやすくなります。

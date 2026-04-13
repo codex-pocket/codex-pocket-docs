@@ -2,5 +2,35 @@
 id: intro
 title: Introduction
 slug: /
-description: Read this page before using CodexPocket.
+description: Start here to use Codex running on your Mac from your iPhone.
 ---
+
+CodexPocket is an iPhone app for remotely controlling Codex running on your Mac. Your Mac setup stays exactly as it is. You can step away from your desk, keep an eye on progress, send a quick follow-up, and read the result from your phone.
+
+![Mac pairing screen and iPhone QR add screen](/img/docs/pairing-flow-redacted.svg)
+
+I built it because being stuck in front of a Mac all day is tiring. The core idea was simple: if I could poke the Codex session from my iPhone, long-running work would feel much lighter. From the couch, you can watch a task move, add one more instruction, or read the answer before deciding whether you even need to go back to the Mac. Roughly half of this app was built with CodexPocket itself.
+
+## The biggest win
+
+- Remote-control Codex on your Mac from your iPhone
+- Pick up an existing thread and continue it from the phone
+- No need to recreate your development environment on iPhone
+- The Mac keeps doing the real work while the iPhone acts as the control surface
+
+Right now, CodexPocket assumes your Mac and iPhone are on the same local network. When you need deeper setup or troubleshooting, you still do that part on the Mac.
+
+## Where it helps most
+
+- You want to leave your desk but still check whether a long task is moving
+- You want to add a quick follow-up like "keep going with this approach"
+- You want to read the answer or scan a diff before deciding to return to the Mac
+- You want to do lighter actions like images, Exec, or branch switching without sitting down again
+
+## Fastest path
+
+1. Open `CodexPocketMac` on your Mac and show the QR in `Pairing`
+2. Open `Add from QR` on your iPhone and scan it
+3. After the import finishes, open the project and continue your usual Codex work
+
+For the full setup flow, go to [Setup Overview](./setup). For the actual pairing screens, go to [Pair the Devices](./shared/pairing-and-bridge).

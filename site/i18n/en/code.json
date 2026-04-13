@@ -1,135 +1,228 @@
 {
-  "home.highlight.version.eyebrow": {
-    "message": "Version-aware"
+  "home.benefit.remote.eyebrow": {
+    "message": "Anywhere"
   },
-  "home.highlight.version.title": {
-    "message": "Run the stable release and next in parallel"
+  "home.benefit.remote.title": {
+    "message": "Keep a thread moving without going back to your desk"
   },
-  "home.highlight.version.body": {
-    "message": "Pin 0.1.0 as the latest stable docs while continuing to evolve docs/ as next."
+  "home.benefit.remote.body": {
+    "message": "Read the existing transcript and send a follow-up from the iPhone side without reopening your Mac."
   },
-  "home.highlight.locale.eyebrow": {
-    "message": "Bilingual"
+  "home.benefit.setup.eyebrow": {
+    "message": "Fast setup"
   },
-  "home.highlight.locale.title": {
-    "message": "Keep Japanese and English in the same shape"
+  "home.benefit.setup.title": {
+    "message": "Pairing finishes in a few steps"
   },
-  "home.highlight.locale.body": {
-    "message": "Store document bodies under docs and i18n/en, then manage landing-page and UI copy through translation catalogs."
+  "home.benefit.setup.body": {
+    "message": "Open the companion app on Mac, show the bridge QR, and import it on iPhone to add a Host."
   },
-  "home.highlight.structure.eyebrow": {
-    "message": "Structured"
+  "home.benefit.context.eyebrow": {
+    "message": "Less context switching"
   },
-  "home.highlight.structure.title": {
-    "message": "The site feels complete before the content does"
+  "home.benefit.context.title": {
+    "message": "Stay oriented by project"
   },
-  "home.highlight.structure.body": {
-    "message": "Guide, Reference, and Release policy sections are already in place, so you can pour real content in later."
+  "home.benefit.context.body": {
+    "message": "Threads, branches, skills, and commands stay grouped around each Project so workspace context is easier to keep."
   },
-  "home.workflow.author.title": {
-    "message": "Write the next version in docs/"
+  "home.step.bridge.title": {
+    "message": "Start the bridge on Mac"
   },
-  "home.workflow.author.body": {
-    "message": "Keep work-in-progress content in docs/ and review it through /docs/next/."
+  "home.step.bridge.body": {
+    "message": "Prepare the pairing QR and the Project registry in the companion app."
   },
-  "home.workflow.version.title": {
-    "message": "Freeze the release with docs:version"
+  "home.step.pair.title": {
+    "message": "Add the Host on iPhone"
   },
-  "home.workflow.version.body": {
-    "message": "At release time, snapshot the docs and sidebar into versioned_docs and versioned_sidebars."
+  "home.step.pair.body": {
+    "message": "Import with QR or manual code, then wait for bridge validation and Project catalog collection."
   },
-  "home.workflow.translate.title": {
-    "message": "Publish English in parallel through i18n/en"
+  "home.step.resume.title": {
+    "message": "Open a Project and continue"
   },
-  "home.workflow.translate.body": {
-    "message": "Translate doc bodies, sidebars, landing-page copy, and theme labels so the locale dropdown can switch cleanly."
+  "home.step.resume.body": {
+    "message": "Resume a thread and send follow-ups, skills, or exec actions from Composer with the existing context."
   },
-  "home.content.docs.title": {
-    "message": "Next unreleased version"
+  "home.scenario.commute.title": {
+    "message": "You only need to check in while moving"
   },
-  "home.content.docs.body": {
-    "message": "Edit the upcoming release here. After versioning, it automatically becomes the next branch of the docs."
+  "home.scenario.commute.body": {
+    "message": "Follow the thread and send a quick reply without reopening the Mac."
   },
-  "home.content.versioned.title": {
-    "message": "Published snapshots"
+  "home.scenario.away.title": {
+    "message": "You do not want to break flow when away"
   },
-  "home.content.versioned.body": {
-    "message": "These are fixed page sets for released versions, preserving historical routes without breaking navigation."
+  "home.scenario.away.body": {
+    "message": "Open a Project from your iPhone and continue while looking at the current branch and transcript."
   },
-  "home.content.i18n.title": {
-    "message": "English localization"
+  "home.scenario.split.title": {
+    "message": "You want setup on Mac and control on iPhone"
   },
-  "home.content.i18n.body": {
-    "message": "Document bodies and code/theme translations are kept separate so localization stays manageable."
+  "home.scenario.split.body": {
+    "message": "Keep bridge, logs, and Project management on Mac while daily interaction happens on iPhone."
   },
-  "home.content.brand.title": {
-    "message": "Brand assets"
+  "home.guide.iphone.eyebrow": {
+    "message": "Start"
   },
-  "home.content.brand.body": {
-    "message": "The favicon, logo, and social card all inherit the same visual direction as the app icon."
+  "home.guide.iphone.title": {
+    "message": "Start on iPhone"
+  },
+  "home.guide.iphone.body": {
+    "message": "The entry point for people who want Host setup, Projects, Threads, and Composer explained first."
+  },
+  "home.guide.iphone.cta": {
+    "message": "Open the iPhone guide"
+  },
+  "home.guide.mac.eyebrow": {
+    "message": "Setup"
+  },
+  "home.guide.mac.title": {
+    "message": "Start on Mac"
+  },
+  "home.guide.mac.body": {
+    "message": "The entry point for people who want the companion app, bridge, QR, and logs explained first."
+  },
+  "home.guide.mac.cta": {
+    "message": "Open the Mac guide"
+  },
+  "home.guide.shared.eyebrow": {
+    "message": "Shared flow"
+  },
+  "home.guide.shared.title": {
+    "message": "Pairing and thread workflow"
+  },
+  "home.guide.shared.body": {
+    "message": "A dedicated section for topics that cross the boundary between iPhone and Mac."
+  },
+  "home.guide.shared.cta": {
+    "message": "Open the shared guide"
+  },
+  "home.guide.reference.eyebrow": {
+    "message": "Reference"
+  },
+  "home.guide.reference.title": {
+    "message": "Architecture and operations"
+  },
+  "home.guide.reference.body": {
+    "message": "The place for cross-cutting information such as release policy and localization."
+  },
+  "home.guide.reference.cta": {
+    "message": "Open reference"
   },
   "home.meta.title": {
-    "message": "Pocket-first documentation foundation"
+    "message": "Control Codex on your Mac from your iPhone"
   },
   "home.meta.description": {
-    "message": "Versioned, bilingual Docusaurus foundation for CodexPocket with a custom landing page and release-ready docs structure."
+    "message": "CodexPocket turns your iPhone into a lightweight control surface for the Codex environment running on your Mac."
   },
   "home.badge.release": {
     "message": "stable"
   },
-  "home.badge.locale": {
-    "message": "ja / en"
+  "home.badge.surface": {
+    "message": "iPhone control surface"
   },
-  "home.badge.stack": {
-    "message": "Docusaurus 3"
+  "home.badge.pairing": {
+    "message": "QR pairing"
   },
   "home.hero.title": {
-    "message": "Put release handling and localization into the CodexPocket docs from day one."
+    "message": "Take the Codex running on your Mac with you, lightly, from your iPhone."
   },
   "home.hero.lead": {
-    "message": "This foundation is built so the iPhone client and macOS companion app / bridge docs can serve both the stable release and next. Even before the content is written, the routes and the visual identity are already in place."
+    "message": "CodexPocket lets you keep the Codex runtime on Mac while bringing Host, Project, Thread, and Composer controls onto the iPhone. Once pairing is done, you can continue without going back to your desk."
   },
   "home.hero.primaryCta": {
-    "message": "Open the latest release"
+    "message": "Try it from iPhone"
   },
   "home.hero.secondaryCta": {
-    "message": "Open next"
+    "message": "See the pairing flow"
   },
   "home.hero.meta": {
-    "message": "The current stable release is {releaseVersion}. New content lives in docs/ and is frozen into versioned_docs/ when you ship."
+    "message": "The current stable release is {releaseVersion}. Start with the shortest setup path and the iPhone / Mac / shared entry points from here."
+  },
+  "home.hero.note.host": {
+    "message": "Add a Host"
+  },
+  "home.hero.note.project": {
+    "message": "Pick a Project"
+  },
+  "home.hero.note.thread": {
+    "message": "Continue a Thread"
   },
   "home.hero.imageAlt": {
     "message": "CodexPocket app icon"
   },
-  "home.visual.releaseLabel": {
-    "message": "Latest release"
+  "home.visual.eyebrow": {
+    "message": "REMOTE CODING FLOW"
   },
-  "home.visual.channelLabel": {
-    "message": "Working branch"
+  "home.visual.title": {
+    "message": "Control on iPhone, execution on Mac. It feels lighter because the roles stay separate."
   },
-  "home.visual.localeLabel": {
-    "message": "Locales"
+  "home.visual.body": {
+    "message": "The companion app and bridge keep the source of truth on Mac, while the iPhone becomes the fast UI for opening Projects and Threads."
+  },
+  "home.visual.setup.label": {
+    "message": "Setup"
+  },
+  "home.visual.setup.value": {
+    "message": "Pair with QR"
+  },
+  "home.visual.context.label": {
+    "message": "Context"
+  },
+  "home.visual.context.value": {
+    "message": "Organized by Project"
+  },
+  "home.visual.action.label": {
+    "message": "Action"
+  },
+  "home.visual.action.value": {
+    "message": "Continue from Composer"
   },
   "home.visual.panelTitle": {
-    "message": "Content flow"
+    "message": "What moves with you"
   },
-  "home.section.highlights.eyebrow": {
-    "message": "Already wired"
+  "home.visual.panel.host.label": {
+    "message": "Host"
   },
-  "home.section.highlights.title": {
-    "message": "What is already wired"
+  "home.visual.panel.host.body": {
+    "message": "Which Mac you connect to"
   },
-  "home.section.workflow.eyebrow": {
-    "message": "Workflow"
+  "home.visual.panel.project.label": {
+    "message": "Project"
   },
-  "home.section.workflow.title": {
-    "message": "A three-step flow for versioning and translation"
+  "home.visual.panel.project.body": {
+    "message": "The entry point for threads and branches"
   },
-  "home.section.structure.eyebrow": {
-    "message": "Authoring map"
+  "home.visual.panel.composer.label": {
+    "message": "Composer"
   },
-  "home.section.structure.title": {
-    "message": "The places to start writing are already prepared"
+  "home.visual.panel.composer.body": {
+    "message": "The entry point for follow-ups, skills, and exec"
+  },
+  "home.section.benefits.eyebrow": {
+    "message": "Why it feels easy"
+  },
+  "home.section.benefits.title": {
+    "message": "What gets easier"
+  },
+  "home.section.steps.eyebrow": {
+    "message": "Quick start"
+  },
+  "home.section.steps.title": {
+    "message": "Getting started stays light"
+  },
+  "home.section.scenarios.eyebrow": {
+    "message": "Use cases"
+  },
+  "home.section.scenarios.title": {
+    "message": "Where it helps"
+  },
+  "home.section.guides.eyebrow": {
+    "message": "Guides"
+  },
+  "home.section.guides.title": {
+    "message": "Deeper entry points"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

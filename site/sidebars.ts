@@ -5,12 +5,30 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'ガイド',
-      items: [
-        'guides/getting-started',
-        'guides/pairing-and-bridge',
-        'guides/thread-workflow',
-      ],
+      label: 'iPhone',
+      link: {
+        type: 'doc',
+        id: 'iphone/overview',
+      },
+      items: ['iphone/getting-started'],
+    },
+    {
+      type: 'category',
+      label: 'Mac',
+      link: {
+        type: 'doc',
+        id: 'mac/overview',
+      },
+      items: ['mac/getting-started'],
+    },
+    {
+      type: 'category',
+      label: 'Mac と iPhone を一緒に使う',
+      link: {
+        type: 'doc',
+        id: 'shared/overview',
+      },
+      items: ['shared/pairing-and-bridge', 'shared/thread-workflow'],
     },
     {
       type: 'category',

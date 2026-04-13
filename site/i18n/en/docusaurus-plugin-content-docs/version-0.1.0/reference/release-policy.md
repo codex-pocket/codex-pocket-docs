@@ -4,27 +4,29 @@ title: Release Versioning
 
 # Release Versioning
 
-This site enables Docusaurus docs versioning so that stable releases and `next` can live side by side.
+This site uses Docusaurus docs versioning so the stable release and `next` can be published in parallel. Moving to platform-first navigation does not change the versioning model.
 
-## Current rule
+## Current rules
 
 - `/docs/`
   latest stable release `0.1.0`
 - `/docs/next/`
   next unreleased version
 
-## How to cut a new version
+## Cut a new version
 
 ```bash
 npm run docs:version -- 0.2.0
 ```
 
-## Files to inspect after versioning
+## Places to inspect after versioning
 
 - `versioned_docs/version-0.2.0/`
 - `versioned_sidebars/version-0.2.0-sidebars.json`
-- `docusaurus.config.ts` entry for `lastVersion`
+- `lastVersion` in `docusaurus.config.ts`
 
-## Editing note
+## Site-specific notes
 
-If release notes or migration guides are added later, this page can become the index that points to version-specific pages.
+- keep the `docs/iphone/`, `docs/mac/`, and `docs/shared/` shape intact in versioned docs too
+- do not let older versions fall back to the old generic guides structure
+- when editing an older version, update the matching `versioned_sidebars` and versioned English docs too

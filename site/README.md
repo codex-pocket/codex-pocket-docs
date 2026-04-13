@@ -91,7 +91,9 @@ npm run write-translations -- --locale en
 
 ## Contribution Policy
 
-- 外部ユーザーは issue 作成を入口にする運用です
+- 外部ユーザーは [GitHub Issues](https://github.com/codex-pocket/codex-pocket-docs/issues) を入口にしてください
+- CodexPocket が役に立ったら App Store での評価も案内してください
+- セキュリティに関わる報告は公開 issue ではなく repo root の `SECURITY.md` に従ってください
 - GitHub 側の `pull_request_creation_policy` は `collaborators_only` に設定済みです
 
 デプロイ先が変わる場合は [`docusaurus.config.ts`](docusaurus.config.ts) を差し替えてください。

@@ -4,7 +4,7 @@ slug: /setup/
 description: Mac の準備から iPhone の接続までをまとめた入口ページです。
 ---
 
-CodexPocket のセットアップは、大きく分けると 3 段階です。
+CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で読み取る」「そのまま続きを触る」の 3 段階です。Mac で使っている Codex を、iPhone から触れるようにする準備だと考えると分かりやすくなります。
 
 1. Mac 側を整える
 2. iPhone で Mac を取り込む
@@ -12,7 +12,7 @@ CodexPocket のセットアップは、大きく分けると 3 段階です。
 
 ## 1. Mac 側を整える
 
-最初に Mac で次を済ませます。
+最初に Mac で次を済ませます。ここで実行環境そのものを作るので、iPhone 側はあとからつなぐだけです。
 
 - `CodexPocketMac` を起動する
 - `codex` が使えることを確認する
@@ -47,5 +47,3 @@ Codex App を使わない場合だけ、`CodexPocketMac` の `プロジェクト
 - Mac 側の手順はサイドバーの `Mac アプリ` を上から順に読む
 
 接続で詰まったときは、先に Mac 側の `一般`、`プロジェクト`、`ペアリング` を見ると切り分けやすくなります。
-
-> TODO(画像): `Mac が実行側、iPhone が操作側` という役割分担を示す図。Mac 側には `CodexPocketMac`、Project、Codex を、iPhone 側には Project 一覧、Thread、Composer を置くと流れが伝わりやすくなります。

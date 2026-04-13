@@ -81,6 +81,10 @@ npm run write-translations -- --locale en
 
 `main` に push すると GitHub Actions で build して GitHub Pages に公開する想定です。
 
+- deploy workflow は repo root の `.github/workflows/deploy-pages.yml` を使います
+- Pages の build type は `workflow` 前提です
+- `main` 以外への push では本番公開しません
+
 - `url`: `https://codex-pocket.github.io`
 - `baseUrl`: `/codex-pocket-docs/`
 - 公開 URL: `https://codex-pocket.github.io/codex-pocket-docs/`

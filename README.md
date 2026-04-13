@@ -14,6 +14,12 @@ related repos:
 - [codex-pocket-backend](https://github.com/codex-pocket/codex-pocket-backend)
 - [codex-pocket-relay](https://github.com/codex-pocket/codex-pocket-relay)
 
+## フィードバック
+
+- 不具合報告や改善要望は [GitHub Issues](https://github.com/codex-pocket/codex-pocket-docs/issues) に書いてください
+- CodexPocket が役に立ったら App Store での評価もお願いします
+- セキュリティに関わる報告は公開 issue ではなく [SECURITY.md](SECURITY.md) の手順を使ってください
+
 最初に読む文書:
 
 - [`product/requirements.md`](product/requirements.md)

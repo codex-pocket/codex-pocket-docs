@@ -4,15 +4,43 @@ title: Architecture
 
 # Architecture
 
-This page is reserved for the product-wide technical shape. The structure is ready, but the full explanation still needs to be written.
+CodexPocket assumes a split where the iPhone is the control surface and the Mac is the execution environment. The docs now mirror that split with four axes: `iPhone`, `Mac`, `shared`, and `reference`.
 
-## Expected viewpoints
+## System view
 
-- iPhone client
-- macOS companion app
-- native bridge runtime
-- reference CLI path
+```text
+[iPhone App]
+  ├─ Host / Project / Thread UI
+  ├─ Composer / Skills / Commands
+  └─ Review / Exec
+        ↓
+[Local Network / future relay]
+        ↓
+[macOS Companion App]
+  ├─ Pairing / Bridge / Logs / Projects
+  ├─ codex app-server
+  ├─ git
+  └─ Codex CLI
+```
 
-## Editing note
+## Main components
 
-This should be close to the source of truth. Interface walkthroughs and operational guidance should stay in the guide section.
+- `iPhone app`
+  owns Host and Project selection, thread rendering, Composer, skills, and exec
+- `macOS companion app`
+  owns pairing QR, bridge lifecycle, Project management, and logs
+- `bridge runtime`
+  receives API calls from iPhone and relays Codex and git state
+- `future relay`
+  the extension point for remote access after the initial LAN-first release
+
+## How that maps to the docs
+
+- `iPhone`
+  the first-run path for the control surface
+- `Mac`
+  the admin path for the companion app and bridge
+- `shared`
+  cross-device flows such as pairing, bridge, and thread workflow
+- `reference`
+  cross-cutting material such as architecture, release policy, and localization

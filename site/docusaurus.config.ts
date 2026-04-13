@@ -6,8 +6,8 @@ const repoOwner = 'codex-pocket';
 const repoName = 'codex-pocket-docs';
 
 const config: Config = {
-  title: 'CodexPocket Docs',
-  tagline: 'Official docs for the CodexPocket iPhone app and macOS companion bridge.',
+  title: 'CodexPocket',
+  tagline: 'Control the Codex environment running on your Mac from your iPhone.',
   favicon: 'img/codex-pocket-icon.png',
 
   future: {
@@ -87,7 +87,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Official documentation for CodexPocket, an iPhone app and macOS companion bridge for Codex pairing, threads, and remote workflows.',
+          'CodexPocket turns your iPhone into a lightweight control surface for the Codex environment running on your Mac.',
       },
       {
         name: 'keywords',
@@ -95,11 +95,11 @@ const config: Config = {
           'CodexPocket, Codex, iPhone app, macOS companion app, bridge, pairing, remote coding assistant, docs',
       },
       {property: 'og:type', content: 'website'},
-      {property: 'og:site_name', content: 'CodexPocket Docs'},
+      {property: 'og:site_name', content: 'CodexPocket'},
       {
         property: 'og:description',
         content:
-          'Official documentation for CodexPocket, covering the iPhone client, macOS companion app, pairing, bridge, and thread workflows.',
+          'Pair once, pick a project, and continue threads on your iPhone while Codex keeps running on your Mac.',
       },
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
@@ -114,10 +114,10 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'CodexPocket Docs',
+      title: 'CodexPocket',
       hideOnScroll: true,
       logo: {
-        alt: 'CodexPocket Logo',
+        alt: 'CodexPocket logo',
         src: 'img/logo-mark.svg',
       },
       items: [
@@ -150,16 +150,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: '最新リリース',
-              to: '/docs/',
+              label: 'iPhone を始める',
+              to: '/docs/iphone/',
             },
             {
-              label: 'next',
-              to: '/docs/next/',
+              label: 'Mac を始める',
+              to: '/docs/mac/',
             },
             {
-              label: '多言語運用',
-              to: '/docs/reference/localization',
+              label: 'ペアリングと bridge',
+              to: '/docs/shared/pairing-and-bridge',
             },
           ],
         },

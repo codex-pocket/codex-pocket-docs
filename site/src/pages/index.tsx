@@ -512,29 +512,6 @@ export default function Home(): ReactNode {
           <div className="container">
             <div className={styles.sectionHeading}>
               <span className={styles.sectionEyebrow}>
-                <Translate id="home.section.limits.eyebrow">Current limits</Translate>
-              </span>
-              <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.limits.title">まず知っておきたいこと</Translate>
-              </Heading>
-            </div>
-            <div className={styles.scenarioGrid}>
-              {limitations.map((item) => (
-                <article key={item.title} className={styles.scenarioCard}>
-                  <Heading as="h3" className={styles.scenarioTitle}>
-                    {item.title}
-                  </Heading>
-                  <p className={styles.scenarioBody}>{item.body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <div className="container">
-            <div className={styles.sectionHeading}>
-              <span className={styles.sectionEyebrow}>
                 <Translate id="home.section.benefits.eyebrow">What you can do now</Translate>
               </span>
               <Heading as="h2" className={styles.sectionTitle}>
@@ -623,6 +600,29 @@ export default function Home(): ReactNode {
                   <Link className={styles.guideLink} to={item.path}>
                     {item.cta}
                   </Link>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeading}>
+              <span className={styles.sectionEyebrow}>
+                <Translate id="home.section.limits.eyebrow">Current limits</Translate>
+              </span>
+              <Heading as="h2" className={styles.sectionTitle}>
+                <Translate id="home.section.limits.title">知っておくべきこと</Translate>
+              </Heading>
+            </div>
+            <div className={styles.scenarioGrid}>
+              {limitations.map((item) => (
+                <article key={item.title} className={styles.scenarioCard}>
+                  <Heading as="h3" className={styles.scenarioTitle}>
+                    {item.title}
+                  </Heading>
+                  <p className={styles.scenarioBody}>{item.body}</p>
                 </article>
               ))}
             </div>

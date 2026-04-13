@@ -7,7 +7,7 @@ const repoName = 'codex-pocket-docs';
 
 const config: Config = {
   title: 'CodexPocket Docs',
-  tagline: 'Versioned, bilingual docs for CodexPocket.',
+  tagline: 'Official docs for the CodexPocket iPhone app and macOS companion bridge.',
   favicon: 'img/codex-pocket-icon.png',
 
   future: {
@@ -67,6 +67,11 @@ const config: Config = {
           },
           editUrl: `https://github.com/${repoOwner}/${repoName}/tree/main/`,
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          filename: 'sitemap.xml',
+        },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -77,7 +82,27 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/codex-pocket-social-card.svg',
-    metadata: [{name: 'theme-color', content: '#e85422'}],
+    metadata: [
+      {name: 'theme-color', content: '#e85422'},
+      {
+        name: 'description',
+        content:
+          'Official documentation for CodexPocket, an iPhone app and macOS companion bridge for Codex pairing, threads, and remote workflows.',
+      },
+      {
+        name: 'keywords',
+        content:
+          'CodexPocket, Codex, iPhone app, macOS companion app, bridge, pairing, remote coding assistant, docs',
+      },
+      {property: 'og:type', content: 'website'},
+      {property: 'og:site_name', content: 'CodexPocket Docs'},
+      {
+        property: 'og:description',
+        content:
+          'Official documentation for CodexPocket, covering the iPhone client, macOS companion app, pairing, bridge, and thread workflows.',
+      },
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,

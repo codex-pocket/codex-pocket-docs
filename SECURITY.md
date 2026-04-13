@@ -8,9 +8,9 @@ Only the latest state of `main` is supported.
 
 Do not open public issues or pull requests for security-sensitive reports.
 
-Contact: TODO
+Contact: mochikun017@gmail.com
 
-Until the contact path above is replaced, report privately to the repository owner through GitHub and include:
+When reporting, include:
 
 - affected area
 - impact

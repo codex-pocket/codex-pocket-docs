@@ -2,11 +2,12 @@
 id: intro
 title: Documentation Overview
 slug: /
+description: Official CodexPocket documentation for the iPhone app, macOS companion app, pairing, bridge, and thread workflows.
 ---
 
 # Documentation Overview
 
-This site is currently a foundation-only scaffold for `CodexPocket Docs`. The real product content will come later, but the information architecture, localization, and release version flow are already wired.
+`CodexPocket Docs` is the official documentation site for CodexPocket, covering the iPhone app, macOS companion app, pairing, bridge, thread workflows, and release operations.
 
 :::note Current state
 
@@ -20,6 +21,7 @@ This site is currently a foundation-only scaffold for `CodexPocket Docs`. The re
 
 - onboarding for the iPhone client
 - setup instructions for the macOS companion app and bridge
+- pairing and bridge connection prerequisites
 - thread / review / exec workflows
 - release notes and known limitations
 

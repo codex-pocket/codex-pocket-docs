@@ -2,11 +2,12 @@
 id: intro
 title: ドキュメント概要
 slug: /
+description: CodexPocket の iPhone app、macOS companion app、pairing、bridge、thread workflow をまとめた公式ドキュメントです。
 ---
 
 # ドキュメント概要
 
-`CodexPocket Docs` の土台だけを先に整えた状態です。本文コンテンツはこれから追加していく前提で、情報設計、多言語、リリースバージョンの流れが先に動くようにしています。
+`CodexPocket Docs` は、Codex を iPhone から扱うための `CodexPocket` の公式ドキュメントです。iPhone app、macOS companion app、pairing、bridge、thread workflow、release 運用をまとめています。
 
 :::note 現在の状態
 
@@ -20,6 +21,7 @@ slug: /
 
 - iPhone クライアントの導入ガイド
 - macOS companion app / bridge のセットアップ
+- pairing と bridge 接続の前提
 - thread / review / exec の操作フロー
 - リリースノートと既知制約
 

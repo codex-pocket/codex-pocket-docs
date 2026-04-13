@@ -85,11 +85,17 @@
     },
     {
       "type": "category",
-      "label": "補足",
+      "label": "リファレンス",
+      "link": {
+        "type": "doc",
+        "id": "reference/overview"
+      },
       "items": [
         "reference/architecture",
         "reference/limitations",
-        "reference/glossary"
+        "reference/glossary",
+        "reference/localization",
+        "reference/release-policy"
       ]
     }
   ]

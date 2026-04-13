@@ -1,43 +1,46 @@
 ---
-title: thread workflow
-description: Project 選択から thread 再開、follow-up、exec までの共通フローを整理します。
+title: Project を開いて Thread を始める
+description: Host 追加後に、iPhone から Project と Thread を開く流れをまとめます。
 ---
 
-# thread workflow
-
-thread workflow は、iPhone だけでも、Mac だけでも完結しません。Project は Mac 側の workspace を基準にしつつ、日常の閲覧と follow-up は iPhone 側で行うため、両方の役割を前提に見取り図を持つ必要があります。
+Host の追加が終わったら、次は iPhone から実際の作業に入ります。普段 Mac で開いている作業フォルダを `Project` として開き、その中の `Thread` を再開するか、新しく始めます。
 
 ## 基本フロー
 
-1. iPhone 側で Host を開く
-2. 対象 `Project` を選ぶ
-3. 既存 `Thread` を再開するか、新規 thread を始める
-4. transcript history と live output を見ながら追加の turn を送る
-5. 必要に応じて branch 切替や `exec` を実行する
+1. `ホーム` または `プロジェクト` から対象の `Project` を選ぶ
+2. 既存の `Thread` を開くか `新しい Thread` を押す
+3. `作業ログ` と `回答` を見ながら進み具合を確認する
+4. Composer から追加の指示を送る
+5. 必要に応じて `Exec`、`Fork`、`ブランチ`、`スキル` を使う
 
-## thread と exec の使い分け
+## `Thread` と `Exec` の使い分け
 
 - `Thread`
-  会話を継続しながら Codex に作業させる主導線です
+  会話の流れを残しながら作業を続けるときに使います
 - `Exec`
-  one-shot の実行を別ストリームで流したいときの導線です
+  1 回だけ確認したいことを別枠で実行したいときに使います
 
-## follow-up の考え方
+迷ったら `Thread` を使えば十分です。`Exec` は、いまの流れを汚さずに単発で試したいときに向いています。
 
-- `queue`
-  current run 完了後に次の turn を順次送ります
-- `steer`
-  実行中の turn に追加指示を送ります
+## 追加指示の送り方
 
-## このページで今後詳しくする項目
+- `キュー`
+  今の実行が終わってから次の依頼を送ります
+- `ステア`
+  進行中の実行にそのまま追加指示を送ります
 
-- transcript history と live event の統合表示
-- branch 切替が Thread / Exec の作業対象にどう反映されるか
-- review / approval の UI をどこで挟むか
-- git 未初期化 workspace の初期化導線
+大きく割り込ませたくないときは `キュー`、その場で少し方向を変えたいときは `ステア` と考えると使い分けやすくなります。
+
+## 接続が一時的に切れたとき
+
+iPhone 側の表示が止まっても、Mac 側の Codex が作業を続けていることがあります。まずは次を試してください。
+
+- `最新へ戻る` で末尾まで移動する
+- 画面を開いたまま少し待つ
+- `Project` や `Thread` を開き直す
 
 ## 関連ページ
 
-- [pairing と bridge](./pairing-and-bridge)
-- [iPhone から始める](../iphone/)
-- [Mac から始める](../mac/)
+- [Project を開く](../usage/open-project)
+- [Thread を確認する](../usage/threads)
+- [Branch / Skills / Exec を使う](../usage/branch-skill-exec)

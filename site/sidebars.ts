@@ -21,9 +21,10 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'mac/getting-started',
+        'mac/install-codex-app',
         'mac/install-codex-cli',
         'mac/install-git',
-        'mac/register-project',
+        'mac/create-project',
         'mac/start-bridge',
       ],
     },
@@ -80,8 +81,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '補足',
-      items: ['reference/architecture', 'reference/limitations', 'reference/glossary'],
+      label: 'リファレンス',
+      link: {
+        type: 'doc',
+        id: 'reference/overview',
+      },
+      items: [
+        'reference/architecture',
+        'reference/limitations',
+        'reference/glossary',
+        'reference/localization',
+        'reference/release-policy',
+      ],
     },
   ],
 };

@@ -35,7 +35,7 @@ Without prior written permission from the rights holder, the following are prohi
 
 For commercial licensing, redistribution, or other permission requests:
 
-TODO
+codexpocket@gmail.com
 
 ## 6. Disclaimer
 

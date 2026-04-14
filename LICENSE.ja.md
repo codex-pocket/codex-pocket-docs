@@ -35,7 +35,7 @@
 
 商用利用、再配布、個別許諾その他の問い合わせ先:
 
-TODO
+codexpocket@gmail.com
 
 ## 6. 無保証
 

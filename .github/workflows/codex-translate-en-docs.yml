@@ -169,8 +169,14 @@ jobs:
           PY
 
       - name: Require OpenAI API key
-        if: steps.changes.outputs.has_work == 'true' && secrets.OPENAI_API_KEY == ''
+        if: steps.changes.outputs.has_work == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
+          if [ -n "$OPENAI_API_KEY" ]; then
+            exit 0
+          fi
+
           echo "OPENAI_API_KEY secret is required for Codex translation workflow." >&2
           exit 1
 

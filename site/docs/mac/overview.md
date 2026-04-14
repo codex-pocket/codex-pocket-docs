@@ -4,7 +4,15 @@ slug: /mac/
 description: iPhone から使う前に、Mac 側で本当に必要な準備だけをまとめます。
 ---
 
+import MacDownloadLink from '@site/src/components/MacDownloadLink';
+
 CodexPocket の実行側は Mac です。iPhone は操作画面なので、Mac で Codex が普段どおり動き、`CodexPocketMac` が待ち受けできれば使い始められます。
+
+まずアプリ本体がまだない場合は、ここから入れます。
+
+<MacDownloadLink className="button button--primary button--lg">
+  Mac アプリをダウンロード
+</MacDownloadLink>
 
 ## 先に結論
 

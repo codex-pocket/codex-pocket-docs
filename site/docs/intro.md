@@ -5,7 +5,15 @@ slug: /
 description: Mac で動いている Codex を iPhone からリモートで続けるための入口です。
 ---
 
+import MacDownloadLink from '@site/src/components/MacDownloadLink';
+
 CodexPocket は、Mac で動いている Codex を iPhone からそのままリモート操作するためのアプリです。Mac の作業環境はそのままに、席を離れていても進捗を見て、ひとこと追記して、結果を確認できます。
+
+Mac 側の準備がまだなら、先に <MacDownloadLink>CodexPocketMac をダウンロード</MacDownloadLink> しておくと、そのまま Pairing まで進めます。
+
+<MacDownloadLink className="button button--primary button--lg">
+  Mac アプリをダウンロード
+</MacDownloadLink>
 
 ![CodexPocketの実行画面](/img/docs/IMG_4365.jpeg)
 

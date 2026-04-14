@@ -1,30 +1,39 @@
-# CodexPocket
+<p align="center">
+  <img src="https://raw.githubusercontent.com/codex-pocket/.github/main/profile/assets/github-hero.svg" alt="CodexPocket hero banner" width="100%">
+</p>
 
-CodexPocket は、Mac 上で動いている Codex を iPhone から扱うためのプロダクトです。  
-このリポジトリでは、CodexPocket の公式ドキュメントとサポート情報を公開しています。  
-現時点では同一 LAN 内での利用が前提で、PC で進めている thread をリアルタイムに iPhone へ持ち出すことはまだできません。
+# CodexPocket Docs
 
-## まず見る場所
+Official product documentation and support content for CodexPocket.
 
-- 公開ドキュメント: [codex-pocket.github.io/codex-pocket-docs](https://codex-pocket.github.io/codex-pocket-docs/)
-- セットアップの入口: [セットアップの全体像](https://codex-pocket.github.io/codex-pocket-docs/docs/setup/)
-- Mac 側の案内: [Mac アプリを準備する](https://codex-pocket.github.io/codex-pocket-docs/docs/mac/)
-- iPhone 側の案内: [iPhone アプリを準備する](https://codex-pocket.github.io/codex-pocket-docs/docs/iphone/)
-- 連携の案内: [Mac と iPhone を連携する](https://codex-pocket.github.io/codex-pocket-docs/docs/shared/)
+CodexPocket は、Mac 上で動いている Codex を iPhone から扱うための companion です。  
+このリポジトリには、公開ドキュメント、セットアップ導線、トラブルシューティング、Docusaurus site のソースをまとめています。  
+現在の公開リリースは同一 LAN 内での利用を前提にしています。
 
-## このリポジトリで案内している内容
+## Quick Links
 
-- CodexPocket を使い始める前に必要なもの
-- Mac アプリ、iPhone アプリ、Codex CLI、Git の準備
-- Codex App と一緒に使うときの見方
-- Mac と iPhone の Pairing と接続確認
-- Project、Thread、Composer など日常操作の流れ
-- 現在の制限事項と今後の予定
-- 困ったときの確認項目とサポート導線
+- Public docs site: [codex-pocket.github.io/codex-pocket-docs](https://codex-pocket.github.io/codex-pocket-docs/)
+- Setup overview: [セットアップの全体像](https://codex-pocket.github.io/codex-pocket-docs/docs/setup/)
+- Mac guide: [Mac アプリを準備する](https://codex-pocket.github.io/codex-pocket-docs/docs/mac/)
+- iPhone guide: [iPhone アプリを準備する](https://codex-pocket.github.io/codex-pocket-docs/docs/iphone/)
+- Pairing guide: [Mac と iPhone を連携する](https://codex-pocket.github.io/codex-pocket-docs/docs/shared/)
+- Releases: [codex-pocket-releases](https://github.com/codex-pocket/codex-pocket-releases/releases)
 
-## サポート
+## Repository Layout
 
-- 不具合報告や改善要望: [GitHub Issues](https://github.com/codex-pocket/codex-pocket-docs/issues)
-- セキュリティに関わる報告: [SECURITY.md](SECURITY.md)
+- `product/`: product requirements and design documents
+- `site/`: public Docusaurus documentation site
+- `.github/`: docs-specific issue templates and deployment workflows
 
-CodexPocket が役に立ったら、App Store での評価もお願いします。
+## Local Development
+
+```bash
+cd site
+npm ci
+npm run start
+```
+
+## Support
+
+- Bug reports and documentation requests: [GitHub Issues](https://github.com/codex-pocket/codex-pocket-docs/issues)
+- Security-related reports: [SECURITY.md](SECURITY.md)

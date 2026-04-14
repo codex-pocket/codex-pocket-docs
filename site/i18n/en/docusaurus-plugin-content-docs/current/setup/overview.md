@@ -16,10 +16,10 @@ Start with the Mac side. That is where the real execution environment lives, so 
 
 - Launch `CodexPocketMac`
 - Confirm that `codex` is available
-- Add the workspace you want through Codex App
+- If you use Codex App, add the workspace you want there
 - Confirm that Bridge is running
 
-If you do not use Codex App, add the working folder manually from `Projects` in `CodexPocketMac`.
+If you do not use Codex App, add the project later from `Projects` on the iPhone after the Host is set up.
 
 ## 2. Add the Mac on iPhone
 

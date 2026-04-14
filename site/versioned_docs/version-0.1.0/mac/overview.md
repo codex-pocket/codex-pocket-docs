@@ -21,7 +21,7 @@ Mac アプリは次の仕事を担当します。
 1. CodexPocketMac を起動する
 2. Codex CLI を使えることを確認する
 3. 必要なら Git を使えるようにする
-4. iPhone に見せたい Project を登録する
+4. 必要なら iPhone 側で Project を追加する
 5. Bridge を開始する
 
 すでに Mac で Codex を使いこなしているなら、主な追加作業は `CodexPocketMac` の起動と `Project` の確認です。
@@ -33,7 +33,7 @@ Mac アプリは次の仕事を担当します。
 - `Bridge`
   表示名、ポート、ローカル接続先の確認
 - `プロジェクト`
-  iPhone に見せる workspace の追加と編集
+  iPhone に見せる workspace の確認
 - `ペアリング`
   QR、Pairing URL、Pairing Code の表示
 - `ログ`

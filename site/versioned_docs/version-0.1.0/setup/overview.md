@@ -16,10 +16,10 @@ CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で
 
 - `CodexPocketMac` を起動する
 - `codex` が使えることを確認する
-- 使いたい workspace を Codex App に入れる
+- Codex App を使うなら、使いたい workspace を Codex App に入れる
 - Bridge が動いていることを確認する
 
-Codex App を使わない場合だけ、`CodexPocketMac` の `プロジェクト` から手動で追加します。
+Codex App を使わない場合は、iPhone で Host を追加したあとに `プロジェクト` の `+` から手動で追加します。
 
 ## 2. iPhone で Mac を取り込む
 

@@ -3,7 +3,7 @@ title: Codex App と一緒に使う
 description: Mac の Codex App を使っている人向けの連携方法をまとめます。
 ---
 
-Mac で Codex App を使っているなら、CodexPocketMac の `プロジェクト` を毎回手で作る必要はありません。Codex App に登録・利用している workspace が、CodexPocket 側の Project 一覧に入ってくることがあります。
+Mac で Codex App を使っているなら、iPhone 側で Project を毎回手動追加する必要はありません。Codex App に登録・利用している workspace が、CodexPocket 側の Project 一覧に入ってくることがあります。
 
 Mac でいつも開いている workspace を、そのまま iPhone の入口にしたい人にはこの使い方がいちばん自然です。
 
@@ -30,7 +30,7 @@ Mac でいつも開いている workspace を、そのまま iPhone の入口に
 - 表示名を自分で分かりやすく付け直したい
 - いまこの場で iPhone 側からすぐ Project を増やしたい
 
-その場合は、Mac の `プロジェクト` タブから追加するか、iPhone 側の `プロジェクト` で `+` を押して追加します。
+その場合は、iPhone 側の `プロジェクト` で `+` を押して追加します。
 
 ## 使い始めるときのコツ
 

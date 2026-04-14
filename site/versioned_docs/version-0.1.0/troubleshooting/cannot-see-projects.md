@@ -3,13 +3,13 @@ title: Project が表示されないとき
 description: Host は追加できたのに Project 一覧が見えないときの確認項目をまとめます。
 ---
 
-Host は追加できたのに `プロジェクト` が空のときは、たいてい Mac 側の Project 登録か初回取り込みで止まっています。
+Host は追加できたのに `プロジェクト` が空のときは、たいてい自動反映待ちか、手動追加がまだです。
 
-## 1. Mac 側に Project があるか確認する
+## 1. Mac 側の workspace か、手動追加した Project があるか確認する
 
-CodexPocketMac の `プロジェクト` を開き、少なくとも 1 件あるか確認します。
+CodexPocketMac の `プロジェクト` を開き、対象 workspace が見えているか確認します。
 
-なければ、まず 1 件追加してください。
+自動反映されていないなら、iPhone 側の `プロジェクト` から 1 件追加してください。
 
 ## 2. iPhone 側で更新する
 
@@ -31,4 +31,4 @@ Mac 側で Project の `作業ディレクトリ` が正しいか確認します
 
 ## 5. Codex App 由来の workspace が見えないとき
 
-普段 Codex App で使っている workspace が自動反映されないことがあります。その場合は、CodexPocketMac の `プロジェクト` から手動追加するのが確実です。
+普段 Codex App で使っている workspace が自動反映されないことがあります。その場合は、iPhone 側の `プロジェクト` から手動追加するのが確実です。

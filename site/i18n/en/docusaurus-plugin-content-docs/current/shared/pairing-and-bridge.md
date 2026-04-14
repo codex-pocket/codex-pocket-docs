@@ -7,7 +7,9 @@ description: This page covers pairing the Mac and iPhone.
 
 QR is the easiest starting point. If you already use Codex comfortably on your Mac, the only extra things to think about are opening `CodexPocketMac` and scanning the QR code.
 
-![Mac pairing screen and iPhone QR add screen](/img/docs/pairing-flow-redacted.svg)
+| Mac | iPhone |
+| --- | --- |
+| ![Mac pairing screen](/img/docs/pairing-mac.jpg) | ![iPhone QR add screen](/img/docs/pairing-iphone.jpg) |
 
 ## Before pairing
 

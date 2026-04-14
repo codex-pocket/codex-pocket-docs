@@ -7,7 +7,9 @@ This is the simple part: show a QR code on the Mac, then scan it with the iPhone
 
 In CodexPocket, a `Host` means the Mac your iPhone connects to.
 
-![Mac pairing screen and iPhone QR add screen](/img/docs/pairing-flow-redacted.svg)
+| Mac | iPhone |
+| --- | --- |
+| ![Mac pairing screen](/img/docs/pairing-mac.jpg) | ![iPhone QR add screen](/img/docs/pairing-iphone.jpg) |
 
 ## Before you start on iPhone
 

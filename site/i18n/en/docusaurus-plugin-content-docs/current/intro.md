@@ -7,7 +7,9 @@ description: Start here to use Codex running on your Mac from your iPhone.
 
 CodexPocket is an iPhone app for remotely controlling Codex running on your Mac. Your Mac setup stays exactly as it is. You can step away from your desk, keep an eye on progress, send a quick follow-up, and read the result from your phone.
 
-![Mac pairing screen and iPhone QR add screen](/img/docs/pairing-flow-redacted.svg)
+| Mac | iPhone |
+| --- | --- |
+| ![Mac pairing screen](/img/docs/pairing-mac.jpg) | ![iPhone QR add screen](/img/docs/pairing-iphone.jpg) |
 
 I built it because being stuck in front of a Mac all day is tiring. The core idea was simple: if I could poke the Codex session from my iPhone, long-running work would feel much lighter. From the couch, you can watch a task move, add one more instruction, or read the answer before deciding whether you even need to go back to the Mac. Roughly half of this app was built with CodexPocket itself.
 

@@ -7,7 +7,9 @@ description: Mac で動いている Codex を iPhone からリモートで続け
 
 CodexPocket は、Mac で動いている Codex を iPhone からそのままリモート操作するためのアプリです。Mac の作業環境はそのままに、席を離れていても進捗を見て、ひとこと追記して、結果を確認できます。
 
-![Mac の Pairing 画面と iPhone の QR 追加画面](/img/docs/pairing-flow-redacted.svg)
+| Mac 側 | iPhone 側 |
+| --- | --- |
+| ![Mac の Pairing 画面](/img/docs/pairing-mac.jpg) | ![iPhone の QR 追加画面](/img/docs/pairing-iphone.jpg) |
 
 私自身、Mac の前にずっといるのがしんどくて、「いま動いている Codex を iPhone から触れたらかなり楽になる」と思って作りました。ソファに移ったあとも、長めの作業の様子を見たり、追加の指示を送ったり、返答だけ先に読んだりできます。実際、このアプリ自体も 50% くらいは CodexPocket を使って作っています。
 

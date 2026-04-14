@@ -7,7 +7,9 @@ description: Mac と iPhone を QR でつなぐ基本手順を説明します。
 
 最初は QR を使うのがいちばん簡単です。普段から Mac で Codex を使っている人なら、追加で意識することは `CodexPocketMac` を開くことと、QR を読み取ることの 2 つで十分です。
 
-![Mac の Pairing 画面と iPhone の QR 追加画面](/img/docs/pairing-flow-redacted.svg)
+| Mac 側 | iPhone 側 |
+| --- | --- |
+| ![Mac の Pairing 画面](/img/docs/pairing-mac.jpg) | ![iPhone の QR 追加画面](/img/docs/pairing-iphone.jpg) |
 
 ## ペアリング前に Mac で確認すること
 

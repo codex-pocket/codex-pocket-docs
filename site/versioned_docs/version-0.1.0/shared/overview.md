@@ -4,9 +4,13 @@ slug: /shared/
 description: Mac で動いている Codex を iPhone から使うための連携手順をまとめます。
 ---
 
+import MacDownloadLink from '@site/src/components/MacDownloadLink';
+
 このセクションは、普段は Mac で Codex を使っていて、席を外したときに iPhone から続きを見たい人向けの案内です。
 
 CodexPocket では、実際の作業は Mac 側で動き続けます。iPhone 側でやることは、Mac を `Host` として登録し、開きたい `Project` と `Thread` に入ることです。
+
+連携の前提として Mac 側で `CodexPocketMac` が起動している必要があります。まだ入っていない場合は、先に <MacDownloadLink>Mac アプリをダウンロード</MacDownloadLink> してください。
 
 ## このセクションで分かること
 

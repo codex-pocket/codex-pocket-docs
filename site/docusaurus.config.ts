@@ -44,6 +44,7 @@ const config: Config = {
 
   customFields: {
     releaseVersion: '0.1.0',
+    macDownloadUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases',
   },
 
   presets: [

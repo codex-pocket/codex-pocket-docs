@@ -39,6 +39,10 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   const iconUrl = useBaseUrl('/img/codex-pocket-icon.png');
   const releaseVersion = String(siteConfig.customFields?.releaseVersion ?? '0.1.0');
+  const macDownloadUrl = String(
+    siteConfig.customFields?.macDownloadUrl ??
+      'https://github.com/codex-pocket/codex-pocket-releases/releases',
+  );
   const canonicalUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
   const structuredData = {
     '@context': 'https://schema.org',
@@ -379,6 +383,9 @@ export default function Home(): ReactNode {
                   </Translate>
                 </p>
                 <div className={styles.heroActions}>
+                  <Link className="button button--primary button--lg" href={macDownloadUrl}>
+                    <Translate id="home.hero.downloadCta">Mac アプリをダウンロード</Translate>
+                  </Link>
                   <Link className="button button--primary button--lg" to="/docs/iphone/getting-started">
                     <Translate id="home.hero.primaryCta">iPhone ですぐ試す</Translate>
                   </Link>

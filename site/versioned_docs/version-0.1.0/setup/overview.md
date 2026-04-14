@@ -4,6 +4,8 @@ slug: /setup/
 description: Mac の準備から iPhone の接続までをまとめた入口ページです。
 ---
 
+import MacDownloadLink from '@site/src/components/MacDownloadLink';
+
 CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で読み取る」「そのまま続きを触る」の 3 段階です。Mac で使っている Codex を、iPhone から触れるようにする準備だと考えると分かりやすくなります。
 
 1. Mac 側を整える
@@ -18,6 +20,8 @@ CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で
 - `codex` が使えることを確認する
 - Codex App を使うなら、使いたい workspace を Codex App に入れる
 - Bridge が動いていることを確認する
+
+まだ入れていない場合は、ここで先に <MacDownloadLink>Mac アプリをダウンロード</MacDownloadLink> しておくと流れが止まりません。
 
 Codex App を使わない場合は、iPhone で Host を追加したあとに `プロジェクト` の `+` から手動で追加します。
 

@@ -217,20 +217,33 @@ jobs:
               fh.write(f"needs_translation={'true' if needs_translation else 'false'}\n")
           PY
 
-      - name: Require OpenAI API key
+      - name: Check translation prerequisites
+        id: translate_gate
         if: steps.changes.outputs.needs_translation == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RUNTIME_FILE: ${{ steps.changes.outputs.runtime_file }}
         run: |
           if [ -n "$OPENAI_API_KEY" ]; then
+            echo "can_translate=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          echo "OPENAI_API_KEY secret is required for Codex translation workflow." >&2
-          exit 1
+          echo "can_translate=false" >> "$GITHUB_OUTPUT"
+          echo "::warning::OPENAI_API_KEY secret is not configured. Skipping automatic English docs sync."
+          {
+            echo "## Translation skipped"
+            echo
+            echo "- Reason: \`OPENAI_API_KEY\` secret is not configured."
+            echo "- Action: Update the English docs manually, or configure the secret and re-run this workflow."
+            echo
+            echo "### Pending translation context"
+            echo
+            cat "$RUNTIME_FILE"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Run Codex translation
-        if: steps.changes.outputs.needs_translation == 'true'
+        if: steps.changes.outputs.needs_translation == 'true' && steps.translate_gate.outputs.can_translate == 'true'
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}

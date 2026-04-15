@@ -6,6 +6,8 @@ description: This is the iPhone-side starting point after the Mac is ready.
 
 The iPhone app is not a replacement for the Mac. It is the remote surface for the Codex environment you already use on the Mac, so you can keep going while away from your desk or moving around.
 
+For the current distribution status and the install path, start with [Get the iPhone App](./getting-started).
+
 If you already know Codex well on the Mac, there is not much new to learn on iPhone. Once you add one `Host`, you can open a `Project`, read a `Thread`, send a quick follow-up, and do light switches without going back to the Mac.
 
 For now, CodexPocket assumes the iPhone and Mac are on the same local network. If the Mac side is not ready yet, check [Start on Mac](../mac/). If you want the detailed network conditions, see [Network Requirements](../shared/network-requirements).
@@ -39,11 +41,10 @@ For now, CodexPocket assumes the iPhone and Mac are on the same local network. I
 
 ## The first flow
 
-1. Install the iPhone app.
+1. [Get the iPhone app](./getting-started).
 2. On first launch, check permissions and display settings.
 3. Use `Add from QR` on the empty screen, or open `Hosts` from the sidebar and scan the Mac QR code.
 4. Wait for the first Host setup to finish.
 5. Open a `Project` and continue a `Thread`.
 
 The only two ideas you really need at the beginning are `Hosts` and `Projects`. The rest of the thread flow becomes familiar naturally after the Host is added.
-

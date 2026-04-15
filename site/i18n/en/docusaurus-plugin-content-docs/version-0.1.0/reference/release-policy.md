@@ -9,7 +9,7 @@ This site uses Docusaurus docs versioning so the stable release and `next` can b
 ## Current rules
 
 - `/docs/`
-  latest stable release `0.1.0`
+  latest stable release `0.1.2`
 - `/docs/next/`
   next unreleased version
 

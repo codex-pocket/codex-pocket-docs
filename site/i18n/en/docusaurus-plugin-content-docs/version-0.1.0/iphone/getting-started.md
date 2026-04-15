@@ -1,15 +1,23 @@
 ---
-title: Install the iPhone App
-description: This page explains the first screen you see after launching the iPhone app.
+title: Get the iPhone App
+description: This page explains the current distribution status and what you see right after getting the app.
 ---
 
-Install and launch the CodexPocket iPhone app. At first, no Mac has been imported yet, so the app starts in an empty state.
+## Current distribution status
+
+- App Store: no public page right now
+- TestFlight: no public link right now
+- Mac stable: `0.1.2` is public
+
+Even while there is no public App Store / TestFlight link, this page lets you confirm the first screen and the first checkpoints in advance.
+
+After you get and launch the CodexPocket iPhone app, no Mac has been imported yet, so the app starts in an empty state.
 
 ## What you see on first launch
 
 Right after launch, the app shows guidance that there is no Host yet. That is normal. It is simply telling you that the Mac side still needs to be added.
 
-## What to confirm first
+## Things to confirm right after getting the app
 
 - the empty-state message and `Add from QR` button are visible
 - `Open Hosts` takes you to the Host list
@@ -22,4 +30,3 @@ Right after launch, the app shows guidance that there is no Host yet. That is no
 - switch the language
 
 You still need to add a Host before you can start using `Projects` and `Threads`.
-

@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const repoOwner = 'codex-pocket';
 const repoName = 'codex-pocket-docs';
+const googleAnalyticsTrackingId = 'G-8BMDJKJ8PD';
 
 const config: Config = {
   title: 'CodexPocket',
@@ -72,6 +73,10 @@ const config: Config = {
           changefreq: 'weekly',
           priority: 0.7,
           filename: 'sitemap.xml',
+        },
+        gtag: {
+          trackingID: googleAnalyticsTrackingId,
+          anonymizeIP: true,
         },
         blog: false,
         theme: {

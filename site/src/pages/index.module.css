@@ -77,23 +77,6 @@
   font-size: 0.95rem;
 }
 
-.heroNotes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.heroNote {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.46rem 0.88rem;
-  border-radius: 999px;
-  border: 1px solid var(--site-border);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--site-text-soft);
-  font-size: 0.92rem;
-}
-
 .heroVisual {
   position: relative;
   min-height: 35rem;
@@ -293,7 +276,6 @@
 .benefitGrid,
 .stepGrid,
 .featuredScenarioGrid,
-.scenarioGrid,
 .guideGrid {
   display: grid;
   gap: 1rem;
@@ -308,10 +290,6 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.scenarioGrid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .guideGrid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -319,7 +297,6 @@
 .benefitCard,
 .stepCard,
 .featuredScenarioCard,
-.scenarioCard,
 .guideCard {
   position: relative;
   border-radius: 1.6rem;
@@ -476,24 +453,6 @@
   line-height: 1.72;
 }
 
-.scenarioCard {
-  padding: 1.35rem;
-  background: rgba(255, 248, 238, 0.72);
-  box-shadow: 0 18px 34px rgba(76, 46, 20, 0.08);
-}
-
-.scenarioTitle {
-  margin: 0 0 0.6rem;
-  font-size: 1.22rem;
-  color: #26170f;
-}
-
-.scenarioBody {
-  margin: 0;
-  color: #5d4330;
-  line-height: 1.75;
-}
-
 .guideCard {
   display: grid;
   gap: 0.75rem;
@@ -545,7 +504,6 @@
   .featuredScenarioGrid,
   .benefitGrid,
   .stepGrid,
-  .scenarioGrid,
   .guideGrid {
     grid-template-columns: minmax(0, 1fr);
   }

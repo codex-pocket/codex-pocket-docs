@@ -22,11 +22,6 @@ type StepItem = {
   body: string;
 };
 
-type ScenarioItem = {
-  title: string;
-  body: string;
-};
-
 type FeaturedScenarioItem = {
   eyebrow: string;
   title: string;
@@ -69,7 +64,7 @@ export default function Home(): ReactNode {
   const stableVersion = String(siteConfig.customFields?.stableVersion ?? '0.1.2');
   const macDownloadUrl = String(
     siteConfig.customFields?.macDownloadUrl ??
-      'https://github.com/codex-pocket/codex-pocket-releases/releases/download/mac-v0.1.2/CodexPocketMac.dmg',
+      'https://github.com/codex-pocket/codex-pocket-releases/releases',
   ).trim();
   const iphoneAppStoreUrl = String(siteConfig.customFields?.iphoneAppStoreUrl ?? '').trim();
   const iphoneTestFlightUrl = String(siteConfig.customFields?.iphoneTestFlightUrl ?? '').trim();
@@ -170,42 +165,6 @@ export default function Home(): ReactNode {
         id: 'home.benefit.context.body',
         message:
           '会話、ブランチ、スキル、コマンドを作業ごとにまとめて扱えるので、どの環境の操作かを見失いにくい構成です。',
-      }),
-    },
-  ];
-
-  const limitations: ScenarioItem[] = [
-    {
-      title: translate({
-        id: 'home.limitations.lan.title',
-        message: '同じネットワーク内で使う前提',
-      }),
-      body: translate({
-        id: 'home.limitations.lan.body',
-        message:
-          'Mac と iPhone が同じ LAN にいるときの軽い再開を主目的にしています。',
-      }),
-    },
-    {
-      title: translate({
-        id: 'home.limitations.realtime.title',
-        message: '実行と管理の中心は Mac 側',
-      }),
-      body: translate({
-        id: 'home.limitations.realtime.body',
-        message:
-          '接続、ログ、作業管理は Mac に置いたまま、iPhone は確認と入力に集中する構成です。',
-      }),
-    },
-    {
-      title: translate({
-        id: 'home.limitations.future.title',
-        message: '外出先からの常時リモート向けではない',
-      }),
-      body: translate({
-        id: 'home.limitations.future.body',
-        message:
-          'どこからでも常時つなぐ用途より、席を立ったあとの短いやり取りを楽にする使い方に向いています。',
       }),
     },
   ];
@@ -450,17 +409,6 @@ export default function Home(): ReactNode {
                 <p className={styles.heroMeta}>
                   {heroMeta}
                 </p>
-                <div className={styles.heroNotes}>
-                  <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.lan">同じ LAN で連携</Translate>
-                  </span>
-                  <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.newThread">実行とログは Mac 側</Translate>
-                  </span>
-                  <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.sync">iPhone は確認と軽い追記</Translate>
-                  </span>
-                </div>
               </div>
 
               <div className={styles.heroVisual}>
@@ -560,29 +508,6 @@ export default function Home(): ReactNode {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <div className="container">
-            <div className={styles.sectionHeading}>
-              <span className={styles.sectionEyebrow}>
-                <Translate id="home.section.limits.eyebrow">前提</Translate>
-              </span>
-              <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.limits.title">この前提に合うと刺さりやすい</Translate>
-              </Heading>
-            </div>
-            <div className={styles.scenarioGrid}>
-              {limitations.map((item) => (
-                <article key={item.title} className={styles.scenarioCard}>
-                  <Heading as="h3" className={styles.scenarioTitle}>
-                    {item.title}
-                  </Heading>
-                  <p className={styles.scenarioBody}>{item.body}</p>
-                </article>
-              ))}
             </div>
           </div>
         </section>

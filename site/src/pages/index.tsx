@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import {useEffect, type ReactNode} from 'react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Translate, {translate} from '@docusaurus/Translate';
@@ -35,15 +35,32 @@ type GuideCard = {
   cta: string;
 };
 
+const JAPANESE_LOCALE = 'ja';
+const ENGLISH_LOCALE = 'en';
+
+function ensureTrailingSlash(path: string): string {
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
+function getLocaleHomePath(baseUrl: string, locale: string): string {
+  const normalizedBaseUrl = ensureTrailingSlash(baseUrl);
+  return locale === JAPANESE_LOCALE ? normalizedBaseUrl : `${normalizedBaseUrl}${ENGLISH_LOCALE}/`;
+}
+
+function detectHomepageLocale(): string {
+  const primaryLanguage = (navigator.languages?.[0] ?? navigator.language ?? '').toLowerCase();
+  return primaryLanguage.startsWith(JAPANESE_LOCALE) ? JAPANESE_LOCALE : ENGLISH_LOCALE;
+}
+
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const {siteConfig, i18n} = useDocusaurusContext();
   const iconUrl = useBaseUrl('/img/codex-pocket-icon.png');
   const releaseVersion = String(siteConfig.customFields?.releaseVersion ?? '0.1.0');
   const macDownloadUrl = String(
     siteConfig.customFields?.macDownloadUrl ??
       'https://github.com/codex-pocket/codex-pocket-releases/releases',
   );
-  const canonicalUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
+  const canonicalUrl = `${siteConfig.url}${getLocaleHomePath(siteConfig.baseUrl, i18n.currentLocale)}`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -58,6 +75,26 @@ export default function Home(): ReactNode {
       url: 'https://github.com/codex-pocket',
     },
   };
+
+  useEffect(() => {
+    const currentPath = ensureTrailingSlash(window.location.pathname);
+    const japaneseHomepagePath = getLocaleHomePath(siteConfig.baseUrl, JAPANESE_LOCALE);
+
+    if (currentPath !== japaneseHomepagePath) {
+      return;
+    }
+
+    const preferredLocale = detectHomepageLocale();
+    const targetPath = getLocaleHomePath(siteConfig.baseUrl, preferredLocale);
+
+    if (currentPath === targetPath) {
+      return;
+    }
+
+    const nextUrl = new URL(window.location.href);
+    nextUrl.pathname = targetPath;
+    window.location.replace(nextUrl.toString());
+  }, [siteConfig.baseUrl]);
 
   const benefits: BenefitItem[] = [
     {
@@ -426,11 +463,11 @@ export default function Home(): ReactNode {
                       <span className={styles.visualEyebrow}>
                         <Translate id="home.visual.eyebrow">REMOTE CODING FLOW</Translate>
                       </span>
-                      <Heading as="p" className={styles.visualTitle}>
+                      <p className={styles.visualTitle}>
                         <Translate id="home.visual.title">
                           操作は iPhone、実行は Mac。役割を分けるから軽い。
                         </Translate>
-                      </Heading>
+                      </p>
                       <p className={styles.visualBodyText}>
                         <Translate id="home.visual.body">
                           companion app と bridge が Mac 側の source of truth を持ち、iPhone は

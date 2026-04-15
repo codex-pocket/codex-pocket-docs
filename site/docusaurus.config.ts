@@ -175,6 +175,10 @@ const config: Config = {
               label: 'Issues',
               href: `https://github.com/${repoOwner}/${repoName}/issues`,
             },
+            {
+              label: 'プライバシーポリシー',
+              to: '/privacy-policy',
+            },
           ],
         },
         {

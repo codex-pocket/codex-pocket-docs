@@ -31,6 +31,10 @@
     "message": "Issues",
     "description": "The label of footer link with label=Issues linking to https://github.com/codex-pocket/codex-pocket-docs/issues"
   },
+  "link.item.label.プライバシーポリシー": {
+    "message": "Privacy Policy",
+    "description": "The label of footer link with label=プライバシーポリシー linking to /privacy-policy"
+  },
   "link.item.label.Docusaurus": {
     "message": "Docusaurus",
     "description": "The label of footer link with label=Docusaurus linking to https://docusaurus.io/"

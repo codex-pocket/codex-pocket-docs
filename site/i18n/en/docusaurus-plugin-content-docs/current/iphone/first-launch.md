@@ -24,8 +24,6 @@ You can change these in `Settings`:
   Worth adjusting early if you often read long logs or `Work Log` output.
 - `Theme`
   Useful when you move between bright and dark places.
-- `Follow-up behavior`
-  Lets you choose whether the default is `Queue` or `Steer`.
 - `KeepAlive` and `Timeout`
   Useful when you want to tune behavior on unstable connections.
 
@@ -38,4 +36,3 @@ For most people, changing only `Font Size` at the beginning is enough.
 - there are no Threads yet
 
 From here, go to `Hosts` and import the Mac.
-

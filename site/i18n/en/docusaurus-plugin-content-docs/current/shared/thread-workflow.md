@@ -25,9 +25,11 @@ The thread workflow does not live entirely on iPhone or Mac. Projects are anchor
 ## How follow-up works
 
 - `queue`
-  sends the next turn after the current run completes
+  send it with the `Queue` button on the right. The next turn starts after the current run completes.
 - `steer`
-  injects additional instructions into the active turn
+  send it with the `Steer` button on the left. Additional instructions go into the active turn.
+
+Anything sent with `queue` stays visible as a pending card until it runs. From that card you can switch it to `Steer Now` or cancel it.
 
 ## Topics to expand here
 

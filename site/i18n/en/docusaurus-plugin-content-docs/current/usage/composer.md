@@ -64,12 +64,14 @@ For normal use, starting with the defaults and changing only when needed is enou
 
 If the workspace has its own prompts or Skills, they can also show up as options.
 
-## When to use each `Follow-up` mode
+## How to send a `Follow-up`
 
 - `Queue`
-  sends the next request after the current run finishes
+  send it with the `Queue` button on the right. The next request waits until the current run finishes.
 - `Steer`
-  inserts additional direction into the run that is already in progress
+  send it with the `Steer` button on the left. Additional direction goes into the run that is already in progress.
+
+Anything sent with `Queue` stays visible as a pending card above Composer. From there you can switch it to `Steer Now` or cancel it.
 
 `Steer` is useful when you are away from the desk and want to add just one quick correction. `Queue` is better when you want the next request to wait its turn calmly.
 
@@ -78,4 +80,3 @@ If the workspace has its own prompts or Skills, they can also show up as options
 Even if Composer shows that updates have stopped, the work on the Mac usually keeps running. Often only the live stream on the iPhone was interrupted.
 
 When the connection returns, the content is synced again. First keep the `Thread` open and wait a little, or reopen it to confirm the latest state.
-

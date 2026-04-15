@@ -10,9 +10,7 @@ CodexPocket を使い始めるときは、まず Mac 側を整えます。ここ
 
 まずアプリ本体がまだない場合は、ここから入れます。
 
-<MacDownloadLink className="button button--primary button--lg">
-  Mac アプリをダウンロード
-</MacDownloadLink>
+<MacDownloadLink className="button button--primary button--lg">Mac アプリをダウンロード</MacDownloadLink>
 
 ## Mac アプリの役割
 

@@ -8,9 +8,11 @@ CodexPocket を使い始めるときは、まず Mac 側を整えます。ここ
 
 ## CodexPocketMac の入手方法
 
-<a class="button button--primary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/download/mac-v0.1.2/CodexPocketMac.dmg">Mac アプリをダウンロード</a>
+<a class="button button--primary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Mac アプリをダウンロード</a>
 <a class="button button--secondary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2">リリースノートを見る</a>
 <a class="button button--secondary button--lg margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-mac-app/blob/main/README.md#quickstart">ソースから起動する</a>
+
+※ GitHub Releases から `.dmg` をダウンロードして、Mac にインストールしてください。
 
 現在公開中の Mac stable は `0.1.2` です。通常は notarized DMG をダウンロードすればそのまま始められます。開発版や検証版を試したいときだけ、`mac-app` README の Quickstart から source build を使ってください。
 

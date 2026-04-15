@@ -70,6 +70,19 @@ jobs:
               ],
               text=True,
           )
+          english_diff_output = subprocess.check_output(
+              [
+                  "git",
+                  "diff",
+                  "--name-status",
+                  "--find-renames",
+                  base_sha,
+                  head_sha,
+                  "--",
+                  "site/i18n/en/docusaurus-plugin-content-docs",
+              ],
+              text=True,
+          )
 
           def map_target(path: str) -> str | None:
               p = pathlib.PurePosixPath(path)
@@ -91,8 +104,24 @@ jobs:
 
           updates: list[tuple[str, str]] = []
           deletes: list[tuple[str, str]] = []
+          changed_targets: set[str] = set()
           seen_updates = set()
           seen_deletes = set()
+
+          for raw_line in english_diff_output.splitlines():
+              if not raw_line.strip():
+                  continue
+
+              parts = raw_line.split("\t")
+              status = parts[0]
+
+              if status.startswith("R") and len(parts) == 3:
+                  changed_targets.add(parts[1])
+                  changed_targets.add(parts[2])
+                  continue
+
+              if len(parts) == 2:
+                  changed_targets.add(parts[1])
 
           for raw_line in diff_output.splitlines():
               if not raw_line.strip():
@@ -130,6 +159,15 @@ jobs:
                       updates.append((path, target))
                       seen_updates.add((path, target))
 
+          pending_updates = [
+              (source, target) for source, target in updates if target not in changed_targets
+          ]
+          pending_deletes = [
+              (source, target) for source, target in deletes if target not in changed_targets
+          ]
+          needs_translation = bool(pending_updates or pending_deletes)
+          has_work = bool(updates or deletes)
+
           runtime_dir = pathlib.Path(".github/codex/runtime")
           runtime_dir.mkdir(parents=True, exist_ok=True)
           runtime_file = runtime_dir / "translate-ja-docs.md"
@@ -142,21 +180,31 @@ jobs:
               "",
           ]
 
-          if updates:
+          if pending_updates:
               lines.extend(["## Translate or update these files", ""])
-              for source, target in updates:
+              for source, target in pending_updates:
                   lines.append(f"- Source: `{source}`")
                   lines.append(f"  Target: `{target}`")
               lines.append("")
 
-          if deletes:
+          if pending_deletes:
               lines.extend(["## Delete these English targets", ""])
-              for source, target in deletes:
+              for source, target in pending_deletes:
                   lines.append(f"- Removed Japanese source: `{source}`")
                   lines.append(f"  Delete target: `{target}`")
               lines.append("")
 
-          if not updates and not deletes:
+          if has_work and not needs_translation:
+              lines.extend(
+                  [
+                      "## Translation not required",
+                      "",
+                      "All mapped English targets already changed in this push.",
+                      "",
+                  ]
+              )
+
+          if not has_work:
               lines.extend(["## No work", "", "There are no Japanese Markdown doc changes to sync."])
 
           runtime_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -165,11 +213,12 @@ jobs:
           with github_output.open("a", encoding="utf-8") as fh:
               fh.write(f"base_sha={base_sha}\n")
               fh.write(f"runtime_file={runtime_file.as_posix()}\n")
-              fh.write(f"has_work={'true' if updates or deletes else 'false'}\n")
+              fh.write(f"has_work={'true' if has_work else 'false'}\n")
+              fh.write(f"needs_translation={'true' if needs_translation else 'false'}\n")
           PY
 
       - name: Require OpenAI API key
-        if: steps.changes.outputs.has_work == 'true'
+        if: steps.changes.outputs.needs_translation == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -181,7 +230,7 @@ jobs:
           exit 1
 
       - name: Run Codex translation
-        if: steps.changes.outputs.has_work == 'true'
+        if: steps.changes.outputs.needs_translation == 'true'
         uses: openai/codex-action@v1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}

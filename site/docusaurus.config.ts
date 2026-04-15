@@ -49,7 +49,7 @@ const config: Config = {
     stableVersion: '0.1.2',
     macReleaseUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2',
     macDownloadUrl:
-      'https://github.com/codex-pocket/codex-pocket-releases/releases/download/mac-v0.1.2/CodexPocketMac.dmg',
+      'https://github.com/codex-pocket/codex-pocket-releases/releases',
     iphoneAppStoreUrl: '',
     iphoneTestFlightUrl: '',
   },

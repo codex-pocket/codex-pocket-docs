@@ -48,24 +48,6 @@
   z-index: 1;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.3rem;
-}
-
-.badge {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--site-text-soft);
-  border-radius: 999px;
-  padding: 0.42rem 0.8rem;
-  font-size: 0.84rem;
-  letter-spacing: 0.04em;
-  backdrop-filter: blur(16px);
-}
-
 .heroTitle {
   max-width: 10.5ch;
   margin: 0 0 1rem;
@@ -313,11 +295,6 @@
 .featuredScenarioGrid,
 .scenarioGrid,
 .guideGrid {
-  display: grid;
-  gap: 1rem;
-}
-
-.scenarioShowcase {
   display: grid;
   gap: 1rem;
 }

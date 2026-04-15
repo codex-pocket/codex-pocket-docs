@@ -16,6 +16,8 @@ CodexPocket は、Mac の前から離れているあいだに Codex の続きを
   `Host` `Bridge` `Project` `Thread` など、画面で見る言葉を短く確認できます
 - `表示言語`
   ドキュメント、iPhone アプリ、Mac アプリの表示言語の切り替え場所を確認できます
+- `なぜ Mac が必要なのか`
+  companion app としての前提、ネットワーク条件、権限、データの流れをまとめて確認できます
 - `リリースと更新の見方`
   `stable` と `next` のどちらを見ればよいかを判断できます
 
@@ -35,5 +37,7 @@ CodexPocket は、Mac の前から離れているあいだに Codex の続きを
   [用語集](./glossary) を見てください
 - `表示言語を変えたのに Project 名や回答がそのまま`
   [表示言語](./localization) に整理しています
+- `なぜ iPhone アプリなのに Mac が必要なのか`
+  [なぜ Mac が必要なのか](./why-mac-is-required) を見てください
 - `今見ているページが自分のアプリ版と合っているか不安`
   [リリースと更新の見方](./release-policy) を見てください

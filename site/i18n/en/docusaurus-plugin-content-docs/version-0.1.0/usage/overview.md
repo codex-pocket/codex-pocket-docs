@@ -44,4 +44,3 @@ The mental model is simple: the real work continues on the Mac, while the iPhone
 
 Even if the live connection on the iPhone drops, the work on the Mac often keeps going. When you are away from the desk, it helps to think of the iPhone as the window for progress checks and follow-up instructions.
 
-> TODO(image): An introductory screenshot set showing `Home`, `Projects`, and `Thread` side by side. It should make the role of each screen obvious at a glance.

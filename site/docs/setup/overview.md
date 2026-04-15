@@ -21,7 +21,7 @@ CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で
 - Codex App を使うなら、使いたい workspace を Codex App に入れる
 - Bridge が動いていることを確認する
 
-まだ入れていない場合は、ここで先に <MacDownloadLink>Mac アプリをダウンロード</MacDownloadLink> しておくと流れが止まりません。
+まだ Mac 側の準備が済んでいない場合は、ここで先に <MacDownloadLink>Mac 側の準備</MacDownloadLink> を開いておくと流れが止まりません。
 
 Codex App を使わない場合は、iPhone で Host を追加したあとに `プロジェクト` の `+` から手動で追加します。
 

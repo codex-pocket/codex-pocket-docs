@@ -96,5 +96,3 @@ Check in this order:
 
 If the logs suggest that Bridge itself is unstable, move on to [Check the Logs](./check-logs).
 
-> TODO(image): The `Projects` tab on the Mac showing a visible workspace list.
-> TODO(image): The `Projects` screen on the iPhone with the refresh gesture or refresh position visible.

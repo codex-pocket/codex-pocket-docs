@@ -59,4 +59,3 @@ Try these in order:
 
 Once the connection comes back, the conversation history is synced again.
 
-> TODO(image): A screenshot set showing an active thread and an unread thread in the list, plus an open `Thread` where `Work Log` and `Answer` are both visible.

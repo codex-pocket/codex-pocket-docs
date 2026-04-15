@@ -79,4 +79,3 @@ Even if Composer shows that updates have stopped, the work on the Mac usually ke
 
 When the connection returns, the content is synced again. First keep the `Thread` open and wait a little, or reopen it to confirm the latest state.
 
-> TODO(image): A screenshot of the lower part of a `Thread` showing the `+` menu, the top control row, and the send button all at once.

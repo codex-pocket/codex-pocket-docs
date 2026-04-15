@@ -37,4 +37,3 @@ After changing them, press `Save` so the state is updated.
 - inspect stdout and stderr in `Logs`
 - if you see legacy launchd warnings, confirm them in `General` and `Details`
 
-> TODO(image): A pair of screenshots showing `Runtime: Running` in `General` and the QR visible in `Pairing`.

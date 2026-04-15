@@ -40,4 +40,3 @@ Mac でいつも開いている workspace を、そのまま iPhone の入口に
 
 Mac の Codex App と CodexPocketMac を一緒に使うと、普段の workspace 管理は Mac のまま、再開と追従だけを iPhone に任せられます。
 
-> TODO(画像): Mac の Codex App に並んだ workspace と、CodexPocketMac の `プロジェクト` タブに同じ workspace が表示されている比較画像。どちらを見ればよいかが一度で伝わります。

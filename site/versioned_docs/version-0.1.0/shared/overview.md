@@ -10,7 +10,7 @@ import MacDownloadLink from '@site/src/components/MacDownloadLink';
 
 CodexPocket では、実際の作業は Mac 側で動き続けます。iPhone 側でやることは、Mac を `Host` として登録し、開きたい `Project` と `Thread` に入ることです。
 
-連携の前提として Mac 側で `CodexPocketMac` が起動している必要があります。まだ入っていない場合は、先に <MacDownloadLink>Mac アプリをダウンロード</MacDownloadLink> してください。
+連携の前提として Mac 側で `CodexPocketMac` が起動している必要があります。まだ準備していない場合は、先に <MacDownloadLink>Mac 側の準備</MacDownloadLink> を済ませてください。
 
 ## このセクションで分かること
 

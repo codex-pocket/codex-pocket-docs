@@ -59,4 +59,3 @@ For the first setup, QR is the easiest path. After import, the authentication to
 - for `Project` list questions: `Projects` on the Mac
 - for understanding why something is not working: `General`, `Logs`, and `Details` on the Mac
 
-> TODO(image): A diagram that shows iPhone, Bridge, Codex on the Mac, and the workspace in one view, with a note that Mac-side work keeps running even if the iPhone disconnects.

@@ -107,5 +107,3 @@ Pairing again is often faster if any of these are true:
 
 In that case, delete the old Host on the iPhone and import it again from `Pairing` on the Mac.
 
-> TODO(image): The `Pairing` tab on the Mac with QR, Pairing URL, and Pairing Code visible together.
-> TODO(image): The Host initial-setup screen on the iPhone, with the Bridge check, project import, workspace preparation, and completion flow visible.

@@ -3,9 +3,9 @@ title: First Things to Check
 description: This page explains what to look at right after launching CodexPocketMac and the fastest path to first use.
 ---
 
-<a class="button button--primary button--lg" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Download the Mac App</a>
-
 When `CodexPocketMac` launches, it prepares the settings window and menu bar item, and if the prerequisites are met, it can also start Bridge automatically. The first question is whether the Mac is ready to wait for the iPhone.
+
+If `CodexPocketMac` is not installed yet, open [Start on Mac](./) first and choose either the public release or the source Quickstart.
 
 ## Fastest path
 
@@ -45,4 +45,3 @@ This is also the fastest place when you only want to pop the pairing QR back ope
 
 Once those two are in place, the Mac side usually needs very little manual attention.
 
-> TODO(image): A `General` tab screenshot where `Runtime`, `Enable Bridge`, and `Launch at login` are visible together. One image should make the first checkpoint obvious.

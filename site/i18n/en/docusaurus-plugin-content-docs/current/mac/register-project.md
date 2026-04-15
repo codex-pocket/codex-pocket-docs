@@ -36,4 +36,3 @@ If you use `Browse on Mac`, you can choose while looking at folders on the Mac. 
 
 The saved `Project` appears in the iPhone list right away. If it does not, pull to refresh and also confirm that you are looking at the correct Host.
 
-> TODO(image): The iPhone `Add Project` screen with `Host`, `Working Directory`, and `Project Name` visible together.

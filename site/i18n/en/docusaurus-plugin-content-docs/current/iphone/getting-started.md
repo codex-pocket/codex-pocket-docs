@@ -34,4 +34,3 @@ If you already know the Codex workflow on the Mac, the only new setup on the iPh
 
 Next, open [What to Check on First Launch](./first-launch) and adjust only the permissions and readability settings you want.
 
-> TODO(image): The empty first-launch screen with both `Add from QR` and `Open Hosts` visible. It should make the initial state feel obviously normal.

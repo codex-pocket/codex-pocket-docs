@@ -10,7 +10,7 @@ This section is for people who already use Codex on the Mac and want to keep fol
 
 In CodexPocket, the real work keeps running on the Mac. On the iPhone, what you do is add that Mac as a `Host`, then open the `Project` and `Thread` you want.
 
-`CodexPocketMac` needs to be running on the Mac before this can work. If it is not installed yet, start with <MacDownloadLink>Download the Mac App</MacDownloadLink>.
+`CodexPocketMac` needs to be running on the Mac before this can work. If the Mac side is not ready yet, start with <MacDownloadLink>the Mac setup</MacDownloadLink>.
 
 ## What this section explains
 

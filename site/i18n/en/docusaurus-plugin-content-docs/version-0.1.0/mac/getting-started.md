@@ -3,9 +3,7 @@ title: Install the Mac App
 description: This page explains what to confirm right after launching CodexPocketMac.
 ---
 
-<a class="button button--primary button--lg" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Download the Mac App</a>
-
-To use CodexPocket from the iPhone, `CodexPocketMac` needs to be running on the Mac.
+To use CodexPocket from the iPhone, `CodexPocketMac` needs to be running on the Mac. If it is not installed yet, open [Start on Mac](./) first and choose either the public release or the source Quickstart.
 
 ## First things to do
 
@@ -35,4 +33,3 @@ You can also operate `CodexPocketMac` from the menu bar:
 
 That makes it easy to pop up the pairing QR quickly, even when the main window is closed.
 
-> TODO(image): A full screenshot of the main Mac app window with `General / Bridge / Projects / Pairing / Logs / Details` visible.

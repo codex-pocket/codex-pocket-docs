@@ -3,9 +3,7 @@ title: Mac アプリをインストールする
 description: CodexPocketMac を起動して最初に確認することをまとめます。
 ---
 
-CodexPocket を iPhone で使うには、Mac 側で `CodexPocketMac` が動いている必要があります。
-
-<a class="button button--primary button--lg" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Mac アプリをダウンロード</a>
+CodexPocket を iPhone で使うには、Mac 側で `CodexPocketMac` が動いている必要があります。まだ入れていない場合は、先に [Mac アプリを準備する](./) を開いて入手方法を確認してください。
 
 ## まずやること
 
@@ -35,4 +33,3 @@ CodexPocketMac はメニューバーからも操作できます。
 
 Mac を閉じているときでも、メニューバーから Pairing QR をすぐ出せるので便利です。
 
-> TODO(画像): Mac アプリのメインウィンドウ全体。`一般 / Bridge / プロジェクト / ペアリング / ログ / 詳細` のタブが見える状態のスクリーンショットがあると、初回起動後の見た目を説明しやすくなります。

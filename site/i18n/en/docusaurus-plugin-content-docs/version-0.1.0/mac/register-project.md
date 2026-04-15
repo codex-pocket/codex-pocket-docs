@@ -38,4 +38,3 @@ Workspaces already registered in the Mac Codex App can sometimes be added automa
 
 If you already have one `Project` before pairing, the iPhone can show the project list right after the connection finishes. You can always add more later.
 
-> TODO(image): The iPhone `Add Project` screen with `Project Name` and `Working Directory` visible.

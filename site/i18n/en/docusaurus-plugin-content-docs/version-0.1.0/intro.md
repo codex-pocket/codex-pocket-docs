@@ -2,10 +2,16 @@
 id: intro
 title: Introduction
 slug: /
-description: Start here to use Codex running on your Mac from your iPhone.
+description: Start here to resume Codex running on your Mac from your iPhone.
 ---
 
-CodexPocket is an iPhone app for remotely controlling Codex running on your Mac. Your Mac setup stays exactly as it is. You can step away from your desk, keep an eye on progress, send a quick follow-up, and read the result from your phone.
+import MacDownloadLink from '@site/src/components/MacDownloadLink';
+
+CodexPocket is a companion app that helps you resume the Codex running on your Mac from your iPhone. Your Mac setup stays exactly as it is, and after stepping away from your desk you can still check progress, add one more instruction, and only return to the Mac when you need to.
+
+If the Mac side is not ready yet, start with <MacDownloadLink>how to get CodexPocketMac</MacDownloadLink> so you can continue straight into pairing.
+
+<MacDownloadLink className="button button--primary button--lg">Start the Mac setup</MacDownloadLink>
 
 | Mac | iPhone |
 | --- | --- |
@@ -15,8 +21,8 @@ I built it because being stuck in front of a Mac all day is tiring. The core ide
 
 ## The biggest win
 
-- Remote-control Codex on your Mac from your iPhone
-- Pick up an existing thread and continue it from the phone
+- Resume Codex on your Mac from your iPhone
+- Check progress on an existing thread and add a follow-up from the phone
 - No need to recreate your development environment on iPhone
 - The Mac keeps doing the real work while the iPhone acts as the control surface
 

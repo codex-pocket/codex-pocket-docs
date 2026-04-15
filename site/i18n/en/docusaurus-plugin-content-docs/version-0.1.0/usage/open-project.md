@@ -47,4 +47,3 @@ When you add one from `+` in `Projects`, choose the Host first and then set the 
 
 It is easier to manage away from the desk when you do not add too many `Projects` at once. Starting with the ones you use every day makes `Home` enough for most cases.
 
-> TODO(image): A screenshot pair showing the `Projects` list with favorites and Host names visible, plus `Browse on Mac` while choosing a working directory.

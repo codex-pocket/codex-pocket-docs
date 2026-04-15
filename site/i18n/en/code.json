@@ -1,21 +1,21 @@
 {
   "home.benefit.remote.eyebrow": {
-    "message": "What works now"
+    "message": "Without going back"
   },
   "home.benefit.remote.title": {
-    "message": "Start a new thread from iPhone"
+    "message": "Reply to one thing before you return to the Mac"
   },
   "home.benefit.remote.body": {
-    "message": "While connected on the same LAN, you can start a new thread from the iPhone side."
+    "message": "Open a Project, jump into Thread or Composer, and cut down the number of times you need to walk back just to check or add one more instruction."
   },
   "home.benefit.setup.eyebrow": {
     "message": "Fast setup"
   },
   "home.benefit.setup.title": {
-    "message": "Pairing finishes in a few steps"
+    "message": "QR pairing on the same LAN"
   },
   "home.benefit.setup.body": {
-    "message": "Open the companion app on Mac, show the bridge QR, and import it on iPhone to add a Host."
+    "message": "Open the companion app on the Mac, show the QR, and scan it from the iPhone. Host setup finishes in a few steps."
   },
   "home.benefit.context.eyebrow": {
     "message": "Less context switching"
@@ -39,34 +39,34 @@
     "message": "Import with QR or manual code, then wait for bridge validation and Project catalog collection."
   },
   "home.step.resume.title": {
-    "message": "Open a Project and start a new thread"
+    "message": "Open a Project and reply from there"
   },
   "home.step.resume.body": {
-    "message": "Open a Project and start a new thread, skills, or exec actions from Composer."
+    "message": "Open a Project, follow the Thread, and use Composer for a follow-up or a new thread when you need it."
   },
   "home.scenario.commute.title": {
-    "message": "You want to check things from your hand on the same network"
+    "message": "You want to check progress from the couch"
   },
   "home.scenario.commute.body": {
-    "message": "Without sitting back at the Mac, you can still check state from iPhone while both devices are on the same LAN."
+    "message": "Leave the longer task on the Mac and just open the Thread on iPhone to see how it is going."
   },
   "home.scenario.away.title": {
-    "message": "You want to start a new thread from iPhone"
+    "message": "You want to add one thing before bed"
   },
   "home.scenario.away.body": {
-    "message": "This is suited to starting a new thread on iPhone, not to live-carrying an in-progress PC thread."
+    "message": "Send the next instruction or follow-up first, then review the Mac-side result later when you are back."
   },
   "home.scenario.split.title": {
-    "message": "You want setup on Mac and control on iPhone"
+    "message": "You want to check while watching your kid"
   },
   "home.scenario.split.body": {
-    "message": "Keep bridge, logs, and Project management on Mac while daily interaction happens on iPhone."
+    "message": "Even when both hands are not always free, you can keep the Mac setup untouched and still open Projects and Threads from the phone."
   },
   "home.scenario.codexApp.title": {
-    "message": "You want to use it together with Codex App"
+    "message": "You want to keep the Mac Codex flow as-is"
   },
   "home.scenario.codexApp.body": {
-    "message": "Keep the normal Codex App flow on Mac while using the iPhone as a lighter place to check things and start new threads."
+    "message": "Leave execution and logs on the Mac, and use the iPhone for lighter checks and quick follow-ups."
   },
   "home.guide.iphone.eyebrow": {
     "message": "Start"
@@ -117,19 +117,13 @@
     "message": "Open reference"
   },
   "home.meta.title": {
-    "message": "Control Codex on your Mac from your iPhone"
+    "message": "Resume Codex on your Mac from your iPhone"
   },
   "home.meta.description": {
-    "message": "CodexPocket is a same-LAN iPhone companion for the Codex environment running on your Mac."
-  },
-  "home.badge.release": {
-    "message": "stable"
-  },
-  "home.badge.sameLan": {
-    "message": "Same LAN only"
+    "message": "CodexPocket is an iPhone companion that helps you resume the Codex running on your Mac without going back to your desk."
   },
   "home.badge.surface": {
-    "message": "iPhone control surface"
+    "message": "iPhone companion"
   },
   "home.badge.pairing": {
     "message": "QR pairing"
@@ -138,28 +132,31 @@
     "message": "Best with Codex App"
   },
   "home.hero.title": {
-    "message": "Use the Codex running on your Mac lightly from your iPhone."
+    "message": "Resume the Codex running on your Mac from your iPhone."
   },
   "home.hero.lead": {
-    "message": "CodexPocket lets you keep the Codex runtime on Mac while bringing Host, Project, Thread, and Composer controls onto the iPhone. Today it assumes the same LAN, and it cannot yet live-carry a PC thread as-is. Instead, it already gives you a path for starting new threads from iPhone and works especially well alongside Codex App."
+    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and brings lightweight Project, Thread, and Composer control onto the iPhone, so you can send one more instruction from the couch, before heading out, or right before bed."
+  },
+  "home.hero.downloadCta": {
+    "message": "Start the Mac setup"
   },
   "home.hero.primaryCta": {
-    "message": "Try it from iPhone"
+    "message": "See the iPhone flow"
   },
   "home.hero.secondaryCta": {
-    "message": "See the pairing flow"
+    "message": "See pairing"
   },
   "home.hero.meta": {
-    "message": "The current stable release is {releaseVersion}. Today it is same-LAN only, but the plan is to move closer to real-time synchronization over time."
+    "message": "The first setup happens over QR pairing on the same LAN. Execution and logs stay on the Mac."
   },
   "home.hero.note.lan": {
-    "message": "Same LAN only"
+    "message": "Reply from the couch"
   },
   "home.hero.note.newThread": {
-    "message": "New iPhone threads are supported"
+    "message": "Add one thing before bed"
   },
   "home.hero.note.sync": {
-    "message": "Live carry-over is not yet supported"
+    "message": "Fast QR pairing"
   },
   "home.hero.imageAlt": {
     "message": "CodexPocket app icon"
@@ -168,10 +165,10 @@
     "message": "REMOTE CODING FLOW"
   },
   "home.visual.title": {
-    "message": "Control on iPhone, execution on Mac. It feels lighter because the roles stay separate."
+    "message": "Control on iPhone, execution on Mac. That makes it easier to fit into the spaces between other things."
   },
   "home.visual.body": {
-    "message": "The companion app and bridge keep the source of truth on Mac, while the iPhone becomes the fast UI for opening Projects and Threads."
+    "message": "The companion app and bridge keep the source of truth on the Mac, while the iPhone becomes the fast entry point back into Projects and Threads."
   },
   "home.visual.setup.label": {
     "message": "Setup"
@@ -213,46 +210,46 @@
     "message": "The entry point for follow-ups, skills, and exec"
   },
   "home.limitations.lan.title": {
-    "message": "Access is limited to the same LAN"
+    "message": "A companion for the same network"
   },
   "home.limitations.lan.body": {
-    "message": "Right now, both the Mac and the iPhone need to be on the same network."
+    "message": "The main goal is a quick resume when the Mac and iPhone are on the same LAN."
   },
   "home.limitations.realtime.title": {
-    "message": "You cannot yet live-carry a PC thread onto iPhone"
+    "message": "Execution and source of truth stay on the Mac"
   },
   "home.limitations.realtime.body": {
-    "message": "An in-progress thread on the PC cannot yet be brought over to the iPhone as if it were real-time synced."
+    "message": "Bridge, logs, and Project management stay on the Mac, while the iPhone focuses on checking and input."
   },
   "home.limitations.future.title": {
-    "message": "The product is planned to move closer to real-time sync"
+    "message": "Not built for always-on from-anywhere access"
   },
   "home.limitations.future.body": {
-    "message": "There are limits today, but the plan is to move toward an experience that feels closer to real-time synchronization."
+    "message": "It fits best when you want to make short interactions easier after stepping away, not when you want a permanent remote setup from anywhere."
   },
   "home.section.benefits.eyebrow": {
-    "message": "What you can do now"
+    "message": "Why it helps"
   },
   "home.section.benefits.title": {
-    "message": "What works today"
+    "message": "Cut the cost of interruption after you leave your desk"
   },
   "home.section.limits.eyebrow": {
-    "message": "Current limits"
+    "message": "Best fit"
   },
   "home.section.limits.title": {
-    "message": "What you should know"
+    "message": "It lands best when these assumptions match"
   },
   "home.section.steps.eyebrow": {
     "message": "Quick start"
   },
   "home.section.steps.title": {
-    "message": "Getting started stays light"
+    "message": "The first success comes quickly"
   },
   "home.section.scenarios.eyebrow": {
-    "message": "Use cases"
+    "message": "Moments"
   },
   "home.section.scenarios.title": {
-    "message": "Good use cases"
+    "message": "These are the moments where it clicks"
   },
   "home.section.guides.eyebrow": {
     "message": "Guides"

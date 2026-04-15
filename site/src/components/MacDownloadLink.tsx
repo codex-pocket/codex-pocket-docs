@@ -1,6 +1,6 @@
 import {isValidElement, type ReactNode} from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 type MacDownloadLinkProps = {
   children: ReactNode;
@@ -19,14 +19,10 @@ export default function MacDownloadLink({
   children,
   className,
 }: MacDownloadLinkProps): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  const href = String(
-    siteConfig.customFields?.macDownloadUrl ??
-      'https://github.com/codex-pocket/codex-pocket-releases/releases',
-  );
+  const to = useBaseUrl('/docs/mac/');
 
   return (
-    <Link className={className} href={href}>
+    <Link className={className} to={to}>
       {normalizeChildren(children)}
     </Link>
   );

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/codex-pocket/.github/main/profile/assets/github-hero.svg" alt="CodexPocket hero banner" width="100%">
+  <img src="https://raw.githubusercontent.com/codex-pocket/.github/main/profile/assets/github-hero-ja.png" alt="CodexPocket hero banner" width="100%">
 </p>
 
 # CodexPocket Docs

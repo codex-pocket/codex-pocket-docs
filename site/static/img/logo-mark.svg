@@ -1,17 +1,15 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="card" x1="64" y1="16" x2="64" y2="78" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFAB5E"/>
-      <stop offset="1" stop-color="#E85422"/>
-    </linearGradient>
-    <linearGradient id="pocket" x1="64" y1="70" x2="64" y2="112" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF1DE"/>
-      <stop offset="1" stop-color="#E5C19A"/>
-    </linearGradient>
-  </defs>
-  <rect x="39" y="16" width="50" height="62" rx="16" fill="url(#card)"/>
-  <path d="M56 39L70 50L56 61" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="75" y="46" width="16" height="8" rx="4" fill="#FFF8EE"/>
-  <path d="M25 63C25 54.1634 32.1634 47 41 47H87C95.8366 47 103 54.1634 103 63V92C103 100.837 95.8366 108 87 108H41C32.1634 108 25 100.837 25 92V63Z" fill="url(#pocket)"/>
-  <path d="M37 61C45.5 55.6667 54.5 53 64 53C73.5 53 82.5 55.6667 91 61" stroke="#8A5A31" stroke-opacity="0.28" stroke-width="4.5" stroke-linecap="round"/>
+  <ellipse cx="64" cy="73" rx="37" ry="11" fill="#281C16" fill-opacity="0.18"/>
+
+  <rect x="41" y="19" width="46" height="62" rx="15" fill="#FF972F"/>
+  <rect x="41" y="19" width="46" height="62" rx="15" stroke="#FFD9A7" stroke-opacity="0.4" stroke-width="1.2"/>
+
+  <path d="M52 38H61L74 51L61 64H52L65 51L52 38Z" fill="#FFF9F0"/>
+  <rect x="77" y="55" width="12" height="6" rx="3" fill="#FFF9F0"/>
+
+  <rect x="22" y="60" width="84" height="49" rx="24" fill="#F4E6D5"/>
+  <rect x="22" y="60" width="84" height="49" rx="24" stroke="#FFF8EF" stroke-opacity="0.8" stroke-width="1.2"/>
+
+  <path d="M31 61C37.5 55.5 48.5 53 64 53C79.5 53 90.5 55.5 97 61" stroke="#FFFDF7" stroke-opacity="0.82" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M39 66C45.5 61.5 54 59 64 59C74 59 82.5 61.5 89 66" stroke="#A06A3D" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round"/>
 </svg>

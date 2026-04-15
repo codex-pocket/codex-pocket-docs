@@ -1,0 +1,23 @@
+{
+  "name": "CodexPocket",
+  "short_name": "CodexPocket",
+  "description": "Control the Codex environment running on your Mac from your iPhone.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#12161c",
+  "theme_color": "#e85422",
+  "icons": [
+    {
+      "src": "./favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -5,18 +5,20 @@ import type * as Preset from '@docusaurus/preset-classic';
 const repoOwner = 'codex-pocket';
 const repoName = 'codex-pocket-docs';
 const googleAnalyticsTrackingId = 'G-8BMDJKJ8PD';
+const siteUrl = `https://${repoOwner}.github.io`;
+const siteBaseUrl = `/${repoName}/`;
 
 const config: Config = {
   title: 'CodexPocket',
   tagline: 'A same-LAN iPhone companion for the Codex environment running on your Mac.',
-  favicon: 'img/codex-pocket-icon.png',
+  favicon: 'favicon.ico',
 
   future: {
     v4: true,
   },
 
-  url: `https://${repoOwner}.github.io`,
-  baseUrl: `/${repoName}/`,
+  url: siteUrl,
+  baseUrl: siteBaseUrl,
 
   organizationName: repoOwner,
   projectName: repoName,
@@ -47,6 +49,40 @@ const config: Config = {
     releaseVersion: '0.1.0',
     macDownloadUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases',
   },
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '48x48',
+        href: `${siteBaseUrl}favicon-48x48.png`,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: `${siteBaseUrl}favicon.svg`,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: `${siteBaseUrl}apple-touch-icon.png`,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: `${siteBaseUrl}site.webmanifest`,
+      },
+    },
+  ],
 
   presets: [
     [

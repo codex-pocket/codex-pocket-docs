@@ -1,5 +1,50 @@
 ---
-title: Prepare the iPhone App
+title: Start on iPhone
 slug: /iphone/
-description: This section collects the iPhone-side setup pages.
+description: This is the iPhone-side starting point after the Mac is ready.
 ---
+
+The iPhone app is not a replacement for the Mac. It is the remote surface for the Codex environment you already use on the Mac, so you can keep going while away from your desk or moving around.
+
+If you already know Codex well on the Mac, there is not much new to learn on iPhone. Once you add one `Host`, you can open a `Project`, read a `Thread`, send a quick follow-up, and do light switches without going back to the Mac.
+
+For now, CodexPocket assumes the iPhone and Mac are on the same local network. If the Mac side is not ready yet, check [Start on Mac](../mac/). If you want the detailed network conditions, see [Network Requirements](../shared/network-requirements).
+
+## Common things to do on iPhone
+
+- open an active `Thread` and read the `Answer` and `Work Log`
+- send a short follow-up or course correction from `Composer`
+- check the local branches for the current workspace from `Branch Switcher`
+- use `Exec` for one one-shot instruction
+- jump back to recent workspaces from `Home` and `Projects`
+
+## Things worth knowing first
+
+- the iPhone does not hold the repository; the real work still happens in Codex and the workspace on the Mac
+- even if the iPhone-side connection drops, the work on the Mac may keep running
+- for the first setup, `CodexPocketMac` and `Bridge` need to be ready on the Mac
+
+## Main screens in the app
+
+- `Home`
+  The entry point for the default Host, recent projects, and the thread you were last using.
+- `Sidebar`
+  The place to open `Projects`, `Hosts`, and `Settings`. You can also return here from an open thread.
+- `Projects`
+  The list where you choose the workspace you want.
+- `Hosts`
+  The place to add the Mac, run `Connection Test`, and retry setup.
+- `Settings`
+  The place to change language, theme, font size, and connection-related options.
+
+## The first flow
+
+1. Install the iPhone app.
+2. On first launch, check permissions and display settings.
+3. Use `Add from QR` on the empty screen, or open `Hosts` from the sidebar and scan the Mac QR code.
+4. Wait for the first Host setup to finish.
+5. Open a `Project` and continue a `Thread`.
+
+The only two ideas you really need at the beginning are `Hosts` and `Projects`. The rest of the thread flow becomes familiar naturally after the Host is added.
+
+> TODO(image): A full iPhone screenshot that shows the main screen and the sidebar path from the upper-left corner. It should make it obvious where `Projects` and `Hosts` are opened.

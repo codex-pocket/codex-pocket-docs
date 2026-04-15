@@ -6,6 +6,8 @@ description: This page explains what to do on the iPhone after the Mac side is r
 
 Once the Mac side is ready, the next step is the iPhone. In the iPhone app, you add the Mac as a `Host`, then open `Projects` and `Threads`.
 
+For the current distribution status and the install path, start with [Get the iPhone App](./getting-started).
+
 ## Main screens you use on iPhone
 
 - `Home`
@@ -21,7 +23,7 @@ Once the Mac side is ready, the next step is the iPhone. In the iPhone app, you 
 
 ## What you do on the iPhone side
 
-1. Launch the app.
+1. [Get the iPhone app](./getting-started).
 2. Allow camera and local network access if needed.
 3. Use `Add from QR` from the empty screen, or open `Hosts` from the sidebar and scan the Mac QR code.
 4. Wait for the `Project` list to be imported automatically.

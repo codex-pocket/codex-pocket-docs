@@ -1,54 +1,54 @@
 {
   "home.benefit.remote.eyebrow": {
-    "message": "Without going back"
+    "message": "Before going back"
   },
   "home.benefit.remote.title": {
     "message": "Reply to one thing before you return to the Mac"
   },
   "home.benefit.remote.body": {
-    "message": "Open a Project, jump into Thread or Composer, and cut down the number of times you need to walk back just to check or add one more instruction."
+    "message": "Open the current work, review the conversation, and add a quick note from the input box so you do not have to walk back just to check or add one more instruction."
   },
   "home.benefit.setup.eyebrow": {
-    "message": "Fast setup"
+    "message": "Connect quickly"
   },
   "home.benefit.setup.title": {
-    "message": "QR pairing on the same LAN"
+    "message": "Connect quickly with QR on the same LAN"
   },
   "home.benefit.setup.body": {
-    "message": "Open the companion app on the Mac, show the QR, and scan it from the iPhone. Host setup finishes in a few steps."
+    "message": "Open the Mac app, show the QR, and scan it from the iPhone. Adding the Mac finishes in a few steps."
   },
   "home.benefit.context.eyebrow": {
-    "message": "Less context switching"
+    "message": "Stay oriented"
   },
   "home.benefit.context.title": {
-    "message": "Stay oriented by project"
+    "message": "Stay oriented by work item"
   },
   "home.benefit.context.body": {
-    "message": "Threads, branches, skills, and commands stay grouped around each Project so workspace context is easier to keep."
+    "message": "Conversations, branches, skills, and commands stay grouped around each work item so it is easier to keep track of what environment you are touching."
   },
   "home.step.bridge.title": {
-    "message": "Start the bridge on Mac"
+    "message": "Prepare the Mac for connection"
   },
   "home.step.bridge.body": {
-    "message": "Prepare the pairing QR and the Project registry in the companion app."
+    "message": "Prepare the QR code and the work list in the Mac app."
   },
   "home.step.pair.title": {
-    "message": "Add the Host on iPhone"
+    "message": "Add the Mac on iPhone"
   },
   "home.step.pair.body": {
-    "message": "Import with QR or manual code, then wait for bridge validation and Project catalog collection."
+    "message": "Import with QR or a code, then wait for connection checks and the work list to load."
   },
   "home.step.resume.title": {
-    "message": "Open a Project and reply from there"
+    "message": "Open the work and reply from there"
   },
   "home.step.resume.body": {
-    "message": "Open a Project, follow the Thread, and use Composer for a follow-up or a new thread when you need it."
+    "message": "Open the work, follow the conversation, add a quick note from the input box, or start a new conversation when you need it."
   },
   "home.scenario.commute.title": {
     "message": "You want to check progress from the couch"
   },
   "home.scenario.commute.body": {
-    "message": "Leave the longer task on the Mac and just open the Thread on iPhone to see how it is going."
+    "message": "Leave the longer task on the Mac and just open the conversation on iPhone to see how it is going."
   },
   "home.scenario.away.title": {
     "message": "You want to add one thing before bed"
@@ -60,7 +60,7 @@
     "message": "You want to check while watching your kid"
   },
   "home.scenario.split.body": {
-    "message": "Even when both hands are not always free, you can keep the Mac setup untouched and still open Projects and Threads from the phone."
+    "message": "Even when both hands are not always free, you can keep the Mac setup untouched and still open work and conversations from the phone."
   },
   "home.scenario.codexApp.title": {
     "message": "You want to keep the Mac Codex flow as-is"
@@ -69,13 +69,13 @@
     "message": "Leave execution and logs on the Mac, and use the iPhone for lighter checks and quick follow-ups."
   },
   "home.guide.iphone.eyebrow": {
-    "message": "Start"
+    "message": "Begin"
   },
   "home.guide.iphone.title": {
     "message": "Start on iPhone"
   },
   "home.guide.iphone.body": {
-    "message": "The entry point for people who want Host setup, Projects, Threads, and Composer explained first."
+    "message": "The entry point for people who want adding a Mac, browsing work, reading conversations, and writing from the input box explained first."
   },
   "home.guide.iphone.cta": {
     "message": "Open the iPhone guide"
@@ -87,46 +87,49 @@
     "message": "Start on Mac"
   },
   "home.guide.mac.body": {
-    "message": "The entry point for people who want the companion app, bridge, QR, and logs explained first."
+    "message": "The entry point for people who want the Mac app, connection layer, QR, and logs explained first."
   },
   "home.guide.mac.cta": {
     "message": "Open the Mac guide"
   },
   "home.guide.shared.eyebrow": {
-    "message": "Shared flow"
+    "message": "Connection"
   },
   "home.guide.shared.title": {
-    "message": "Pairing and thread workflow"
+    "message": "How Mac and iPhone connect"
   },
   "home.guide.shared.body": {
     "message": "A dedicated section for topics that cross the boundary between iPhone and Mac."
   },
   "home.guide.shared.cta": {
-    "message": "Open the shared guide"
+    "message": "Open the connection guide"
   },
   "home.guide.reference.eyebrow": {
-    "message": "Reference"
+    "message": "More"
   },
   "home.guide.reference.title": {
     "message": "Architecture and operations"
   },
   "home.guide.reference.body": {
-    "message": "The place for cross-cutting information such as release policy and localization."
+    "message": "The place for cross-cutting information such as release policy and multilingual support."
   },
   "home.guide.reference.cta": {
-    "message": "Open reference"
+    "message": "Open more details"
   },
   "home.meta.title": {
     "message": "Resume Codex on your Mac from your iPhone"
   },
   "home.meta.description": {
-    "message": "CodexPocket is an iPhone companion that helps you resume the Codex running on your Mac without going back to your desk."
+    "message": "CodexPocket is an iPhone app that helps you resume the Codex running on your Mac without going back to your desk."
+  },
+  "home.badge.release": {
+    "message": "Stable"
   },
   "home.badge.surface": {
-    "message": "iPhone companion"
+    "message": "For iPhone"
   },
   "home.badge.pairing": {
-    "message": "QR pairing"
+    "message": "Connect with QR"
   },
   "home.badge.codexApp": {
     "message": "Best with Codex App"
@@ -135,19 +138,22 @@
     "message": "Resume the Codex running on your Mac from your iPhone."
   },
   "home.hero.lead": {
-    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and brings lightweight Project, Thread, and Composer control onto the iPhone, so you can send one more instruction from the couch, before heading out, or right before bed."
+    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and lets you open work, review the conversation, and add quick notes from the input box on your iPhone, so you can send one more instruction from the couch, before heading out, or right before bed."
   },
   "home.hero.downloadCta": {
-    "message": "Start the Mac setup"
+    "message": "Download the Mac app"
   },
   "home.hero.primaryCta": {
-    "message": "See the iPhone flow"
+    "message": "Get the iPhone app"
   },
   "home.hero.secondaryCta": {
-    "message": "See pairing"
+    "message": "See how it connects"
   },
-  "home.hero.meta": {
-    "message": "The first setup happens over QR pairing on the same LAN. Execution and logs stay on the Mac."
+  "home.hero.meta.public": {
+    "message": "Mac version {stableVersion} is available now. Once the iPhone app is installed, you can finish the first connection by scanning a QR code on the same LAN."
+  },
+  "home.hero.meta.unavailable": {
+    "message": "Mac version {stableVersion} is available now. The iPhone side does not yet have a public App Store / TestFlight link, so check the current distribution status first."
   },
   "home.hero.note.lan": {
     "message": "Reply from the couch"
@@ -156,61 +162,61 @@
     "message": "Add one thing before bed"
   },
   "home.hero.note.sync": {
-    "message": "Fast QR pairing"
+    "message": "Connect fast with QR"
   },
   "home.hero.imageAlt": {
     "message": "CodexPocket app icon"
   },
   "home.visual.eyebrow": {
-    "message": "REMOTE CODING FLOW"
+    "message": "Mac and iPhone roles"
   },
   "home.visual.title": {
     "message": "Control on iPhone, execution on Mac. That makes it easier to fit into the spaces between other things."
   },
   "home.visual.body": {
-    "message": "The companion app and bridge keep the source of truth on the Mac, while the iPhone becomes the fast entry point back into Projects and Threads."
+    "message": "The Mac app and connection layer keep the working state on the Mac, while the iPhone becomes the quick way back in when you need it."
   },
   "home.visual.setup.label": {
     "message": "Setup"
   },
   "home.visual.setup.value": {
-    "message": "Pair with QR"
+    "message": "Connect with QR"
   },
   "home.visual.context.label": {
     "message": "Context"
   },
   "home.visual.context.value": {
-    "message": "Organized by Project"
+    "message": "Organized by work item"
   },
   "home.visual.action.label": {
     "message": "Action"
   },
   "home.visual.action.value": {
-    "message": "Start a new thread from Composer"
+    "message": "Start a new conversation from the input box"
   },
   "home.visual.panelTitle": {
-    "message": "What iPhone can access"
+    "message": "What you can touch on iPhone"
   },
   "home.visual.panel.host.label": {
-    "message": "Host"
+    "message": "Connection"
   },
   "home.visual.panel.host.body": {
-    "message": "Which Mac you connect to"
+    "message": "Which Mac you open"
   },
   "home.visual.panel.project.label": {
-    "message": "Project"
+    "message": "Work"
   },
   "home.visual.panel.project.body": {
-    "message": "The entry point for threads and branches"
+    "message": "The entry point for conversations and branches"
   },
   "home.visual.panel.composer.label": {
-    "message": "Composer"
+    "message": "Input box"
   },
   "home.visual.panel.composer.body": {
-    "message": "The entry point for follow-ups, skills, and exec"
+    "message": "The entry point for quick notes, skills, and one-off execution"
   },
   "home.limitations.lan.title": {
-    "message": "A companion for the same network"
+    "message": "Built for the same network"
   },
   "home.limitations.lan.body": {
     "message": "The main goal is a quick resume when the Mac and iPhone are on the same LAN."
@@ -219,7 +225,7 @@
     "message": "Execution and source of truth stay on the Mac"
   },
   "home.limitations.realtime.body": {
-    "message": "Bridge, logs, and Project management stay on the Mac, while the iPhone focuses on checking and input."
+    "message": "Connection handling, logs, and work management stay on the Mac, while the iPhone focuses on checking and input."
   },
   "home.limitations.future.title": {
     "message": "Not built for always-on from-anywhere access"
@@ -228,25 +234,25 @@
     "message": "It fits best when you want to make short interactions easier after stepping away, not when you want a permanent remote setup from anywhere."
   },
   "home.section.benefits.eyebrow": {
-    "message": "Why it helps"
+    "message": "What it gives you"
   },
   "home.section.benefits.title": {
     "message": "Cut the cost of interruption after you leave your desk"
   },
   "home.section.limits.eyebrow": {
-    "message": "Best fit"
+    "message": "Assumptions"
   },
   "home.section.limits.title": {
     "message": "It lands best when these assumptions match"
   },
   "home.section.steps.eyebrow": {
-    "message": "Quick start"
+    "message": "Getting started"
   },
   "home.section.steps.title": {
     "message": "The first success comes quickly"
   },
   "home.section.scenarios.eyebrow": {
-    "message": "Moments"
+    "message": "Good moments"
   },
   "home.section.scenarios.title": {
     "message": "These are the moments where it clicks"

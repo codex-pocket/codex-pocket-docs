@@ -45,6 +45,15 @@ const config: Config = {
     },
   },
 
+  customFields: {
+    stableVersion: '0.1.2',
+    macReleaseUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2',
+    macDownloadUrl:
+      'https://github.com/codex-pocket/codex-pocket-releases/releases/download/mac-v0.1.2/CodexPocketMac.dmg',
+    iphoneAppStoreUrl: '',
+    iphoneTestFlightUrl: '',
+  },
+
   headTags: [
     {
       tagName: 'link',
@@ -95,7 +104,7 @@ const config: Config = {
               banner: 'unreleased',
             },
             '0.1.0': {
-              label: '0.1.0',
+              label: '0.1.2',
               banner: 'none',
             },
           },

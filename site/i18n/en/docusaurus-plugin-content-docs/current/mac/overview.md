@@ -8,10 +8,11 @@ The execution side of CodexPocket is the Mac. The iPhone is the control surface,
 
 ## How to get CodexPocketMac
 
-<a class="button button--primary button--lg margin-right--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Check public releases</a>
-<a class="button button--secondary button--lg" href="https://github.com/codex-pocket/codex-pocket-mac-app/blob/main/README.md#quickstart">Run from source</a>
+<a class="button button--primary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/download/mac-v0.1.2/CodexPocketMac.dmg">Download the Mac app</a>
+<a class="button button--secondary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2">Read the release notes</a>
+<a class="button button--secondary button--lg margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-mac-app/blob/main/README.md#quickstart">Run from source</a>
 
-Even when GitHub Releases is still empty, you can try it right away from the `mac-app` README Quickstart. When a public build exists, Releases is the shortest path.
+The current public Mac stable is `0.1.2`. In the normal path, download the notarized DMG and start from there. Use the `mac-app` README Quickstart only when you want a source build for development or verification.
 
 ## The short version first
 

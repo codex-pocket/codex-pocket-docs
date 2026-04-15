@@ -29,7 +29,7 @@
   <text x="104" y="228" fill="#FFF7EF" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="84" font-weight="700" letter-spacing="-3">CodexPocket Docs</text>
   <text x="104" y="306" fill="#DCC8B4" font-family="Noto Sans JP, sans-serif" font-size="34" font-weight="500">Versioned and bilingual documentation foundation</text>
   <rect x="104" y="362" width="164" height="48" rx="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
-  <text x="138" y="393" fill="#FFD5AE" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="24" font-weight="700">stable 0.1.0</text>
+  <text x="138" y="393" fill="#FFD5AE" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="24" font-weight="700">stable 0.1.2</text>
   <rect x="286" y="362" width="120" height="48" rx="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
   <text x="324" y="393" fill="#F6E7D5" font-family="Space Grotesk, Noto Sans JP, sans-serif" font-size="24" font-weight="700">ja / en</text>
   <rect x="770" y="150" width="342" height="258" rx="70" fill="url(#card)"/>

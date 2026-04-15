@@ -1,12 +1,12 @@
 {
   "home.benefit.remote.eyebrow": {
-    "message": "Before going back"
+    "message": "Where to look first"
   },
   "home.benefit.remote.title": {
-    "message": "Reply to one thing before you return to the Mac"
+    "message": "Jump back into the current work without guessing"
   },
   "home.benefit.remote.body": {
-    "message": "Open the current work, review the conversation, and add a quick note from the input box so you do not have to walk back just to check or add one more instruction."
+    "message": "Open the work that is already in progress on the Mac from the list so it takes less time to recover where you should look first."
   },
   "home.benefit.setup.eyebrow": {
     "message": "Connect quickly"
@@ -49,24 +49,6 @@
   },
   "home.scenario.commute.body": {
     "message": "Leave the longer task on the Mac and just open the conversation on iPhone to see how it is going."
-  },
-  "home.scenario.away.title": {
-    "message": "You want to add one thing before bed"
-  },
-  "home.scenario.away.body": {
-    "message": "Send the next instruction or follow-up first, then review the Mac-side result later when you are back."
-  },
-  "home.scenario.split.title": {
-    "message": "You want to check while watching your kid"
-  },
-  "home.scenario.split.body": {
-    "message": "Even when both hands are not always free, you can keep the Mac setup untouched and still open work and conversations from the phone."
-  },
-  "home.scenario.codexApp.title": {
-    "message": "You want to keep the Mac Codex flow as-is"
-  },
-  "home.scenario.codexApp.body": {
-    "message": "Leave execution and logs on the Mac, and use the iPhone for lighter checks and quick follow-ups."
   },
   "home.guide.iphone.eyebrow": {
     "message": "Begin"
@@ -138,7 +120,7 @@
     "message": "Resume the Codex running on your Mac from your iPhone."
   },
   "home.hero.lead": {
-    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and lets you open work, review the conversation, and add quick notes from the input box on your iPhone, so you can send one more instruction from the couch, before heading out, or right before bed."
+    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and lets you open work, check the current state, and add a quick follow-up from your iPhone, so you can clear short checks before you return to the Mac."
   },
   "home.hero.downloadCta": {
     "message": "Download the Mac app"
@@ -156,13 +138,13 @@
     "message": "Mac version {stableVersion} is available now. The iPhone side does not yet have a public App Store / TestFlight link, so check the current distribution status first."
   },
   "home.hero.note.lan": {
-    "message": "Reply from the couch"
+    "message": "Connect on the same LAN"
   },
   "home.hero.note.newThread": {
-    "message": "Add one thing before bed"
+    "message": "Execution and logs stay on the Mac"
   },
   "home.hero.note.sync": {
-    "message": "Connect fast with QR"
+    "message": "Use iPhone for checks and light follow-ups"
   },
   "home.hero.imageAlt": {
     "message": "CodexPocket app icon"

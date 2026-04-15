@@ -82,14 +82,12 @@ export default function Home(): ReactNode {
         id: 'home.hero.meta.public',
         message:
           'Mac 版 {stableVersion} を公開中です。iPhone アプリを入れたら、同じ LAN で QR を読み取るだけで最初の連携を終えられます。',
-        values: {stableVersion},
-      })
+      }, {stableVersion})
     : translate({
         id: 'home.hero.meta.unavailable',
         message:
           'Mac 版 {stableVersion} を公開中です。iPhone 側は公開 App Store / TestFlight リンクがまだないため、現在の配布状況を先に確認してください。',
-        values: {stableVersion},
-      });
+      }, {stableVersion});
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -130,16 +128,16 @@ export default function Home(): ReactNode {
       tone: 'ember',
       eyebrow: translate({
         id: 'home.benefit.remote.eyebrow',
-        message: '席に戻る前に',
+        message: 'まず見る場所',
       }),
       title: translate({
         id: 'home.benefit.remote.title',
-        message: 'Mac に戻る前のひとことを返しやすい',
+        message: 'いまの作業へ迷わず戻れる',
       }),
       body: translate({
         id: 'home.benefit.remote.body',
         message:
-          'いまの作業を開いて、やり取りを見たり入力欄から追記したりできるので、ちょっとした確認や追記のために席へ戻る回数を減らせます。',
+          'Mac 側で進めていた作業を一覧からそのまま開けるので、どこを見ればよいかの拾い直しが早くなります。',
       }),
     },
     {
@@ -314,63 +312,7 @@ export default function Home(): ReactNode {
     },
   ];
 
-  const scenarios: ScenarioItem[] = [
-    {
-      title: translate({
-        id: 'home.scenario.away.title',
-        message: '寝る前に 1 件だけ追記したい',
-      }),
-      body: translate({
-        id: 'home.scenario.away.body',
-        message:
-          '新しい指示や追記を先に送っておき、戻れるタイミングで Mac 側の結果をまとめて確認できます。',
-      }),
-    },
-    {
-      title: translate({
-        id: 'home.scenario.split.title',
-        message: '子どもを見ながら確認したい',
-      }),
-      body: translate({
-        id: 'home.scenario.split.body',
-        message:
-          '両手が空きにくい場面でも、Mac 側のセットアップを崩さず iPhone から作業と会話を開けます。',
-      }),
-    },
-    {
-      title: translate({
-        id: 'home.scenario.codexApp.title',
-        message: 'Mac の Codex フローはそのままにしたい',
-      }),
-      body: translate({
-        id: 'home.scenario.codexApp.body',
-        message:
-          '実行環境やログ管理は Mac に残し、iPhone は確認と軽い追記に寄せる使い方に向いています。',
-      }),
-    },
-  ];
-
   const guideCards: GuideCard[] = [
-    {
-      path: '/docs/iphone/getting-started',
-      eyebrow: translate({
-        id: 'home.guide.iphone.eyebrow',
-        message: 'はじめる',
-      }),
-      title: translate({
-        id: 'home.guide.iphone.title',
-        message: 'iPhone から始める',
-      }),
-      body: translate({
-        id: 'home.guide.iphone.body',
-        message:
-          'Mac の追加、作業一覧、やり取り、入力欄を先に把握したい人向けの入口です。',
-      }),
-      cta: translate({
-        id: 'home.guide.iphone.cta',
-        message: 'iPhone ガイドへ',
-      }),
-    },
     {
       path: '/docs/mac/',
       eyebrow: translate({
@@ -389,6 +331,26 @@ export default function Home(): ReactNode {
       cta: translate({
         id: 'home.guide.mac.cta',
         message: 'Mac ガイドへ',
+      }),
+    },
+    {
+      path: '/docs/iphone/getting-started',
+      eyebrow: translate({
+        id: 'home.guide.iphone.eyebrow',
+        message: 'はじめる',
+      }),
+      title: translate({
+        id: 'home.guide.iphone.title',
+        message: 'iPhone から始める',
+      }),
+      body: translate({
+        id: 'home.guide.iphone.body',
+        message:
+          'Mac の追加、作業一覧、やり取り、入力欄を先に把握したい人向けの入口です。',
+      }),
+      cta: translate({
+        id: 'home.guide.iphone.cta',
+        message: 'iPhone ガイドへ',
       }),
     },
     {
@@ -460,33 +422,6 @@ export default function Home(): ReactNode {
           <div className="container">
             <div className={styles.heroGrid}>
               <div className={styles.heroCopy}>
-                <div className={styles.badges}>
-                  <span className={styles.badge}>
-                    {translate({
-                      id: 'home.badge.release',
-                      message: '安定版',
-                    })}{' '}
-                    {stableVersion}
-                  </span>
-                  <span className={styles.badge}>
-                    {translate({
-                      id: 'home.badge.surface',
-                      message: 'iPhone 向け',
-                    })}
-                  </span>
-                  <span className={styles.badge}>
-                    {translate({
-                      id: 'home.badge.codexApp',
-                      message: 'Codex App と併用',
-                    })}
-                  </span>
-                  <span className={styles.badge}>
-                    {translate({
-                      id: 'home.badge.pairing',
-                      message: 'QR で連携',
-                    })}
-                  </span>
-                </div>
                 <Heading as="h1" className={styles.heroTitle}>
                   <Translate id="home.hero.title">
                     Macで動くCodexを、iPhoneからすぐ再開。
@@ -495,9 +430,8 @@ export default function Home(): ReactNode {
                 <p className={styles.heroLead}>
                   <Translate id="home.hero.lead">
                     席を立っても、開発の流れを止めない。CodexPocket は、Mac 側の Codex
-                    環境はそのままに、iPhone から作業を開いて、やり取りを見て、入力欄から軽く追記できる
-                    iPhone 向けアプリです。ソファでも、外出前でも、寝る前でも、Mac
-                    に戻る前のひとことを先に送れます。
+                    環境はそのままに、iPhone から作業を開いて状況を見たり、ひとこと追記したりできる
+                    iPhone 向けアプリです。Mac に戻る前の短い確認や follow-up を、生活の合間に先に片付けられます。
                   </Translate>
                 </p>
                 <div className={styles.heroActions}>
@@ -518,13 +452,13 @@ export default function Home(): ReactNode {
                 </p>
                 <div className={styles.heroNotes}>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.lan">ソファから返せる</Translate>
+                    <Translate id="home.hero.note.lan">同じ LAN で連携</Translate>
                   </span>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.newThread">寝る前に 1 件だけ追記</Translate>
+                    <Translate id="home.hero.note.newThread">実行とログは Mac 側</Translate>
                   </span>
                   <span className={styles.heroNote}>
-                    <Translate id="home.hero.note.sync">QR ですぐ連携</Translate>
+                    <Translate id="home.hero.note.sync">iPhone は確認と軽い追記</Translate>
                   </span>
                 </div>
               </div>
@@ -634,6 +568,29 @@ export default function Home(): ReactNode {
           <div className="container">
             <div className={styles.sectionHeading}>
               <span className={styles.sectionEyebrow}>
+                <Translate id="home.section.limits.eyebrow">前提</Translate>
+              </span>
+              <Heading as="h2" className={styles.sectionTitle}>
+                <Translate id="home.section.limits.title">この前提に合うと刺さりやすい</Translate>
+              </Heading>
+            </div>
+            <div className={styles.scenarioGrid}>
+              {limitations.map((item) => (
+                <article key={item.title} className={styles.scenarioCard}>
+                  <Heading as="h3" className={styles.scenarioTitle}>
+                    {item.title}
+                  </Heading>
+                  <p className={styles.scenarioBody}>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeading}>
+              <span className={styles.sectionEyebrow}>
                 <Translate id="home.section.benefits.eyebrow">できること</Translate>
               </span>
               <Heading as="h2" className={styles.sectionTitle}>
@@ -688,39 +645,27 @@ export default function Home(): ReactNode {
                 <Translate id="home.section.scenarios.title">こういう瞬間に刺さる</Translate>
               </Heading>
             </div>
-            <div className={styles.scenarioShowcase}>
-              <div className={styles.featuredScenarioGrid}>
-                {featuredScenarios.map((item) => (
-                  <article key={item.title} className={styles.featuredScenarioCard}>
-                    <div className={styles.featuredScenarioMedia}>
-                      <img
-                        src={item.imageSrc}
-                        alt={item.imageAlt}
-                        className={styles.featuredScenarioImage}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <div className={styles.featuredScenarioContent}>
-                      <span className={styles.featuredScenarioEyebrow}>{item.eyebrow}</span>
-                      <Heading as="h3" className={styles.featuredScenarioTitle}>
-                        {item.title}
-                      </Heading>
-                      <p className={styles.featuredScenarioBody}>{item.body}</p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-              <div className={styles.scenarioGrid}>
-                {scenarios.map((item) => (
-                  <article key={item.title} className={styles.scenarioCard}>
-                    <Heading as="h3" className={styles.scenarioTitle}>
+            <div className={styles.featuredScenarioGrid}>
+              {featuredScenarios.map((item) => (
+                <article key={item.title} className={styles.featuredScenarioCard}>
+                  <div className={styles.featuredScenarioMedia}>
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt}
+                      className={styles.featuredScenarioImage}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className={styles.featuredScenarioContent}>
+                    <span className={styles.featuredScenarioEyebrow}>{item.eyebrow}</span>
+                    <Heading as="h3" className={styles.featuredScenarioTitle}>
                       {item.title}
                     </Heading>
-                    <p className={styles.scenarioBody}>{item.body}</p>
-                  </article>
-                ))}
-              </div>
+                    <p className={styles.featuredScenarioBody}>{item.body}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -752,28 +697,6 @@ export default function Home(): ReactNode {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <div className="container">
-            <div className={styles.sectionHeading}>
-              <span className={styles.sectionEyebrow}>
-                <Translate id="home.section.limits.eyebrow">前提</Translate>
-              </span>
-              <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.limits.title">この前提に合うと刺さりやすい</Translate>
-              </Heading>
-            </div>
-            <div className={styles.scenarioGrid}>
-              {limitations.map((item) => (
-                <article key={item.title} className={styles.scenarioCard}>
-                  <Heading as="h3" className={styles.scenarioTitle}>
-                    {item.title}
-                  </Heading>
-                  <p className={styles.scenarioBody}>{item.body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
     </Layout>
   );

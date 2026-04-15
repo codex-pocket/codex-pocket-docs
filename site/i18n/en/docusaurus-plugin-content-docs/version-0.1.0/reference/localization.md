@@ -6,6 +6,12 @@ title: Localization
 
 This site uses `ja` as the default locale and `en` as the additional locale. The `iPhone`, `Mac`, `shared`, and `reference` structure stays aligned across both languages so the starting paths do not drift.
 
+## Homepage locale routing
+
+- When a visitor opens the site homepage, browsers with a primary `ja` language stay on Japanese.
+- Browsers with a primary `en` language, or any other language, are shown English.
+- Visitors can still switch manually from the language menu in the navbar.
+
 ## Where content lives
 
 - Japanese source docs

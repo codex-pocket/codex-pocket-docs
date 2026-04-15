@@ -16,6 +16,8 @@ CodexPocket is built for continuing Codex work while you are away from the Mac. 
   Look up short explanations for terms such as `Host`, `Bridge`, `Project`, and `Thread`.
 - `Display language`
   See where to change the language for the docs, the iPhone app, and the Mac app.
+- `Why the Mac is required`
+  See the companion model, network assumptions, permissions, and data flow in one place.
 - `Release tracks and updates`
   Decide whether you should read `stable` or `next`.
 
@@ -35,5 +37,7 @@ CodexPocket is built for continuing Codex work while you are away from the Mac. 
   Open [Glossary](./glossary).
 - `I changed the language, but project names and answers did not change.`
   See [Display Language](./localization).
+- `Why does an iPhone app need a Mac in the first place?`
+  Open [Why the Mac Is Required](./why-mac-is-required).
 - `I am not sure whether this page matches my app version.`
   See [Release Versioning](./release-policy).

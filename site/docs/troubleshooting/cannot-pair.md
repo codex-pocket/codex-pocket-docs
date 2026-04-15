@@ -107,5 +107,3 @@ Mac の `詳細` で次を見ます。
 
 その場合は、iPhone の古い Host を削除して、Mac の `ペアリング` から取り込み直します。
 
-> TODO(画像): Mac の `ペアリング` タブで QR・Pairing URL・Pairing Code が見えている画面。QR が読めないときの代替手段を説明しやすくなります。
-> TODO(画像): iPhone の Host 初回設定画面。`Bridge 確認`、`Project 取り込み`、`workspace 準備`、`完了` の流れが分かると、どこで止まっているか判断しやすくなります。

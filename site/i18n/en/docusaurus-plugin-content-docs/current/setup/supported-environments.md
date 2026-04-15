@@ -43,4 +43,3 @@ If the following are true, you are within the intended scope:
 
 If you want to connect from another network while away from home, or use an iPad, that is out of scope in the current release.
 
-> TODO(image): A comparison diagram of supported versus unsupported setups, with `Mac + iPhone on the same Wi-Fi` marked `OK` and another network or `iPad` marked `No`.

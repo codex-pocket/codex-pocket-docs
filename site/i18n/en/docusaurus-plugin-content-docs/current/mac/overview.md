@@ -4,13 +4,14 @@ slug: /mac/
 description: This section collects only the Mac-side setup that actually matters before using the iPhone.
 ---
 
-import MacDownloadLink from '@site/src/components/MacDownloadLink';
-
 The execution side of CodexPocket is the Mac. The iPhone is the control surface, so you can start as soon as Codex works normally on the Mac and `CodexPocketMac` can wait for connections.
 
-If you do not have the app yet, download it here first.
+## How to get CodexPocketMac
 
-<MacDownloadLink className="button button--primary button--lg">Download the Mac App</MacDownloadLink>
+<a class="button button--primary button--lg margin-right--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Check public releases</a>
+<a class="button button--secondary button--lg" href="https://github.com/codex-pocket/codex-pocket-mac-app/blob/main/README.md#quickstart">Run from source</a>
+
+Even when GitHub Releases is still empty, you can try it right away from the `mac-app` README Quickstart. When a public build exists, Releases is the shortest path.
 
 ## The short version first
 

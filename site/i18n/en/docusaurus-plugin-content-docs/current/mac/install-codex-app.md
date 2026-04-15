@@ -29,4 +29,3 @@ If it does not appear immediately after you add it, wait a few seconds and check
 
 CodexPocket still works when your workflow is based on the `codex` CLI alone. In that case, follow [Register a Project](./register-project) and add the working directory from the iPhone.
 
-> TODO(image): A comparison image showing the workspace list in Codex App and the same folder in the `Projects` tab of `CodexPocketMac`. The point should be obvious at a glance.

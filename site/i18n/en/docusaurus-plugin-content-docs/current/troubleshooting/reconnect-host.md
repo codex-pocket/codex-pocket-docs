@@ -112,5 +112,3 @@ Because the current release assumes the local network, even when you are away fr
 
 If those checks make it clear that the token or endpoint is stale, that is the point where pairing again is enough.
 
-> TODO(image): The `Hosts` screen on the iPhone with `Connection Test` and `Retry Setup` visible.
-> TODO(image): A side-by-side view of `General` and `Bridge` on the Mac, showing `Runtime`, `Health`, port, and endpoint together.

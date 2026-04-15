@@ -51,4 +51,3 @@ On the `Hosts` screen, swiping left on a Host lets you run `Connection Test`. Ri
 
 Even in those cases, Bridge and Codex may still be working on the Mac. First try bringing the iPhone app back to the foreground, then `Connection Test`, pull-to-refresh, or `Retry Setup`.
 
-> TODO(image): A pair of screenshots showing `Connection confirmed` on the iPhone Host row and `Runtime` plus `Health` on the Mac. The goal is to show, in one glance, where normal looks normal.

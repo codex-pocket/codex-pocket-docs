@@ -10,7 +10,7 @@ const siteBaseUrl = `/${repoName}/`;
 
 const config: Config = {
   title: 'CodexPocket',
-  tagline: 'A same-LAN iPhone companion for the Codex environment running on your Mac.',
+  tagline: 'Resume the Codex running on your Mac from your iPhone without going back to your desk.',
   favicon: 'favicon.ico',
 
   future: {
@@ -45,10 +45,6 @@ const config: Config = {
     },
   },
 
-  customFields: {
-    releaseVersion: '0.1.0',
-    macDownloadUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases',
-  },
   headTags: [
     {
       tagName: 'link',
@@ -129,7 +125,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'CodexPocket is a same-LAN iPhone companion for the Codex environment running on your Mac, with support for starting new threads from iPhone.',
+          'CodexPocket keeps the Codex running on your Mac within reach from your iPhone, with same-LAN QR pairing and lightweight Project and Thread control.',
       },
       {
         name: 'keywords',
@@ -141,7 +137,7 @@ const config: Config = {
       {
         property: 'og:description',
         content:
-          'Today CodexPocket works on the same LAN, starts new threads from iPhone, and is planned to move closer to real-time sync over time.',
+          'CodexPocket helps you resume the Codex running on your Mac from your iPhone, with same-LAN QR pairing and lightweight follow-ups away from your desk.',
       },
       {name: 'twitter:card', content: 'summary_large_image'},
     ],

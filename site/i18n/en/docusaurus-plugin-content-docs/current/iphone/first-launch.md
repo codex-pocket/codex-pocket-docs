@@ -39,4 +39,3 @@ For most people, changing only `Font Size` at the beginning is enough.
 
 From here, go to `Hosts` and import the Mac.
 
-> TODO(image): The upper half of the `Settings` screen with `Font Size`, `Follow-up behavior`, and `Timeout` visible together. That makes the first-touch settings easy to spot.

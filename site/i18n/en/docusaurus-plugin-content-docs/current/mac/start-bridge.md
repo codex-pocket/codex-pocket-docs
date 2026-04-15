@@ -50,4 +50,3 @@ If you spend long stretches away from the Mac, it is worth checking `Launch at l
 - inspect stdout and stderr in `Logs`
 - if you see warnings about legacy launchd, confirm them in `General` and `Details`
 
-> TODO(image): A pair of screenshots showing `Runtime: Running` in `General` and the QR visible in `Pairing`.

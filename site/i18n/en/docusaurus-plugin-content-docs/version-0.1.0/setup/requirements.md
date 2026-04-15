@@ -54,4 +54,3 @@ Even if `git` is missing, basic thread viewing and a lot of normal actions can s
 
 If you still are not sure whether your setup fits, read [Supported Environments](./supported-environments) next. If your combination is in scope, you can continue with setup.
 
-> TODO(image): A Mac-side screenshot that makes both `Codex is detected` and `at least one Project is visible` obvious at a glance.

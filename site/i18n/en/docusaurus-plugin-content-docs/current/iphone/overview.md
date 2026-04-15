@@ -47,4 +47,3 @@ For now, CodexPocket assumes the iPhone and Mac are on the same local network. I
 
 The only two ideas you really need at the beginning are `Hosts` and `Projects`. The rest of the thread flow becomes familiar naturally after the Host is added.
 
-> TODO(image): A full iPhone screenshot that shows the main screen and the sidebar path from the upper-left corner. It should make it obvious where `Projects` and `Hosts` are opened.

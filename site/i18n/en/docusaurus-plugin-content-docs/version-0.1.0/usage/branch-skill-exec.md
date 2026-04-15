@@ -72,4 +72,3 @@ If you want to split the conversation flow, not the Git branch, use `Fork`. It c
 
 Branches and `Fork` are different tools. Branches change the code workspace. `Fork` changes only the conversation path.
 
-> TODO(image): A comparison image that shows the branch switcher, the Skill picker, and the `Exec` screen side by side.

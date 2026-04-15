@@ -2,7 +2,7 @@
 
 このディレクトリには、CodexPocket の公開ドキュメントサイトに載る内容が入っています。  
 公開先は [codex-pocket.github.io/codex-pocket-docs](https://codex-pocket.github.io/codex-pocket-docs/) です。  
-公開文面では、現時点の制限として「同一 LAN 前提」「PC thread のリアルタイム持ち出しは未対応」を先に明記します。
+公開文面では、まず「Mac の Codex を iPhone から再開できること」と、そのときに楽になる生活シーンを伝えます。制約の説明は、価値と導線のあとに置きます。
 
 ## ドキュメントの構成
 
@@ -23,7 +23,7 @@
 - Pairing、接続確認、ネットワーク条件
 - Codex App と一緒に使うときの導線
 - Project、Thread、Composer の基本操作
-- 現在の制限事項と今後の予定
+- 現在の前提条件と向いている使い方
 
 ## サポート
 

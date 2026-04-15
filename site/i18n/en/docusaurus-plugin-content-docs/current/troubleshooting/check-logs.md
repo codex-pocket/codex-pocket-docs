@@ -132,5 +132,3 @@ Whether you are narrowing it down yourself or reporting it later, this is usuall
 
 A few lines from just before and after the symptom are usually more useful than pasting the entire log.
 
-> TODO(image): The `Logs` tab on the Mac with stdout and stderr visible together.
-> TODO(image): The `Details` tab on the Mac with `Codex CLI`, `git`, `Shell`, and file paths visible together.

@@ -23,4 +23,3 @@ Right after launch, the app shows guidance that there is no Host yet. That is no
 
 You still need to add a Host before you can start using `Projects` and `Threads`.
 
-> TODO(image): The empty first-launch state with `Add from QR` and `Open Hosts` visible together. It should make it obvious where the Host flow starts.

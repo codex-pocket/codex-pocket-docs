@@ -40,4 +40,3 @@ In those cases, press `+` in `Projects` on the iPhone and add it manually.
 
 Using Codex App together with `CodexPocketMac` keeps workspace management on the Mac while letting the iPhone handle resume and follow-up.
 
-> TODO(image): A comparison image showing the workspace list in Codex App and the same workspaces in the `Projects` tab of `CodexPocketMac`.

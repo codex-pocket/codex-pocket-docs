@@ -29,4 +29,3 @@ If just one `Project` is visible before pairing, the iPhone can import the list 
 - reopen the `Projects` tab
 - if it still does not appear, use [Register a Project](./register-project)
 
-> TODO(image): A screenshot of the `Projects` tab showing at least one automatically imported project, with both `Name` and `Working Directory` visible.

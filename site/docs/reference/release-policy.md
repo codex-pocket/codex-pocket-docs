@@ -12,7 +12,7 @@ description: stable と next の意味、そして公開の切り替わり方を
 | stable | `/docs/` | 公開済みの iPhone / Mac / docs をそのまま使っているとき |
 | next | `/docs/next/` | 未公開の変更、審査中の版、案内された検証版を見ているとき |
 
-現在の stable は `0.1.2` です。
+現在の stable は `0.1.3` です。
 
 ## 迷ったら stable を見る
 

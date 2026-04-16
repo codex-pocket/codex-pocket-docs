@@ -91,6 +91,8 @@ const sidebars: SidebarsConfig = {
         'reference/limitations',
         'reference/glossary',
         'reference/localization',
+        'reference/why-mac-is-required',
+        'reference/app-store-feature-brief',
         'reference/release-policy',
       ],
     },

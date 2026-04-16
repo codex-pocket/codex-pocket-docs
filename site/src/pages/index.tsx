@@ -45,9 +45,24 @@ function ensureTrailingSlash(path: string): string {
   return path.endsWith('/') ? path : `${path}/`;
 }
 
-function getLocaleHomePath(baseUrl: string, locale: string): string {
+function getDefaultLocaleBasePath(baseUrl: string, currentLocale: string): string {
   const normalizedBaseUrl = ensureTrailingSlash(baseUrl);
-  return locale === JAPANESE_LOCALE ? normalizedBaseUrl : `${normalizedBaseUrl}${ENGLISH_LOCALE}/`;
+
+  if (currentLocale === JAPANESE_LOCALE) {
+    return normalizedBaseUrl;
+  }
+
+  const localeSuffix = `${currentLocale}/`;
+  return normalizedBaseUrl.endsWith(localeSuffix)
+    ? normalizedBaseUrl.slice(0, -localeSuffix.length)
+    : normalizedBaseUrl;
+}
+
+function getLocaleHomePath(baseUrl: string, currentLocale: string, targetLocale: string): string {
+  const defaultLocaleBasePath = getDefaultLocaleBasePath(baseUrl, currentLocale);
+  return targetLocale === JAPANESE_LOCALE
+    ? defaultLocaleBasePath
+    : `${defaultLocaleBasePath}${targetLocale}/`;
 }
 
 function detectHomepageLocale(): string {
@@ -71,7 +86,28 @@ export default function Home(): ReactNode {
   const iphoneInstallFallbackUrl = useBaseUrl('/docs/iphone/getting-started');
   const hasPublicIphoneDownload = iphoneAppStoreUrl.length > 0 || iphoneTestFlightUrl.length > 0;
   const iphoneInstallUrl = iphoneAppStoreUrl || iphoneTestFlightUrl || iphoneInstallFallbackUrl;
-  const canonicalUrl = `${siteConfig.url}${getLocaleHomePath(siteConfig.baseUrl, i18n.currentLocale)}`;
+  const currentLocaleHomePath = ensureTrailingSlash(siteConfig.baseUrl);
+  const canonicalUrl = new URL(currentLocaleHomePath, siteConfig.url).toString();
+  const currentLanguageTag =
+    i18n.currentLocale === JAPANESE_LOCALE ? 'ja-JP' : 'en-US';
+  const metaTitle = translate({
+    id: 'home.meta.title',
+    message: 'Mac の Codex を iPhone からすぐ再開',
+  });
+  const metaDescription = translate({
+    id: 'home.meta.description',
+    message:
+      'CodexPocket は、Mac で動く Codex を iPhone から軽く再開できる iPhone 向けアプリです。',
+  });
+  const iphonePrimaryCta = hasPublicIphoneDownload
+    ? translate({
+        id: 'home.hero.primaryCta.public',
+        message: 'iPhone アプリを入手',
+      })
+    : translate({
+        id: 'home.hero.primaryCta.unavailable',
+        message: 'iPhone の配布状況を見る',
+      });
   const heroMeta = hasPublicIphoneDownload
     ? translate({
         id: 'home.hero.meta.public',
@@ -88,9 +124,8 @@ export default function Home(): ReactNode {
     '@type': 'WebSite',
     name: 'CodexPocket',
     url: canonicalUrl,
-    description:
-      'Resume the Codex running on your Mac from your iPhone with same-LAN QR pairing, Project access, and lightweight follow-ups away from your desk.',
-    inLanguage: ['ja-JP', 'en-US'],
+    description: metaDescription,
+    inLanguage: currentLanguageTag,
     publisher: {
       '@type': 'Organization',
       name: 'CodexPocket',
@@ -100,14 +135,22 @@ export default function Home(): ReactNode {
 
   useEffect(() => {
     const currentPath = ensureTrailingSlash(window.location.pathname);
-    const japaneseHomepagePath = getLocaleHomePath(siteConfig.baseUrl, JAPANESE_LOCALE);
+    const japaneseHomepagePath = getLocaleHomePath(
+      siteConfig.baseUrl,
+      i18n.currentLocale,
+      JAPANESE_LOCALE,
+    );
 
     if (currentPath !== japaneseHomepagePath) {
       return;
     }
 
     const preferredLocale = detectHomepageLocale();
-    const targetPath = getLocaleHomePath(siteConfig.baseUrl, preferredLocale);
+    const targetPath = getLocaleHomePath(
+      siteConfig.baseUrl,
+      i18n.currentLocale,
+      preferredLocale,
+    );
 
     if (currentPath === targetPath) {
       return;
@@ -116,7 +159,7 @@ export default function Home(): ReactNode {
     const nextUrl = new URL(window.location.href);
     nextUrl.pathname = targetPath;
     window.location.replace(nextUrl.toString());
-  }, [siteConfig.baseUrl]);
+  }, [i18n.currentLocale, siteConfig.baseUrl]);
 
   const benefits: BenefitItem[] = [
     {
@@ -356,15 +399,8 @@ export default function Home(): ReactNode {
 
   return (
     <Layout
-      title={translate({
-        id: 'home.meta.title',
-        message: 'Mac の Codex を iPhone からすぐ再開',
-      })}
-      description={translate({
-        id: 'home.meta.description',
-        message:
-          'CodexPocket は、Mac で動く Codex を iPhone から軽く再開できる iPhone 向けアプリです。',
-      })}
+      title={metaTitle}
+      description={metaDescription}
       wrapperClassName={styles.homepage}>
       <Head>
         <link rel="canonical" href={canonicalUrl} />
@@ -398,7 +434,7 @@ export default function Home(): ReactNode {
                     <Translate id="home.hero.downloadCta">Mac アプリをダウンロード</Translate>
                   </Link>
                   <Link className="button button--primary button--lg" href={iphoneInstallUrl}>
-                    <Translate id="home.hero.primaryCta">iPhone アプリを入手</Translate>
+                    {iphonePrimaryCta}
                   </Link>
                   <Link
                     className="button button--secondary button--lg"

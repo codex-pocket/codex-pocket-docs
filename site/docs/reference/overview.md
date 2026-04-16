@@ -18,6 +18,8 @@ CodexPocket は、Mac の前から離れているあいだに Codex の続きを
   ドキュメント、iPhone アプリ、Mac アプリの表示言語の切り替え場所を確認できます
 - `なぜ Mac が必要なのか`
   companion app としての前提、ネットワーク条件、権限、データの流れをまとめて確認できます
+- `App Store フィーチャー向けブリーフ`
+  App Store Editorial に伝えたい価値、体験フロー、公開前提を短く共有できます
 - `リリースと更新の見方`
   `stable` と `next` のどちらを見ればよいかを判断できます
 
@@ -39,5 +41,7 @@ CodexPocket は、Mac の前から離れているあいだに Codex の続きを
   [表示言語](./localization) に整理しています
 - `なぜ iPhone アプリなのに Mac が必要なのか`
   [なぜ Mac が必要なのか](./why-mac-is-required) を見てください
+- `App Store フィーチャー応募で使う公開資料をすぐ見たい`
+  [App Store フィーチャー向けブリーフ](./app-store-feature-brief) を見てください
 - `今見ているページが自分のアプリ版と合っているか不安`
   [リリースと更新の見方](./release-policy) を見てください

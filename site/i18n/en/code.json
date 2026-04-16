@@ -1,30 +1,30 @@
 {
   "home.benefit.remote.eyebrow": {
-    "message": "Where to look first"
+    "message": "Get back in fast"
   },
   "home.benefit.remote.title": {
-    "message": "Jump back into the current work without guessing"
+    "message": "Pick up the current work without guesswork"
   },
   "home.benefit.remote.body": {
-    "message": "Open the work that is already in progress on the Mac from the list so it takes less time to recover where you should look first."
+    "message": "Open the work already running on your Mac from the list, so you can recover context quickly without hunting for the right place to start."
   },
   "home.benefit.setup.eyebrow": {
     "message": "Connect quickly"
   },
   "home.benefit.setup.title": {
-    "message": "Connect quickly with QR on the same LAN"
+    "message": "Connect with a QR code on the same LAN"
   },
   "home.benefit.setup.body": {
-    "message": "Open the Mac app, show the QR, and scan it from the iPhone. Adding the Mac finishes in a few steps."
+    "message": "Open the Mac app, show the QR code, and scan it from iPhone. Adding your Mac takes just a few steps."
   },
   "home.benefit.context.eyebrow": {
     "message": "Stay oriented"
   },
   "home.benefit.context.title": {
-    "message": "Stay oriented by work item"
+    "message": "Keep everything organized by work item"
   },
   "home.benefit.context.body": {
-    "message": "Conversations, branches, skills, and commands stay grouped around each work item so it is easier to keep track of what environment you are touching."
+    "message": "Conversations, branches, skills, and commands stay grouped around each work item, so it is easier to keep track of which environment you are touching."
   },
   "home.step.bridge.title": {
     "message": "Prepare the Mac for connection"
@@ -33,31 +33,61 @@
     "message": "Prepare the QR code and the work list in the Mac app."
   },
   "home.step.pair.title": {
-    "message": "Add the Mac on iPhone"
+    "message": "Add your Mac from iPhone"
   },
   "home.step.pair.body": {
-    "message": "Import with QR or a code, then wait for connection checks and the work list to load."
+    "message": "Import it with a QR code or setup code, then wait for the connection check and work list to load."
   },
   "home.step.resume.title": {
-    "message": "Open the work and reply from there"
+    "message": "Open the work and continue from there"
   },
   "home.step.resume.body": {
-    "message": "Open the work, follow the conversation, add a quick note from the input box, or start a new conversation when you need it."
+    "message": "Open the work, follow the conversation, add a quick follow-up from the input box, or start a new conversation when you need one."
   },
   "home.scenario.commute.title": {
     "message": "You want to check progress from the couch"
   },
   "home.scenario.commute.body": {
-    "message": "Leave the longer task on the Mac and just open the conversation on iPhone to see how it is going."
+    "message": "Leave the longer task running on the Mac and open the conversation on iPhone to check progress first."
+  },
+  "home.scenario.feature.sofa.eyebrow": {
+    "message": "On the couch"
+  },
+  "home.scenario.feature.sofa.alt": {
+    "message": "Illustration of using CodexPocket from a smartphone while sitting on a couch"
+  },
+  "home.scenario.feature.nightcare.eyebrow": {
+    "message": "After bedtime"
+  },
+  "home.scenario.nightcare.title": {
+    "message": "You want to send one quick follow-up after putting the kids to bed"
+  },
+  "home.scenario.nightcare.body": {
+    "message": "Send the quick follow-up first after the kids are asleep, and leave heavier work and log checking for the Mac."
+  },
+  "home.scenario.feature.nightcare.alt": {
+    "message": "Illustration of using CodexPocket from a smartphone in bed after the kids are asleep"
+  },
+  "home.scenario.feature.breaktime.eyebrow": {
+    "message": "During downtime"
+  },
+  "home.scenario.breaktime.title": {
+    "message": "You want to send one quick follow-up during a break"
+  },
+  "home.scenario.breaktime.body": {
+    "message": "Even between videos or games, you can send the follow-up first from your iPhone and leave execution and log management to the Mac workflow."
+  },
+  "home.scenario.feature.breaktime.alt": {
+    "message": "Illustration of using CodexPocket from a smartphone while relaxing"
   },
   "home.guide.iphone.eyebrow": {
-    "message": "Begin"
+    "message": "Start"
   },
   "home.guide.iphone.title": {
     "message": "Start on iPhone"
   },
   "home.guide.iphone.body": {
-    "message": "The entry point for people who want adding a Mac, browsing work, reading conversations, and writing from the input box explained first."
+    "message": "The best starting point if you want to learn how to add a Mac, browse work, read conversations, and send follow-ups from the input box."
   },
   "home.guide.iphone.cta": {
     "message": "Open the iPhone guide"
@@ -69,7 +99,7 @@
     "message": "Start on Mac"
   },
   "home.guide.mac.body": {
-    "message": "The entry point for people who want the Mac app, connection layer, QR, and logs explained first."
+    "message": "The best starting point if you want to understand the Mac app, connection layer, QR setup, and logs first."
   },
   "home.guide.mac.cta": {
     "message": "Open the Mac guide"
@@ -93,7 +123,7 @@
     "message": "Architecture and operations"
   },
   "home.guide.reference.body": {
-    "message": "The place for cross-cutting information such as release policy and multilingual support."
+    "message": "The place to look for cross-cutting information such as release policy and multilingual support."
   },
   "home.guide.reference.cta": {
     "message": "Open more details"
@@ -102,7 +132,7 @@
     "message": "Resume Codex on your Mac from your iPhone"
   },
   "home.meta.description": {
-    "message": "CodexPocket is an iPhone app that helps you resume the Codex running on your Mac without going back to your desk."
+    "message": "CodexPocket is an iPhone app that lets you resume Codex running on your Mac without going back to your desk."
   },
   "home.badge.release": {
     "message": "Stable"
@@ -120,22 +150,25 @@
     "message": "Resume the Codex running on your Mac from your iPhone."
   },
   "home.hero.lead": {
-    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on the Mac and lets you open work, check the current state, and add a quick follow-up from your iPhone, so you can clear short checks before you return to the Mac."
+    "message": "Do not break the flow just because you stepped away from your desk. CodexPocket keeps the Codex environment on your Mac and lets you open work, check status, and send a quick follow-up from your iPhone, so you can clear short checks before you get back to the Mac."
   },
   "home.hero.downloadCta": {
     "message": "Download the Mac app"
   },
-  "home.hero.primaryCta": {
+  "home.hero.primaryCta.public": {
     "message": "Get the iPhone app"
+  },
+  "home.hero.primaryCta.unavailable": {
+    "message": "Check iPhone availability"
   },
   "home.hero.secondaryCta": {
     "message": "See how it connects"
   },
   "home.hero.meta.public": {
-    "message": "Mac version {stableVersion} is available now. Once the iPhone app is installed, you can finish the first connection by scanning a QR code on the same LAN."
+    "message": "Mac version {stableVersion} is available now. Once you install the iPhone app, your first connection is just a QR scan away on the same LAN."
   },
   "home.hero.meta.unavailable": {
-    "message": "Mac version {stableVersion} is available now. The iPhone side does not yet have a public App Store / TestFlight link, so check the current distribution status first."
+    "message": "Mac version {stableVersion} is available now. There is no public App Store or TestFlight link for the iPhone app yet, so check the current availability first."
   },
   "home.hero.note.lan": {
     "message": "Connect on the same LAN"
@@ -153,10 +186,10 @@
     "message": "Mac and iPhone roles"
   },
   "home.visual.title": {
-    "message": "Control on iPhone, execution on Mac. That makes it easier to fit into the spaces between other things."
+    "message": "Control from iPhone, execution on Mac. That makes it easy to stay in the flow when you step away."
   },
   "home.visual.body": {
-    "message": "The Mac app and connection layer keep the working state on the Mac, while the iPhone becomes the quick way back in when you need it."
+    "message": "The Mac app and connection layer keep the work anchored on the Mac, while the iPhone gives you a quick way back in whenever you need it."
   },
   "home.visual.setup.label": {
     "message": "Setup"
@@ -177,25 +210,25 @@
     "message": "Start a new conversation from the input box"
   },
   "home.visual.panelTitle": {
-    "message": "What you can touch on iPhone"
+    "message": "What you can do from iPhone"
   },
   "home.visual.panel.host.label": {
     "message": "Connection"
   },
   "home.visual.panel.host.body": {
-    "message": "Which Mac you open"
+    "message": "Choose which Mac to open"
   },
   "home.visual.panel.project.label": {
     "message": "Work"
   },
   "home.visual.panel.project.body": {
-    "message": "The entry point for conversations and branches"
+    "message": "Jump into the right conversation or branch"
   },
   "home.visual.panel.composer.label": {
     "message": "Input box"
   },
   "home.visual.panel.composer.body": {
-    "message": "The entry point for quick notes, skills, and one-off execution"
+    "message": "Send follow-ups, use skills, and trigger one-off runs"
   },
   "home.limitations.lan.title": {
     "message": "Built for the same network"
@@ -219,7 +252,7 @@
     "message": "What it gives you"
   },
   "home.section.benefits.title": {
-    "message": "Cut the cost of interruption after you leave your desk"
+    "message": "Lower the cost of interruption when you step away from your desk"
   },
   "home.section.limits.eyebrow": {
     "message": "Assumptions"
@@ -234,16 +267,16 @@
     "message": "The first success comes quickly"
   },
   "home.section.scenarios.eyebrow": {
-    "message": "Good moments"
+    "message": "When it helps"
   },
   "home.section.scenarios.title": {
-    "message": "These are the moments where it clicks"
+    "message": "Where it fits best"
   },
   "home.section.guides.eyebrow": {
     "message": "Guides"
   },
   "home.section.guides.title": {
-    "message": "Deeper entry points"
+    "message": "Start with the right guide"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

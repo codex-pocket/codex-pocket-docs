@@ -46,8 +46,8 @@ const config: Config = {
   },
 
   customFields: {
-    stableVersion: '0.1.2',
-    macReleaseUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2',
+    stableVersion: '0.1.3',
+    macReleaseUrl: 'https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.3',
     macDownloadUrl:
       'https://github.com/codex-pocket/codex-pocket-releases/releases',
     iphoneAppStoreUrl: '',
@@ -104,7 +104,7 @@ const config: Config = {
               banner: 'unreleased',
             },
             '0.1.0': {
-              label: '0.1.2',
+              label: '0.1.3',
               banner: 'none',
             },
           },

@@ -76,7 +76,7 @@ export default function Home(): ReactNode {
   const sofaScenarioImageUrl = useBaseUrl('/img/home/sofa-codex-follow-up.webp');
   const bedtimeScenarioImageUrl = useBaseUrl('/img/home/bedtime-codex-follow-up.webp');
   const breaktimeScenarioImageUrl = useBaseUrl('/img/home/breaktime-codex-follow-up.webp');
-  const stableVersion = String(siteConfig.customFields?.stableVersion ?? '0.1.2');
+  const stableVersion = String(siteConfig.customFields?.stableVersion ?? '0.1.3');
   const macDownloadUrl = String(
     siteConfig.customFields?.macDownloadUrl ??
       'https://github.com/codex-pocket/codex-pocket-releases/releases',

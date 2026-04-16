@@ -9,12 +9,12 @@ When you start using CodexPocket, begin on the Mac. In practice, that means laun
 ## How to get CodexPocketMac
 
 <a class="button button--primary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Download the Mac app</a>
-<a class="button button--secondary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.2">Read the release notes</a>
+<a class="button button--secondary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases/tag/mac-v0.1.3">Read the release notes</a>
 <a class="button button--secondary button--lg margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-mac-app/blob/main/README.md#quickstart">Run from source</a>
 
 Note: download the `.dmg` from GitHub Releases, then install it on your Mac.
 
-The current public Mac stable is `0.1.2`. In the normal path, download the notarized DMG and start from there. Use the `mac-app` README Quickstart only when you want a source build for development or verification.
+The current public Mac stable is `0.1.3`. In the normal path, download the notarized DMG and start from there. Use the `mac-app` README Quickstart only when you want a source build for development or verification.
 
 ## What the Mac app does
 

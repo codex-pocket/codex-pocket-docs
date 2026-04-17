@@ -14,6 +14,16 @@ In CodexPocket, the real work keeps running on the Mac. On the iPhone, what you 
 
 ![Overview of linking the Mac and iPhone through pairing and project access](/img/docs/setup-overview-hero.webp)
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| follow the QR-based linking steps in order | [Pair the Devices](./pairing-and-bridge) |
+| confirm whether the connection actually worked | [Confirm the Connection](./check-connection) |
+| check the same-LAN and port requirements | [Network Requirements](./network-requirements) |
+| troubleshoot a pairing failure itself | [Cannot Pair](../troubleshooting/cannot-pair) |
+| revisit the Mac-side setup first | [Start on Mac](../mac/) |
+
 ## What this section explains
 
 - what happens during the first link

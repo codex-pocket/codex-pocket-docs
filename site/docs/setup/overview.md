@@ -14,6 +14,16 @@ CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で
 2. iPhone で Mac を取り込む
 3. Project と Thread が見えることを確かめる
 
+## やりたいことから探す
+
+| やりたいこと | 読むページ |
+| --- | --- |
+| 最初に必要なものだけ確認したい | [はじめる前に必要なもの](./requirements) |
+| 使える端末の組み合わせを見たい | [対応環境](./supported-environments) |
+| Mac 側の準備を順番に進めたい | [Mac を準備する](../mac/) |
+| iPhone で Host を追加する流れを見たい | [iPhone アプリを入手する](../iphone/getting-started) |
+| QR でつなぐ実画面を見たい | [Pairing する](../shared/pairing-and-bridge) |
+
 ## 1. Mac 側を整える
 
 最初に Mac で次を済ませます。ここで実行環境そのものを作るので、iPhone 側はあとからつなぐだけです。

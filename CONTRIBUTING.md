@@ -26,3 +26,13 @@ npm run validate
 ```
 
 必要なら `npm run start:ja` と `npm run start:en` で表示確認をします。
+current docs 向けの追加チェックは、手元では `./scripts/run-current-doc-checks.sh --staged` でまとめて確認できます。
+current docs 向けチェックと site validate をまとめて回したいときは、repo root で `./scripts/run-doc-review-checks.sh --staged` を使ってください。
+任意で `./scripts/install-git-hooks.sh` を実行すると、current docs の markdown を commit するときだけ pre-commit hook で `./scripts/run-current-doc-checks.sh --staged` を自動実行できます。
+PR では、この aggregate command に含まれる locale parity、frontmatter、画像 alt、見出し構造、asset path の確認を個別 job で自動実行します。
+各スクリプトの役割と使い分けは [scripts/README.md](scripts/README.md) を参照してください。
+
+## Pull Requests
+
+- PR では「何を変えたか」「どの導線やページに影響するか」「何を検証したか」を本文に残します
+- 追加した PR テンプレートのチェック項目を埋めて、翻訳や関連ページ確認の抜けを防いでください

@@ -39,3 +39,7 @@ CodexPocket のドキュメント、iPhone アプリ、Mac アプリは、日本
 ## 表示が混ざって見えるとき
 
 混在して見える理由の多くは、アプリが翻訳している部分と、workspace 由来の内容が別だからです。気になる場合は、まず「UI の言語」と「自分が依頼した言語」を分けて考えると整理しやすくなります。
+
+## ドキュメント更新時の扱い
+
+- 現行の markdown docs では、日本語と English の current docs がずれないように、pull request で locale parity check を自動実行しています

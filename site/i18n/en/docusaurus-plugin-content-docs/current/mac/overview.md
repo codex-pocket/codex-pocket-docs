@@ -30,6 +30,17 @@ If you already use Codex on the Mac every day, there is not much new to do.
 
 You only need `Git` when you want branch-related features. Most people do not need to touch ports, tokens, or manual project registration first.
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| know the minimum first checks | [First Things to Check](./getting-started) |
+| continue with a Codex App-based workflow | [Install the Codex App](./install-codex-app) |
+| confirm the `codex` CLI setup | [Install Codex CLI](./install-codex-cli) |
+| enable Git for branch actions too | [Make Git Available](./install-git) |
+| add a project by hand | [Register a Project](./register-project) |
+| finish with Bridge startup | [Start Bridge](./start-bridge) |
+
 ## What the Mac side is responsible for
 
 - starting and stopping Bridge

@@ -12,6 +12,16 @@ CodexPocket setup is really three steps: get the Mac ready, import that Mac on t
 2. Add the Mac on iPhone
 3. Confirm that projects and threads are visible
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| check only the prerequisites first | [What You Need Before You Start](./requirements) |
+| see which device combinations are supported | [Supported Environments](./supported-environments) |
+| go through the Mac-side setup in order | [Start on Mac](../mac/) |
+| see how to add the Host on iPhone | [Get the iPhone App](../iphone/getting-started) |
+| look at the QR-based pairing flow | [Pair the Devices](../shared/pairing-and-bridge) |
+
 ## 1. Prepare the Mac
 
 Start with the Mac side. That is where the real execution environment lives, so the iPhone mainly connects to what you already have there.

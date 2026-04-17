@@ -13,6 +13,16 @@ CodexPocket works as a combination of `CodexPocketMac` on the Mac and `CodexPock
 
 The fastest first cut is still: `Is Bridge running on the Mac?` and `Can the iPhone reach it from the same network?`
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| fix QR scan, save, or authentication failures | [If Pairing Does Not Finish](./cannot-pair) |
+| fix missing projects after pairing | [If Projects Do Not Appear](./cannot-see-projects) |
+| reconnect to a Host that used to work | [Reconnect or Pair Again](./reconnect-host) |
+| inspect Mac-side logs and detection first | [Check the Logs](./check-logs) |
+| revisit same-network and connection requirements | [Network Requirements](../shared/network-requirements) |
+
 ## Five checks that save time early
 
 1. In `General` on the Mac, `Runtime` shows `Running`

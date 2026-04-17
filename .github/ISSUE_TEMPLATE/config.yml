@@ -3,3 +3,9 @@ contact_links:
   - name: 公開サイト
     url: https://codex-pocket.github.io/codex-pocket-docs/
     about: 先に公開中のドキュメントを確認したい場合はこちら
+  - name: Contributing Guide
+    url: https://github.com/codex-pocket/codex-pocket-docs/blob/main/CONTRIBUTING.md
+    about: docs repo への変更フローや確認方法を見たい場合はこちら
+  - name: Scripts Guide
+    url: https://github.com/codex-pocket/codex-pocket-docs/blob/main/scripts/README.md
+    about: review 用スクリプトの使い分けを見たい場合はこちら

@@ -1,5 +1,6 @@
 ---
 title: Localization
+description: Learn where language switching happens across the docs site and apps.
 ---
 
 # Localization
@@ -41,3 +42,4 @@ npm run write-translations -- --locale en
 - do the same for `docs/mac/` and `i18n/en/.../mac/`
 - keep `shared` limited to flows that involve both devices
 - keep sidebar category ordering aligned across locales
+- pull requests also run a locale parity check for current markdown docs so Japanese and English updates do not drift silently

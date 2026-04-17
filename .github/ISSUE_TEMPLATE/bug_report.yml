@@ -11,6 +11,46 @@ body:
       description: 何が起きたかを簡潔に書いてください
     validations:
       required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 発生箇所
+      description: 主にどこで起きた問題かを選んでください
+      options:
+        - 公開 docs site
+        - GitHub Issue / PR テンプレート
+        - GitHub Actions / 公開フロー
+        - リポジトリ構成や案内文
+        - まだ分からない
+    validations:
+      required: true
+  - type: dropdown
+    id: locale
+    attributes:
+      label: 対象の言語
+      description: どの表示言語で起きたかを選んでください
+      options:
+        - 日本語
+        - English
+        - 両方
+        - 言語には依存しない
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: 関連ページや workflow
+      description: URL、ファイル名、workflow 名などが分かれば書いてください
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: 再現した環境を書いてください
+      placeholder: |
+        例:
+        - macOS / iOS / browser
+        - 利用したページ URL
+        - GitHub Actions の run URL
   - type: textarea
     id: steps
     attributes:
@@ -33,3 +73,8 @@ body:
       label: 実際の結果
     validations:
       required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 補足資料
+      description: スクリーンショット、エラーログ、console 出力、run URL などがあれば書いてください

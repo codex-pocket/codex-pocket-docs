@@ -11,6 +11,43 @@ body:
       description: 困った点や分かりにくかった点を書いてください
     validations:
       required: true
+  - type: dropdown
+    id: locale
+    attributes:
+      label: 対象の言語
+      description: どの表示言語で困ったかを選んでください
+      options:
+        - 日本語
+        - English
+        - 両方
+        - まだ分からない
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 関連するセクション
+      description: 主にどの導線や章の改善かを選んでください
+      options:
+        - セットアップ
+        - Mac アプリ
+        - iPhone アプリ
+        - Mac と iPhone の連携
+        - 使い方
+        - 困ったとき
+        - リファレンス
+        - リポジトリ運用
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 現在の説明でつまずいた点
+      description: 現在の文面や導線で足りなかった情報を書いてください
+      placeholder: |
+        - どの場面で読んだか
+        - 何が分からなかったか
+        - どこで迷ったか
   - type: textarea
     id: proposal
     attributes:
@@ -23,3 +60,18 @@ body:
     attributes:
       label: 関連ページ
       description: URL やファイル名が分かれば書いてください
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響を受けた人や場面
+      description: どの利用者や状況で困ったかを書いてください
+      placeholder: |
+        例:
+        - 初回セットアップ中の人
+        - Codex App を使わず CLI だけで使っている人
+        - 英語ページを読んでいる人
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 補足資料
+      description: スクリーンショット、他ページへのリンク、期待する表現例があれば書いてください

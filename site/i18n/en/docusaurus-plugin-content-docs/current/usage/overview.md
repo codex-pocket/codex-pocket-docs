@@ -10,6 +10,17 @@ The mental model is simple: the real work continues on the Mac, while the iPhone
 
 ![Diagram of the Project to Thread to Composer workflow](/img/docs/thread-workflow.svg)
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| understand the big picture with Codex App first | [Use It with Codex App](./with-codex-app) |
+| start from opening a project | [Open a Project](./open-project) |
+| learn how to read and resume threads | [Check a Thread](./threads) |
+| go deeper on sending requests with Composer | [Send with Composer](./composer) |
+| choose between branches, skills, and Exec | [Use Branches, Skills, and Exec](./branch-skill-exec) |
+| troubleshoot missing projects before you can start | [Cannot See Projects](../troubleshooting/cannot-see-projects) |
+
 ## Core flow to remember
 
 1. Open the target workspace from `Home` or `Projects`.

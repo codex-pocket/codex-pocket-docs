@@ -7,6 +7,8 @@ description: The shared flow from Project selection to thread resume, follow-up 
 
 The thread workflow does not live entirely on iPhone or Mac. Projects are anchored in Mac workspaces, while day-to-day reading and follow-up often happen on iPhone, so this flow needs a cross-device view.
 
+![Diagram of the Project to Thread to Composer workflow](/img/docs/thread-workflow.svg)
+
 ## Core flow
 
 1. open a Host on iPhone

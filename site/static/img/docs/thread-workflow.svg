@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Thread workflow overview</title>
+  <desc id="desc">A flow diagram from Project to Thread to Composer to Work Log and Answer, with loop-back follow-up and side actions for Branch, Skills, and Exec.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFF9F2"/>
+      <stop offset="100%" stop-color="#FCEEE0"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFB15B"/>
+      <stop offset="100%" stop-color="#E45D28"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#5A321C" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 1 1 L 11 6 L 1 11 z" fill="#D45A28"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" rx="36" fill="#F8EFE2"/>
+  <circle cx="132" cy="130" r="160" fill="#FFDCC4" opacity="0.7"/>
+  <circle cx="1084" cy="588" r="176" fill="#FFF2E4" opacity="0.9"/>
+
+  <text x="78" y="104" fill="#8A5A40" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Everyday flow on iPhone</text>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="176" width="222" height="202" rx="30" fill="url(#surface)" stroke="#E7C6AA"/>
+    <circle cx="126" cy="222" r="22" fill="url(#orange)"/>
+    <text x="126" y="230" fill="#FFF7F0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">1</text>
+    <text x="188" y="236" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Project</text>
+    <text x="188" y="270" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">pick the workspace</text>
+    <rect x="118" y="300" width="142" height="44" rx="18" fill="#FFF4EA"/>
+    <text x="189" y="329" fill="#291810" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Home / Projects</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="344" y="176" width="222" height="202" rx="30" fill="url(#surface)" stroke="#E7C6AA"/>
+    <circle cx="392" cy="222" r="22" fill="url(#orange)"/>
+    <text x="392" y="230" fill="#FFF7F0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">2</text>
+    <text x="454" y="236" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Thread</text>
+    <text x="454" y="270" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">resume or start new</text>
+    <rect x="386" y="298" width="136" height="48" rx="18" fill="#FFF4EA"/>
+    <text x="454" y="329" fill="#291810" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">New / Existing</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="610" y="176" width="222" height="202" rx="30" fill="url(#orange)"/>
+    <circle cx="658" cy="222" r="22" fill="#FFF4EA"/>
+    <text x="658" y="230" fill="#D45A28" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">3</text>
+    <text x="720" y="236" fill="#FFF8F3" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Composer</text>
+    <text x="720" y="270" fill="#FFE7D9" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">send prompt or follow-up</text>
+    <rect x="646" y="300" width="66" height="34" rx="17" fill="#FFF4EA"/>
+    <rect x="726" y="300" width="68" height="34" rx="17" fill="#FFF4EA"/>
+    <text x="679" y="322" fill="#D45A28" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" text-anchor="middle">Queue</text>
+    <text x="760" y="322" fill="#D45A28" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" text-anchor="middle">Steer</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="876" y="176" width="246" height="202" rx="30" fill="url(#surface)" stroke="#E7C6AA"/>
+    <circle cx="924" cy="222" r="22" fill="url(#orange)"/>
+    <text x="924" y="230" fill="#FFF7F0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">4</text>
+    <text x="999" y="226" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Work Log</text>
+    <text x="999" y="264" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Answer</text>
+    <text x="999" y="298" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">watch progress and results</text>
+    <rect x="944" y="316" width="110" height="18" rx="9" fill="#FFD8BF"/>
+    <circle cx="930" cy="325" r="8" fill="#E45D28"/>
+  </g>
+
+  <path d="M300 278 H344" fill="none" stroke="#D45A28" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M566 278 H610" fill="none" stroke="#D45A28" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M832 278 H876" fill="none" stroke="#D45A28" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M999 378 C 1044 466, 806 560, 722 476" fill="none" stroke="#E18A63" stroke-width="6" stroke-dasharray="11 12" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="818" y="536" fill="#8A5A40" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">follow-up loop</text>
+
+  <g filter="url(#shadow)">
+    <rect x="334" y="466" width="146" height="74" rx="24" fill="#FFF5EC" stroke="#E7C6AA"/>
+    <text x="407" y="505" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Branch</text>
+    <text x="407" y="526" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">switch repo state</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="526" y="466" width="146" height="74" rx="24" fill="#FFF5EC" stroke="#E7C6AA"/>
+    <text x="599" y="505" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Skills</text>
+    <text x="599" y="526" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">add guided prompts</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="718" y="466" width="146" height="74" rx="24" fill="#FFF5EC" stroke="#E7C6AA"/>
+    <text x="791" y="505" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Exec</text>
+    <text x="791" y="526" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">run one-off checks</text>
+  </g>
+
+  <path d="M454 378 V466" fill="none" stroke="#D8A687" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round"/>
+  <path d="M599 378 V466" fill="none" stroke="#D8A687" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round"/>
+  <path d="M791 378 V466" fill="none" stroke="#D8A687" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round"/>
+</svg>

@@ -5,6 +5,8 @@ description: This page explains what to confirm before linking CodexPocketMac fo
 
 If you already use Codex App on the Mac, this page is more of a checklist than an installation guide. `CodexPocketMac` reads workspace information from Codex App and uses it as the source for `Project` candidates shown on the iPhone.
 
+![Diagram of workspaces flowing from Codex App to CodexPocketMac and the iPhone](/img/docs/workspace-sync.svg)
+
 ## What to confirm here
 
 - Codex App works normally on the Mac
@@ -28,4 +30,3 @@ If it does not appear immediately after you add it, wait a few seconds and check
 ## If you do not use Codex App
 
 CodexPocket still works when your workflow is based on the `codex` CLI alone. In that case, follow [Register a Project](./register-project) and add the working directory from the iPhone.
-

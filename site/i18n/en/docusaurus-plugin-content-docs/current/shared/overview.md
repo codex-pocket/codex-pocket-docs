@@ -12,6 +12,8 @@ In CodexPocket, the real work keeps running on the Mac. On the iPhone, what you 
 
 `CodexPocketMac` needs to be running on the Mac before this can work. If the Mac side is not ready yet, start with <MacDownloadLink>the Mac setup</MacDownloadLink>.
 
+![Overview of linking the Mac and iPhone through pairing and project access](/img/docs/setup-overview-hero.webp)
+
 ## What this section explains
 
 - what happens during the first link

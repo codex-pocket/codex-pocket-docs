@@ -6,6 +6,8 @@ description: Start here for the setup flow.
 
 CodexPocket setup is really three steps: get the Mac ready, import that Mac on the iPhone, then confirm you can continue your work. It helps to think of it as making the Codex session on your Mac reachable from your phone, not building a separate environment on iPhone.
 
+![Overview of the setup flow from Mac preparation to iPhone pairing](/img/docs/setup-overview-hero.webp)
+
 1. Prepare the Mac
 2. Add the Mac on iPhone
 3. Confirm that projects and threads are visible

@@ -9,6 +9,7 @@ Official product documentation and support content for CodexPocket.
 CodexPocket は、Mac 上で動いている Codex を iPhone からすぐ再開するための companion です。  
 このリポジトリには、公開ドキュメント、セットアップ導線、トラブルシューティング、Docusaurus site のソースをまとめています。  
 現在の案内は、同じ LAN 上での QR pairing を使って、席を立ったあとも軽く続けられる体験を中心に整理しています。
+非公開の requirement、設計、App Review 素材、内部検証メモは sibling repo の `codex-pocket-internal-docs` を正本とし、この公開 repo には置きません。
 
 ## Quick Links
 

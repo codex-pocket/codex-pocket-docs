@@ -7,6 +7,8 @@ If you already use Codex App on the Mac, you usually do not need to add every `P
 
 For people who want the same everyday workspaces on both Mac and iPhone, this is the most natural path.
 
+![Diagram of workspaces flowing from Codex App to CodexPocketMac and the iPhone](/img/docs/workspace-sync.svg)
+
 ## Recommended flow
 
 1. In Codex App on the Mac, open or register the workspace you use regularly.
@@ -39,4 +41,3 @@ In those cases, press `+` in `Projects` on the iPhone and add it manually.
 - The real environment still lives on the Mac, so it helps to think of the iPhone as the remote entry point into that same workspace.
 
 Using Codex App together with `CodexPocketMac` keeps workspace management on the Mac while letting the iPhone handle resume and follow-up.
-

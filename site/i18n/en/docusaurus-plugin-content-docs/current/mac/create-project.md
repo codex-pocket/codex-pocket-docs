@@ -5,6 +5,8 @@ description: This page explains how to make a working folder show up as a CodexP
 
 In CodexPocket, the unit shown on the iPhone is called a `Project`. Workspaces you already use in Codex App on the Mac can become `Project` candidates as they are.
 
+![Diagram of workspaces flowing from Codex App to CodexPocketMac and the iPhone](/img/docs/workspace-sync.svg)
+
 ## The easiest path
 
 1. Put the folder you use every day into the Codex App workspace list on the Mac.
@@ -28,4 +30,3 @@ If just one `Project` is visible before pairing, the iPhone can import the list 
 - wait a few seconds while keeping `CodexPocketMac` open
 - reopen the `Projects` tab
 - if it still does not appear, use [Register a Project](./register-project)
-

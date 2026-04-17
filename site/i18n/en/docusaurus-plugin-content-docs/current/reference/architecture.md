@@ -5,6 +5,8 @@ description: This page explains how responsibilities are split between the iPhon
 
 CodexPocket does not finish the work on the iPhone alone. The real Codex process, workspace access, and Git operations all happen on the Mac. The iPhone is the screen you use to open and continue that Mac-side work.
 
+![Diagram of the CodexPocket architecture](/img/docs/architecture-flow.svg)
+
 ## The shape to remember first
 
 ```text
@@ -58,4 +60,3 @@ For the first setup, QR is the easiest path. After import, the authentication to
 - for connection or QR issues: `Pairing` and `Bridge` on the Mac
 - for `Project` list questions: `Projects` on the Mac
 - for understanding why something is not working: `General`, `Logs`, and `Details` on the Mac
-

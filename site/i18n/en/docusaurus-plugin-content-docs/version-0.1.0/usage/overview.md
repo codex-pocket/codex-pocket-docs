@@ -8,6 +8,8 @@ The `Usage` section explains how to continue the Codex work you normally run on 
 
 The mental model is simple: the real work continues on the Mac, while the iPhone lets you quickly check what is happening, send the next instruction, and switch context when needed.
 
+![Diagram of the Project to Thread to Composer workflow](/img/docs/thread-workflow.svg)
+
 ## Core flow to remember
 
 1. Open the target workspace from `Home` or `Projects`.
@@ -43,4 +45,3 @@ The mental model is simple: the real work continues on the Mac, while the iPhone
 - use `Skills` and `Exec`
 
 Even if the live connection on the iPhone drops, the work on the Mac often keeps going. When you are away from the desk, it helps to think of the iPhone as the window for progress checks and follow-up instructions.
-

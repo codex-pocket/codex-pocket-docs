@@ -552,6 +552,41 @@ export default function Home(): ReactNode {
           <div className="container">
             <div className={styles.sectionHeading}>
               <span className={styles.sectionEyebrow}>
+                <Translate id="home.section.scenarios.eyebrow">向いている場面</Translate>
+              </span>
+              <Heading as="h2" className={styles.sectionTitle}>
+                <Translate id="home.section.scenarios.title">こういう瞬間に刺さる</Translate>
+              </Heading>
+            </div>
+            <div className={styles.featuredScenarioGrid}>
+              {featuredScenarios.map((item) => (
+                <article key={item.title} className={styles.featuredScenarioCard}>
+                  <div className={styles.featuredScenarioMedia}>
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt}
+                      className={styles.featuredScenarioImage}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className={styles.featuredScenarioContent}>
+                    <span className={styles.featuredScenarioEyebrow}>{item.eyebrow}</span>
+                    <Heading as="h3" className={styles.featuredScenarioTitle}>
+                      {item.title}
+                    </Heading>
+                    <p className={styles.featuredScenarioBody}>{item.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeading}>
+              <span className={styles.sectionEyebrow}>
                 <Translate id="home.section.benefits.eyebrow">できること</Translate>
               </span>
               <Heading as="h2" className={styles.sectionTitle}>
@@ -590,41 +625,6 @@ export default function Home(): ReactNode {
                     {item.title}
                   </Heading>
                   <p className={styles.stepBody}>{item.body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <div className="container">
-            <div className={styles.sectionHeading}>
-              <span className={styles.sectionEyebrow}>
-                <Translate id="home.section.scenarios.eyebrow">向いている場面</Translate>
-              </span>
-              <Heading as="h2" className={styles.sectionTitle}>
-                <Translate id="home.section.scenarios.title">こういう瞬間に刺さる</Translate>
-              </Heading>
-            </div>
-            <div className={styles.featuredScenarioGrid}>
-              {featuredScenarios.map((item) => (
-                <article key={item.title} className={styles.featuredScenarioCard}>
-                  <div className={styles.featuredScenarioMedia}>
-                    <img
-                      src={item.imageSrc}
-                      alt={item.imageAlt}
-                      className={styles.featuredScenarioImage}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div className={styles.featuredScenarioContent}>
-                    <span className={styles.featuredScenarioEyebrow}>{item.eyebrow}</span>
-                    <Heading as="h3" className={styles.featuredScenarioTitle}>
-                      {item.title}
-                    </Heading>
-                    <p className={styles.featuredScenarioBody}>{item.body}</p>
-                  </div>
                 </article>
               ))}
             </div>

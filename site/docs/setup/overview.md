@@ -8,6 +8,8 @@ import MacDownloadLink from '@site/src/components/MacDownloadLink';
 
 CodexPocket のセットアップは、「Mac で待ち受ける」「iPhone で読み取る」「そのまま続きを触る」の 3 段階です。Mac で使っている Codex を、iPhone から触れるようにする準備だと考えると分かりやすくなります。
 
+![Mac で待ち受けて iPhone で取り込むセットアップの流れ](/img/docs/setup-overview-hero.webp)
+
 1. Mac 側を整える
 2. iPhone で Mac を取り込む
 3. Project と Thread が見えることを確かめる

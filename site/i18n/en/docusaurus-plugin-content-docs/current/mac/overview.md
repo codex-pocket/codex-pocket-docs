@@ -6,6 +6,8 @@ description: This section collects only the Mac-side setup that actually matters
 
 The execution side of CodexPocket is the Mac. The iPhone is the control surface, so you can start as soon as Codex works normally on the Mac and `CodexPocketMac` can wait for connections.
 
+![Illustration of the Mac side acting as the CodexPocket control center](/img/docs/mac-overview-hero.webp)
+
 ## How to get CodexPocketMac
 
 <a class="button button--primary button--lg margin-right--sm margin-bottom--sm" href="https://github.com/codex-pocket/codex-pocket-releases/releases">Download the Mac app</a>

@@ -25,6 +25,7 @@ const sidebars: SidebarsConfig = {
         'mac/install-codex-cli',
         'mac/install-git',
         'mac/create-project',
+        'mac/register-project',
         'mac/start-bridge',
       ],
     },

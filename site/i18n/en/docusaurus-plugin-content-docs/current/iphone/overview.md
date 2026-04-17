@@ -12,6 +12,8 @@ If you already know Codex well on the Mac, there is not much new to learn on iPh
 
 For now, CodexPocket assumes the iPhone and Mac are on the same local network. If the Mac side is not ready yet, check [Start on Mac](../mac/). If you want the detailed network conditions, see [Network Requirements](../shared/network-requirements).
 
+![Illustration of following a Codex thread from iPhone while away from the desk](/img/docs/iphone-overview-hero.webp)
+
 ## Common things to do on iPhone
 
 - open an active `Thread` and read the `Answer` and `Work Log`

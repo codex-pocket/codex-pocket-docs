@@ -13,6 +13,16 @@ CodexPocket は、Mac で動く `CodexPocketMac` と、iPhone の `CodexPocket` 
 
 まずは「Mac 側の Bridge が動いているか」と「iPhone が同じネットワークから見に行けるか」を確認すると、切り分けが早くなります。
 
+## 症状から探す
+
+| 症状 | 読むページ |
+| --- | --- |
+| QR が読めない、保存後に止まる、認証に失敗する | [Pairing できないとき](./cannot-pair) |
+| Pairing は済んだのに Project が見えない | [Project が表示されないとき](./cannot-see-projects) |
+| 以前つながっていた Host に戻れない | [再接続と再 Pairing](./reconnect-host) |
+| まず Mac 側のログと検出状態を見たい | [ログを確認する](./check-logs) |
+| 同じ LAN や接続条件を見直したい | [接続に必要なネットワーク条件](../shared/network-requirements) |
+
 ## 先に確認すると早い 5 項目
 
 1. Mac の `一般` で `ランタイム` が `実行中` になっている

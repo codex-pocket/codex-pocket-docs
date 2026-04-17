@@ -14,6 +14,16 @@ For now, CodexPocket assumes the iPhone and Mac are on the same local network. I
 
 ![Illustration of following a Codex thread from iPhone while away from the desk](/img/docs/iphone-overview-hero.webp)
 
+## Find the right page fast
+
+| If you want to... | Read this page |
+| --- | --- |
+| check the current distribution status and install path | [Get the iPhone App](./getting-started) |
+| know what to review on first launch | [What to Check on First Launch](./first-launch) |
+| add a Host by QR or code | [Add the Mac](./add-host) |
+| revisit the Mac-side preparation first | [Start on Mac](../mac/) |
+| troubleshoot missing projects or threads | [Cannot See Projects](../troubleshooting/cannot-see-projects) |
+
 ## Common things to do on iPhone
 
 - open an active `Thread` and read the `Answer` and `Work Log`

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+mode="${CODEX_HOOK_MODE:-staged}"
+
+case "$mode" in
+  staged)
+    diff_output="$(git diff --cached --name-only --diff-filter=ACMR)"
+    check_arg="--staged"
+    ;;
+  worktree)
+    diff_output="$(
+      {
+        git diff --name-only --diff-filter=ACMR HEAD
+        git ls-files --others --exclude-standard
+      } | awk 'NF'
+    )"
+    check_arg="--worktree"
+    ;;
+  *)
+    printf 'Unsupported CODEX_HOOK_MODE: %s\n' "$mode" >&2
+    exit 1
+    ;;
+esac
+
+if ! printf '%s\n' "$diff_output" | grep -Eq '^site/(docs|i18n/en/docusaurus-plugin-content-docs/current)/.*\.md$'; then
+  echo "Skipping docs pre-commit checks: no staged current docs markdown changes."
+  exit 0
+fi
+
+echo "Running current docs checks from pre-commit hook..."
+./scripts/run-current-doc-checks.sh "$check_arg"

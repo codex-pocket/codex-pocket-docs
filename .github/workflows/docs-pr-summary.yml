@@ -1,0 +1,23 @@
+name: Docs PR Summary
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Write changed docs summary
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: ./scripts/summarize-doc-changes.sh "$BASE_SHA" "$HEAD_SHA" >> "$GITHUB_STEP_SUMMARY"

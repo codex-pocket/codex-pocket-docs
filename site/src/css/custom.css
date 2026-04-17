@@ -190,7 +190,33 @@ h6 {
 }
 
 @media (max-width: 996px) {
+  .navbar__docs-link.navbar__item {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0.38rem 0.78rem;
+    border: 1px solid rgba(255, 155, 63, 0.28);
+    border-radius: 999px;
+    background: rgba(255, 155, 63, 0.1);
+    color: var(--ifm-font-color-base);
+    font-size: 0.88rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .navbar__docs-link.navbar__item:hover,
+  .navbar__docs-link.navbar__item.navbar__link--active {
+    background: rgba(255, 155, 63, 0.16);
+    color: var(--ifm-font-color-base);
+  }
+
   .navbar-sidebar {
     background: var(--ifm-background-color);
+  }
+}
+
+@media (min-width: 997px) {
+  .navbar__item.dropdown:has(> .navbar__guide-menu) {
+    display: none;
   }
 }

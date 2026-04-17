@@ -173,6 +173,54 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Docs',
+          className: 'navbar__docs-link',
+        },
+        {
+          label: '目次',
+          position: 'left',
+          className: 'navbar__guide-menu',
+          items: [
+            {
+              type: 'doc',
+              docId: 'intro',
+              label: 'はじめに',
+            },
+            {
+              type: 'doc',
+              docId: 'setup/overview',
+              label: '準備と前提',
+            },
+            {
+              type: 'doc',
+              docId: 'mac/overview',
+              label: 'Mac アプリ',
+            },
+            {
+              type: 'doc',
+              docId: 'iphone/overview',
+              label: 'iPhone アプリ',
+            },
+            {
+              type: 'doc',
+              docId: 'shared/overview',
+              label: 'Mac と iPhone の連携',
+            },
+            {
+              type: 'doc',
+              docId: 'usage/overview',
+              label: '使い方',
+            },
+            {
+              type: 'doc',
+              docId: 'troubleshooting/overview',
+              label: '困ったとき',
+            },
+            {
+              type: 'doc',
+              docId: 'reference/overview',
+              label: 'リファレンス',
+            },
+          ],
         },
         {
           href: `https://github.com/${repoOwner}/${repoName}`,

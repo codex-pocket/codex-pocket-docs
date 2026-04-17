@@ -38,8 +38,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Docusaurus
-        run: npm run build
+      - name: Validate and build docs
+        run: npm run validate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5.0.0

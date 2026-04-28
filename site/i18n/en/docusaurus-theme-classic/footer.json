@@ -35,6 +35,10 @@
     "message": "Privacy Policy",
     "description": "The label of footer link with label=プライバシーポリシー linking to /privacy-policy"
   },
+  "link.item.label.特定商取引法に基づく表記": {
+    "message": "Commercial Disclosure",
+    "description": "The label of footer link with label=特定商取引法に基づく表記 linking to /commercial-disclosure"
+  },
   "link.item.label.Docusaurus": {
     "message": "Docusaurus",
     "description": "The label of footer link with label=Docusaurus linking to https://docusaurus.io/"

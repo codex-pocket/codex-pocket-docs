@@ -270,6 +270,10 @@ const config: Config = {
               href: `https://github.com/${repoOwner}/${repoName}/issues`,
             },
             {
+              label: '利用規約',
+              to: '/terms',
+            },
+            {
               label: 'プライバシーポリシー',
               to: '/privacy-policy',
             },

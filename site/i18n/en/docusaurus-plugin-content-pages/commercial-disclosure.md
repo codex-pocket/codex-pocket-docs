@@ -8,6 +8,8 @@ Last updated: April 28, 2026
 
 This page provides commerce disclosure information for CodexPocket.
 
+<div className="site-table site-table--key-value">
+
 | Item | Details |
 | --- | --- |
 | Corporate name / seller name | CodexPocket |
@@ -27,3 +29,5 @@ This page provides commerce disclosure information for CodexPocket.
 | Application period | If an application deadline is shown on the application page, applications are accepted until that deadline. If no deadline is shown, applications are accepted at any time. |
 | Quantity limits | If a quantity limit is shown on the application page, that limit applies. If no limit is shown, no quantity limit applies. |
 | Operating environment | CodexPocket requires a compatible iPhone, Mac, network environment, Codex CLI, Git, and related setup. See [Requirements](/docs/setup/requirements) and [Supported Environments](/docs/setup/supported-environments). |
+
+</div>

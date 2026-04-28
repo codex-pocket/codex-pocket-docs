@@ -25,6 +25,10 @@
 - 作業一覧、やり取り、入力欄の基本操作
 - 現在の前提条件と向いている使い方
 
+## 表の見せ方
+
+通常の Markdown 表はそのまま使います。項目名と説明を対応させる開示事項や定義リストのように、表として明示的に読ませたい場合だけ、表を `<div className="site-table site-table--key-value">` で包みます。画像比較表や 3 列以上の一覧表には、この key-value 用の class を流用しません。
+
 ## サポート
 
 - 公開ドキュメント: [CodexPocket Docs](https://codex-pocket.github.io/codex-pocket-docs/)

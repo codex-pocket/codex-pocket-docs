@@ -167,6 +167,56 @@ h6 {
   border: 1px solid var(--site-border);
 }
 
+/* Use site-table wrappers when a Markdown table needs deliberate presentation. */
+.site-table {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  background: var(--site-surface);
+}
+
+.site-table table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  table-layout: fixed;
+}
+
+.site-table th,
+.site-table td {
+  box-sizing: border-box;
+  padding: 0.95rem 1rem;
+  border-color: var(--site-border);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.site-table th {
+  background: rgba(255, 155, 63, 0.14);
+  color: var(--ifm-heading-color);
+  font-weight: 700;
+}
+
+.site-table--key-value th:first-child,
+.site-table--key-value td:first-child {
+  width: 13.5rem;
+}
+
+.site-table--key-value td:first-child {
+  background: rgba(255, 155, 63, 0.08);
+  color: var(--ifm-heading-color);
+  font-weight: 700;
+}
+
+[data-theme='dark'] .site-table th {
+  background: rgba(255, 155, 63, 0.16);
+}
+
+[data-theme='dark'] .site-table--key-value td:first-child {
+  background: rgba(255, 155, 63, 0.1);
+}
+
 .pagination-nav__link {
   border-radius: 1.2rem;
   border-color: var(--site-border);
@@ -190,6 +240,10 @@ h6 {
 }
 
 @media (max-width: 996px) {
+  .navbar {
+    backdrop-filter: none;
+  }
+
   .navbar__docs-link.navbar__item {
     display: inline-flex;
     align-items: center;
@@ -212,6 +266,48 @@ h6 {
 
   .navbar-sidebar {
     background: var(--ifm-background-color);
+  }
+
+  .site-table--key-value {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .site-table--key-value table,
+  .site-table--key-value tbody,
+  .site-table--key-value tr,
+  .site-table--key-value th,
+  .site-table--key-value td {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .site-table--key-value thead {
+    display: none;
+  }
+
+  .site-table--key-value table {
+    table-layout: auto;
+  }
+
+  .site-table--key-value tr {
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--site-border);
+    border-radius: 8px;
+    background: var(--site-surface);
+  }
+
+  .site-table--key-value td {
+    border: 0;
+  }
+
+  .site-table--key-value td:first-child {
+    width: 100%;
+    border-bottom: 1px solid var(--site-border);
+    font-size: 0.88rem;
   }
 }
 

@@ -8,6 +8,8 @@ slug: /commercial-disclosure
 
 本ページは、CodexPocket の通信販売に関する表示事項です。
 
+<div className="site-table site-table--key-value">
+
 | 項目 | 内容 |
 | --- | --- |
 | 法人名・販売事業者名 | CodexPocket |
@@ -27,3 +29,5 @@ slug: /commercial-disclosure
 | 申込期間 | 申込ページに期限の表示がある場合は、当該期限までお申し込みいただけます。特段の表示がない場合は、随時お申し込みいただけます。 |
 | 販売数量の制限 | 申込ページに数量制限の表示がある場合は、当該表示に従います。特段の表示がない場合、数量制限はありません。 |
 | 動作環境 | CodexPocket の利用には、対応する iPhone、Mac、ネットワーク環境、Codex CLI、Git などが必要です。詳しくは [必要なもの](/docs/setup/requirements) と [対応環境](/docs/setup/supported-environments) をご確認ください。 |
+
+</div>

@@ -7,7 +7,7 @@ description: This page explains the current distribution status and what you see
 
 - App Store: no public page right now
 - TestFlight: no public link right now
-- Mac stable: `0.1.3` is public
+- Mac stable: `0.1.4` is public
 
 Even while there is no public App Store / TestFlight link, this page lets you confirm the first screen and the first checkpoints in advance.
 

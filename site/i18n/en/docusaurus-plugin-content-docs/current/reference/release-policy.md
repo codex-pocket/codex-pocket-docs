@@ -1,5 +1,6 @@
 ---
 title: Release Policy
+description: How to read stable and next, and how public releases move forward.
 ---
 
 # Release Policy
@@ -9,7 +10,7 @@ This site uses Docusaurus docs versioning so the stable release and `next` can b
 ## Stable and next
 
 - `/docs/`
-  latest fully published release `0.1.3`
+  latest fully published release `0.1.4`
 - `/docs/next/`
   next unreleased or review-pending version
 

@@ -47,7 +47,7 @@ description: A short editorial-facing brief that explains the value, core flow, 
 | Companion | CodexPocketMac |
 | Network | same local network |
 | Languages | Japanese, English |
-| Mac distribution | public stable `0.1.3` |
+| Mac distribution | public stable `0.1.4` |
 | iPhone distribution | App Store launch preparation in progress |
 
 ## Privacy and permissions

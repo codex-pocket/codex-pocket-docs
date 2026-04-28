@@ -1,5 +1,6 @@
 ---
 title: Release Versioning
+description: How to read stable and next in this documentation site.
 ---
 
 # Release Versioning
@@ -9,7 +10,7 @@ This site uses Docusaurus docs versioning so the stable release and `next` can b
 ## Current rules
 
 - `/docs/`
-  latest stable release `0.1.3`
+  latest stable release `0.1.4`
 - `/docs/next/`
   next unreleased version
 

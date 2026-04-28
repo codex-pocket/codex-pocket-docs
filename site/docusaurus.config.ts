@@ -273,6 +273,10 @@ const config: Config = {
               label: 'プライバシーポリシー',
               to: '/privacy-policy',
             },
+            {
+              label: '特定商取引法に基づく表記',
+              to: '/commercial-disclosure',
+            },
           ],
         },
         {

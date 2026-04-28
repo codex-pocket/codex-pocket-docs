@@ -36,6 +36,7 @@ The two things you want here are:
 - `codex app-server --help` does not fail
 
 If `codex` itself launches but `codex app-server --help` fails, the CLI may be outdated or broken.
+`CodexPocketMac` can start with a different PATH than Terminal, but it also checks the standard Homebrew / system install paths.
 
 ## 3. Confirm that it is current, then update it
 
@@ -66,10 +67,10 @@ If you installed it some other way, update it with the same method you used orig
 
 ## If it does not work
 
-- if `which codex` is empty, revisit the Codex CLI installation or PATH
+- if `which codex` is empty, inspect where Codex CLI is installed. If it is outside the standard Homebrew / system install paths, revisit PATH too
 - if `codex --version` works but `codex` does not launch, revisit shell setup and execution permissions
 - if `codex` launches but `codex app-server --help` fails, update the CLI and check again
-- if Terminal works but the Mac app does not detect it, restart the Mac app
+- if Terminal works but the Mac app does not detect it, restart the Mac app. If it still does not change, inspect the install path and PATH
 - you can also inspect the state on the `Codex CLI` row in `Details`
 - if `General` shows `Bridge prerequisites are not satisfied`, this page is the first place to look
 

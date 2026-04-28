@@ -102,7 +102,7 @@ If something works in Terminal but not in the Mac app, checking the path seen by
 
 ### A state close to `Codex CLI missing`
 
-Look at `Codex CLI` in `Details`. Even if `which codex` works in Terminal, the Mac app may see a different PATH. Restart the Mac app first, and if it still does not change, fix the PATH side.
+Look at `Codex CLI` in `Details`. Even if `which codex` works in Terminal, the Mac app may see a different PATH. The Mac app also checks the standard Homebrew / system install paths, so if restarting the app does not change the result, inspect the install path and PATH.
 
 ### `git missing`
 
@@ -131,4 +131,3 @@ Whether you are narrowing it down yourself or reporting it later, this is usuall
 - the message shown on the iPhone
 
 A few lines from just before and after the symptom are usually more useful than pasting the entire log.
-

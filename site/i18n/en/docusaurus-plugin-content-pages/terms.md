@@ -44,7 +44,7 @@ When a free trial is offered, its eligible features, duration, number of uses, a
 
 ## 6. Cancellation, Refunds, and Account Deletion
 
-Subscriptions can be canceled through the account management page provided to the User, Stripe Customer Portal, or a support contact specified by us. Unless otherwise stated, after cancellation the applicable paid features remain available until the end of the paid usage period.
+Users can cancel subscriptions themselves through a cancellation feature provided in the Service or on the web. This feature may include an account management page, a link to Stripe Customer Portal, or another cancellation page we provide. A support contact specified by us is available only as a fallback when the cancellation feature cannot be accessed. Unless otherwise stated, after cancellation the applicable paid features remain available until the end of the paid usage period.
 
 Due to the nature of digital services, refunds, prorated refunds, and cancellations for customer convenience are not provided after service provision begins. This does not apply where required by law or individually approved by us. Handling of service defects follows the [Commerce Disclosure](/commercial-disclosure).
 

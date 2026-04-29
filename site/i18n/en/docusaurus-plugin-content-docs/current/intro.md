@@ -26,7 +26,7 @@ I built it because being stuck in front of a Mac all day is tiring. The core ide
 - No need to recreate your development environment on iPhone
 - The Mac keeps doing the real work while the iPhone acts as the control surface
 
-Right now, CodexPocket assumes your Mac and iPhone are on the same local network. When you need deeper setup or troubleshooting, you still do that part on the Mac.
+First setup happens while your Mac and iPhone are on the same local network. After Managed Relay information is saved for a Host, you can also connect from another Wi-Fi network or mobile data. When you need deeper setup or troubleshooting, you still do that part on the Mac.
 
 ## Where it helps most
 

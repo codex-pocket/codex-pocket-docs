@@ -10,7 +10,7 @@ For the current distribution status and the install path, start with [Get the iP
 
 If you already know Codex well on the Mac, there is not much new to learn on iPhone. Once you add one `Host`, you can open a `Project`, read a `Thread`, send a quick follow-up, and do light switches without going back to the Mac.
 
-For now, CodexPocket assumes the iPhone and Mac are on the same local network. If the Mac side is not ready yet, check [Start on Mac](../mac/). If you want the detailed network conditions, see [Network Requirements](../shared/network-requirements).
+For first setup, the iPhone and Mac need to be on the same local network. After Managed Relay information is saved for a Host, you can also connect from another Wi-Fi network or mobile data. If the Mac side is not ready yet, check [Start on Mac](../mac/). If you want the detailed network conditions, see [Network Requirements](../shared/network-requirements).
 
 ![Illustration of following a Codex thread from iPhone while away from the desk](/img/docs/iphone-overview-hero.webp)
 

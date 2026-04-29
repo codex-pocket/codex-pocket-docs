@@ -44,16 +44,17 @@ This is especially common:
 
 Pull down to refresh in `Projects`. Refresh from `Hosts` is also fine.
 
-### The Host connects, but the devices are not on the same network
+### The Host connects, but only Project refresh fails
 
-Because the current release assumes a local network, just keeping old Host information is not enough. If the Mac is not visible from the place you are now, the iPhone cannot fetch `Projects`.
+A Host with Managed Relay information saved automatically falls back to Relay even when the local connection is not reachable from your current location. If only `Project` refresh fails, check both the network path and the Host's saved state on the Mac side.
 
 Check these:
 
-- the Mac and iPhone are on the same Wi-Fi
-- the iPhone did not fall back to mobile data
-- local network permission is enabled on the iPhone
+- `CodexPocketMac` is running on the Mac
 - the Mac is not asleep
+- Managed Relay information is saved for the Host
+- if the Host does not have Managed Relay yet, the Mac and iPhone are on the same Wi-Fi
+- before first setup or retry setup, local network permission is enabled on the iPhone
 
 If `Connection Test` fails in `Hosts`, fix the connection side first.
 
@@ -95,4 +96,3 @@ Check in this order:
    stdout and stderr
 
 If the logs suggest that Bridge itself is unstable, move on to [Check the Logs](./check-logs).
-

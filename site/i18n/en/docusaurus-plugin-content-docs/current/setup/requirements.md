@@ -83,8 +83,9 @@ If all you want is reading threads and sending normal requests, CodexPocket can 
 
 ## Network and permissions
 
-- the Mac and iPhone must be on the same local network
+- during first setup, the Mac and iPhone must be on the same local network
 - local network access must be allowed on the iPhone
+- the Host you want to use from another Wi-Fi network or mobile data must have Managed Relay information saved
 - if you add the Host with QR, the iPhone camera must be available
 
 ## Nice to have before you start

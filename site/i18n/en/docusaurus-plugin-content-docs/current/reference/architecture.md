@@ -50,6 +50,7 @@ So if the network gets unstable while you are away from the desk, the first ques
 
 - the display name of the Mac
 - the local endpoint to connect to
+- Managed Relay connection information
 - the authentication token
 - optional notes
 

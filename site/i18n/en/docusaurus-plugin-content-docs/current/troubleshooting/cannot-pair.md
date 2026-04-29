@@ -75,13 +75,14 @@ If you are unsure, QR is safer than manual entry because it imports both the end
 
 ### The QR scans, but the connection fails somewhere else
 
-The current release assumes the same local network. You can use the iPhone away from the Mac physically, but the Mac still has to be visible on the same network.
+During first setup, the Mac and iPhone need to be visible on the same local network. After setup finishes, the Host stores both local connection candidates and Managed Relay connection information.
 
-Pairing or follow-up connection will fail in cases such as:
+A Host with Managed Relay saved first tries the local connection on the same Wi-Fi. If that is not reachable, it automatically falls back to Relay. As long as `CodexPocketMac` is running on the Mac, the following states can still work:
 
 - the Mac and iPhone are on different Wi-Fi networks
 - the iPhone switched over to mobile data
-- local network permission is off on the iPhone
+
+If the Host is old enough that Managed Relay was not saved, or if it was created manually, return to the same Wi-Fi as the Mac and use `Retry Setup`. If the iPhone can reach the Mac there, it will import Relay information and become eligible for automatic fallback next time.
 
 ## Mac-side prerequisites that often block pairing
 
@@ -106,4 +107,3 @@ Pairing again is often faster if any of these are true:
 - the Host is saved, but `Retry Setup` keeps ending in authentication or missing-field errors
 
 In that case, delete the old Host on the iPhone and import it again from `Pairing` on the Mac.
-

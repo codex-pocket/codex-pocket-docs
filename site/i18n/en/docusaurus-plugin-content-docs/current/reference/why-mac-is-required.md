@@ -9,8 +9,8 @@ When people first see `CodexPocket`, a natural question is: why does an iPhone a
 
 - The iPhone is the screen you use to open projects and threads, send follow-up instructions, and read results.
 - The real Codex process, workspace access, and Git operations stay on the Mac.
-- The current public release assumes that your iPhone and your own Mac are on the same local network.
-- The iPhone app does not depend on a cloud relay or developer-operated backend for its core operation.
+- First setup requires your iPhone and your own Mac to be on the same local network.
+- Hosts with Managed Relay information saved can connect from another Wi-Fi network or mobile data.
 
 The short version is that `CodexPocket` is a companion app for continuing work already running on your Mac.
 
@@ -38,12 +38,12 @@ Because of this structure, the iPhone app is not a separate execution environmen
 
 ## Network assumptions
 
-The current public release is designed for a Mac and iPhone on the same LAN.
+First setup is designed for a Mac and iPhone on the same LAN. After Managed Relay information is saved for a Host, the app automatically falls back to Relay when the local connection is not reachable.
 
 - The main connection paths are Bonjour and a local URL.
-- The pairing QR code contains connection candidates and the access token.
+- The pairing QR code contains connection candidates, the access token, and Managed Relay connection information.
 - The `Direct Bridge URL` field is only a recovery path for entering a same-LAN hostname or IP manually if Bonjour discovery fails.
-- Internet relay connections are outside the scope of this release.
+- Directly exposing the Bridge over the internet without Managed Relay is outside the supported scope.
 
 For more detail, see [Network Requirements](../shared/network-requirements).
 
@@ -53,7 +53,7 @@ The current iPhone app uses the following permissions:
 
 | Permission | Why it is used |
 | --- | --- |
-| Local Network | To discover and connect to your own Mac bridge on the same LAN |
+| Local Network | To discover and connect to your own Mac bridge on the same LAN during first setup and local connections |
 | Camera | To scan the pairing QR code shown on the Mac |
 | Photos | To attach an image you explicitly choose through the system photo picker |
 | Notifications | To show on-device local alerts such as task completion |
@@ -71,7 +71,7 @@ For the current iPhone app, the main points are straightforward:
 
 - the iPhone app does not send user data to developer-operated servers for storage
 - the iPhone app does not include analytics, advertising, or tracking SDKs
-- input sent from the iPhone is sent primarily to your own Mac
+- input sent from the iPhone is sent primarily to your own Mac. When Managed Relay is used, execution and the source of truth for threads still stay on the Mac
 - host information and bridge tokens are kept securely with Keychain on the iPhone
 
 Another useful way to think about it is this:
@@ -83,7 +83,7 @@ Another useful way to think about it is this:
 - `What the developer does not keep`
   user data sent from the iPhone app to a developer backend for storage
 
-One nuance is worth calling out clearly: whether the Mac-side Codex environment connects to external services depends on the configuration of your own Mac. The iPhone app itself does not embed a third-party AI SDK or directly call a third-party AI API.
+One nuance is worth calling out clearly: whether the Mac-side Codex environment connects to external services depends on the configuration of your own Mac. The iPhone app itself does not embed a third-party AI SDK or directly call a third-party AI API. Managed Relay is a connection path back to the Mac; it does not create another Codex runtime on the iPhone.
 
 For more detail, see the [Privacy Policy](/privacy-policy).
 

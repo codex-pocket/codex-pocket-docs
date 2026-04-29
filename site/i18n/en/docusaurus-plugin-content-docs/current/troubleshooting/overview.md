@@ -11,7 +11,7 @@ CodexPocket works as a combination of `CodexPocketMac` on the Mac and `CodexPock
 - you cannot reconnect to a `Host` that used to work
 - you do not know where to look for the cause
 
-The fastest first cut is still: `Is Bridge running on the Mac?` and `Can the iPhone reach it from the same network?`
+The fastest first cut is still: `Is Bridge running on the Mac?` and `Does the Host have Managed Relay information saved?` For first setup or Hosts without Relay information, also check whether the iPhone can reach the Mac from the same network.
 
 ## Find the right page fast
 
@@ -21,7 +21,7 @@ The fastest first cut is still: `Is Bridge running on the Mac?` and `Can the iPh
 | fix missing projects after pairing | [If Projects Do Not Appear](./cannot-see-projects) |
 | reconnect to a Host that used to work | [Reconnect or Pair Again](./reconnect-host) |
 | inspect Mac-side logs and detection first | [Check the Logs](./check-logs) |
-| revisit same-network and connection requirements | [Network Requirements](../shared/network-requirements) |
+| revisit LAN / Relay and connection requirements | [Network Requirements](../shared/network-requirements) |
 
 ## Five checks that save time early
 
@@ -29,9 +29,9 @@ The fastest first cut is still: `Is Bridge running on the Mac?` and `Can the iPh
 2. `General` on the Mac does not show warnings such as `Bridge prerequisites are not satisfied` or legacy launchd conflicts
 3. The Mac can show a QR code in `Pairing`
 4. On the iPhone, `Connection Test` can run for the target Host
-5. The Mac and iPhone are on the same network
+5. For first setup or Hosts without Relay information, the Mac and iPhone are on the same network
 
-The current release assumes a local network. If you are trying to connect from somewhere else or through another network, first go back to the same network and then check again.
+A Host with Managed Relay saved can automatically fall back to Relay from another place or network. If that fallback does not happen, check whether `CodexPocketMac` is running on the Mac and whether the Host has Relay information saved.
 
 ## Entry points by symptom
 

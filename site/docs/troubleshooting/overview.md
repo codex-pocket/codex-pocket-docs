@@ -11,7 +11,7 @@ CodexPocket は、Mac で動く `CodexPocketMac` と、iPhone の `CodexPocket` 
 - いったん使えていた `Host` に再接続できない
 - どこを見れば原因が分からない
 
-まずは「Mac 側の Bridge が動いているか」と「iPhone が同じネットワークから見に行けるか」を確認すると、切り分けが早くなります。
+まずは「Mac 側の Bridge が動いているか」と「Host に Managed Relay 情報が保存されているか」を確認すると、切り分けが早くなります。初回設定や Relay 未設定の Host では、iPhone が同じネットワークから見に行けることも確認してください。
 
 ## 症状から探す
 
@@ -21,7 +21,7 @@ CodexPocket は、Mac で動く `CodexPocketMac` と、iPhone の `CodexPocket` 
 | Pairing は済んだのに Project が見えない | [Project が表示されないとき](./cannot-see-projects) |
 | 以前つながっていた Host に戻れない | [再接続と再 Pairing](./reconnect-host) |
 | まず Mac 側のログと検出状態を見たい | [ログを確認する](./check-logs) |
-| 同じ LAN や接続条件を見直したい | [接続に必要なネットワーク条件](../shared/network-requirements) |
+| LAN / Relay や接続条件を見直したい | [接続に必要なネットワーク条件](../shared/network-requirements) |
 
 ## 先に確認すると早い 5 項目
 
@@ -29,9 +29,9 @@ CodexPocket は、Mac で動く `CodexPocketMac` と、iPhone の `CodexPocket` 
 2. Mac の `一般` に `Bridge の前提条件を満たしていません` や legacy launchd の警告が出ていない
 3. Mac の `ペアリング` で QR を表示できる
 4. iPhone の `ホスト` で対象 Host に `接続テスト` を実行できる
-5. Mac と iPhone が同じネットワークにいる
+5. 初回設定や Relay 未設定の Host では、Mac と iPhone が同じネットワークにいる
 
-現在のリリースはローカルネットワーク前提です。外出先や別ネットワークから直接つなごうとしている場合は、まず同じネットワークに戻してから確認してください。
+Managed Relay が保存済みの Host は、外出先や別ネットワークでも Relay へ自動で切り替わります。切り替わらない場合は、Mac 側の CodexPocketMac が起動しているか、Host に Relay 情報が保存されているかを確認してください。
 
 ## 症状別の入口
 

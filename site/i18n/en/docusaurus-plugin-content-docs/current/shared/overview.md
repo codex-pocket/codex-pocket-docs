@@ -20,7 +20,7 @@ In CodexPocket, the real work keeps running on the Mac. On the iPhone, what you 
 | --- | --- |
 | follow the QR-based linking steps in order | [Pair the Devices](./pairing-and-bridge) |
 | confirm whether the connection actually worked | [Confirm the Connection](./check-connection) |
-| check the same-LAN and port requirements | [Network Requirements](./network-requirements) |
+| check LAN / Relay and port requirements | [Network Requirements](./network-requirements) |
 | troubleshoot a pairing failure itself | [Cannot Pair](../troubleshooting/cannot-pair) |
 | revisit the Mac-side setup first | [Start on Mac](../mac/) |
 
@@ -29,7 +29,7 @@ In CodexPocket, the real work keeps running on the Mac. On the iPhone, what you 
 - what happens during the first link
 - the difference between `Pairing` and `Bridge`
 - where to confirm that the link worked
-- the network conditions required for the connection
+- the network conditions for first setup and Managed Relay
 
 ## The flow
 

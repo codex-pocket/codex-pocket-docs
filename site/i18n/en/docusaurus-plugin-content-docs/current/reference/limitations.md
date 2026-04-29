@@ -7,7 +7,8 @@ CodexPocket is not meant to replace the Mac completely. It narrows the feature s
 
 ## Current assumptions
 
-- the Mac and iPhone are on the same local network
+- during first setup, the Mac and iPhone need to be on the same local network
+- Hosts with Managed Relay information saved can connect from another Wi-Fi network or mobile data
 - the mobile side is designed for iPhone
 - `CodexPocketMac` and `Bridge` are running on the Mac
 

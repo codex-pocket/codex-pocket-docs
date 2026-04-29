@@ -10,14 +10,14 @@ description: A short editorial-facing brief that explains the value, core flow, 
 ## In one sentence
 
 - Keep the real execution on the Mac, while using the iPhone to check progress and send follow-ups
-- Pair with a QR code and connect directly to your own Mac on the same LAN
+- Pair with a QR code and connect to your own Mac on the same LAN for first setup
 - Open projects and threads, send short instructions, switch branches, run one-shot exec, and review results from the phone
 
 ## What this launch is trying to show
 
 - long-running Codex work can stay useful even when you step away from the desk
 - the real workspace, Git state, and thread source of truth remain on the Mac
-- the iPhone app does not depend on a developer-operated backend or cloud relay for its core path
+- even when Managed Relay is used, the runtime and thread source of truth remain on the user's own Mac
 - the UI ships in Japanese and English
 
 ## The fastest way to understand the experience
@@ -35,7 +35,7 @@ description: A short editorial-facing brief that explains the value, core flow, 
 ## What makes it different
 
 - It does not try to turn the iPhone into a second IDE. It carries only the control surface away from the desk.
-- It connects directly to the user's own Mac on the same LAN.
+- It connects to the user's own Mac on the same LAN for first setup, then can continue from another network after Managed Relay is saved.
 - It focuses on a touch-first path built around pairing, projects, threads, and short follow-ups.
 - A large share of the app itself has already been built while using CodexPocket in day-to-day development.
 
@@ -45,7 +45,7 @@ description: A short editorial-facing brief that explains the value, core flow, 
 | --- | --- |
 | Client | iOS (iPhone) |
 | Companion | CodexPocketMac |
-| Network | same local network |
+| Network | same local network for first setup; another Wi-Fi network or mobile data after Managed Relay is saved |
 | Languages | Japanese, English |
 | Mac distribution | public stable `0.1.3` |
 | iPhone distribution | App Store launch preparation in progress |
@@ -54,7 +54,7 @@ description: A short editorial-facing brief that explains the value, core flow, 
 
 - the iPhone app does not send user data to developer-operated servers for storage
 - it does not include analytics, advertising, or tracking SDKs
-- `Local Network` is used only to discover and connect to the user's own Mac bridge, `Camera` only to scan the QR code, `Photos` only for user-chosen image attachments, and `Notifications` only for local on-device completion alerts
+- `Local Network` is used to discover the user's own Mac bridge during first setup and local connections, `Camera` only to scan the QR code, `Photos` only for user-chosen image attachments, and `Notifications` only for local on-device completion alerts
 
 ## Related pages
 

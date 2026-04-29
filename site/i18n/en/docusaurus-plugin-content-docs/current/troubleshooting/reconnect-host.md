@@ -40,7 +40,7 @@ It is not unusual for the connection to look dropped after the app stayed closed
 
 ### You just returned to the same network
 
-After a Wi-Fi switch or a short network wobble, `Connection Test` and refresh are often enough.
+After a Wi-Fi switch or a short network wobble, `Connection Test` and refresh are often enough. Hosts with Managed Relay saved automatically fall back to Relay when the local connection is not reachable.
 
 ## Cases where pairing again is often faster
 
@@ -100,7 +100,9 @@ For unstable networks or very first connections, a slightly longer `Timeout` can
 - the Mac is asleep
 - the home Wi-Fi looks the same, but the Mac and iPhone are actually on different SSIDs
 
-Because the current release assumes the local network, even when you are away from the desk physically, the Mac still needs to be visible from the same network.
+A Host with Managed Relay saved automatically falls back to Relay even from another Wi-Fi network or mobile data. If fallback does not happen, check whether `CodexPocketMac` is running on the Mac and whether Managed Relay information is saved for the Host.
+
+If Managed Relay has not been saved for the Host yet, return to the same network as the Mac and use `Retry Setup`. If the iPhone can reach the Mac there, it will import Relay information and become eligible for automatic fallback next time.
 
 ## Final checks before deleting and recreating the Host
 
@@ -111,4 +113,3 @@ Because the current release assumes the local network, even when you are away fr
 5. think back to whether the token or port changed recently
 
 If those checks make it clear that the token or endpoint is stale, that is the point where pairing again is enough.
-

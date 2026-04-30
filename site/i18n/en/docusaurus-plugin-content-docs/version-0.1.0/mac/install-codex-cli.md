@@ -19,6 +19,15 @@ The expected results are:
 - `which codex` prints a path
 - `codex app-server --help` does not fail
 
+Even when `codex` was installed with Homebrew, `which codex` may print a symlink under `bin`, such as `/opt/homebrew/bin/codex` or `/usr/local/bin/codex`. To confirm where it came from, inspect that path too:
+
+```bash
+CODEX_PATH="$(which codex)"
+ls -l "$CODEX_PATH"
+```
+
+If the `ls -l` target, or the `which codex` result itself, points into `/opt/homebrew/Caskroom/...` or `/usr/local/Caskroom/...`, it is installed as a Homebrew cask.
+
 ## If it does not work
 
 - if `which codex` is empty, revisit the Codex CLI installation or PATH

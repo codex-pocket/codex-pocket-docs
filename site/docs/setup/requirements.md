@@ -51,16 +51,24 @@ codex app-server --help
 which codex
 ```
 
-`/opt/homebrew/Caskroom/...` や `/usr/local/Caskroom/...` を指していれば、Homebrew で入っている状態です。その場合は次で更新できます。
+Homebrew で入れている場合でも、`which codex` は `/opt/homebrew/bin/codex` や `/usr/local/bin/codex` のような `bin` 配下の symlink を返すことがあります。まずそのパスを確認し、symlink ならリンク先も見ます。
+
+```bash
+CODEX_PATH="$(which codex)"
+printf '%s\n' "$CODEX_PATH"
+ls -l "$CODEX_PATH"
+```
+
+`ls -l` のリンク先、または `which codex` の結果そのものが `/opt/homebrew/Caskroom/...` や `/usr/local/Caskroom/...` を指していれば、Homebrew cask で入っている状態です。その場合は次で更新できます。
 
 ```bash
 brew update
-brew info codex
-brew upgrade codex
+brew info --cask codex
+brew upgrade --cask codex
 codex --version
 ```
 
-`brew info codex` でインストール済みと配布中のバージョンを見比べ、更新後に `codex --version` をもう一度実行します。Homebrew 以外で入れている場合は、最初に使った方法で更新したあと、同じく `codex --version` と `codex app-server --help` をやり直してください。
+`brew info --cask codex` でインストール済みと配布中のバージョンを見比べ、更新後に `codex --version` をもう一度実行します。Homebrew 以外で入れている場合は、最初に使った方法で更新したあと、同じく `codex --version` と `codex app-server --help` をやり直してください。
 
 ### 開きたい Project（作業フォルダ）が 1 件以上あること
 

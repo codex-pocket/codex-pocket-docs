@@ -19,6 +19,15 @@ codex app-server --help
 - `which codex` でパスが表示される
 - `codex app-server --help` がエラーにならない
 
+Homebrew で入れている場合でも、`which codex` は `/opt/homebrew/bin/codex` や `/usr/local/bin/codex` のような `bin` 配下の symlink を返すことがあります。導入元を確認したいときは、そのパスに対して次も実行します。
+
+```bash
+CODEX_PATH="$(which codex)"
+ls -l "$CODEX_PATH"
+```
+
+`ls -l` のリンク先、または `which codex` の結果そのものが `/opt/homebrew/Caskroom/...` や `/usr/local/Caskroom/...` を指していれば、Homebrew cask で入っている状態です。
+
 ## うまくいかないとき
 
 - `which codex` が空なら、Codex CLI のインストールや PATH を見直します

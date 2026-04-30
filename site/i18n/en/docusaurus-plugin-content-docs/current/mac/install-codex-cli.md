@@ -45,20 +45,28 @@ First, check where `codex` comes from:
 which codex
 ```
 
-If the path points to `/opt/homebrew/Caskroom/...` or `/usr/local/Caskroom/...`, it is installed with Homebrew. In that case, update it like this:
+Even when `codex` was installed with Homebrew, `which codex` may print a symlink under `bin`, such as `/opt/homebrew/bin/codex` or `/usr/local/bin/codex`. First check that path, then inspect the symlink target when there is one:
+
+```bash
+CODEX_PATH="$(which codex)"
+printf '%s\n' "$CODEX_PATH"
+ls -l "$CODEX_PATH"
+```
+
+If the `ls -l` target, or the `which codex` result itself, points into `/opt/homebrew/Caskroom/...` or `/usr/local/Caskroom/...`, it is installed as a Homebrew cask. In that case, update it like this:
 
 ```bash
 brew update
-brew info codex
-brew upgrade codex
+brew info --cask codex
+brew upgrade --cask codex
 codex --version
 codex app-server --help
 ```
 
 Here is how to read the result:
 
-- use `brew info codex` to compare the installed version with the available version
-- use `brew upgrade codex` to update it
+- use `brew info --cask codex` to compare the installed version with the available version
+- use `brew upgrade --cask codex` to update it
 - run `codex --version` again after the upgrade and confirm the version you expected
 - finish by running `codex app-server --help` again to confirm the feature CodexPocketMac needs is available too
 

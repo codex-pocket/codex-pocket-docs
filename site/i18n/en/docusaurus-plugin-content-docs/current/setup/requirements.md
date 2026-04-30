@@ -51,16 +51,24 @@ After checking the current version with `codex --version`, update it according t
 which codex
 ```
 
-If it points into `/opt/homebrew/Caskroom/...` or `/usr/local/Caskroom/...`, it is installed via Homebrew. In that case, update it like this:
+Even when `codex` was installed with Homebrew, `which codex` may print a symlink under `bin`, such as `/opt/homebrew/bin/codex` or `/usr/local/bin/codex`. First check that path, then inspect the symlink target when there is one:
+
+```bash
+CODEX_PATH="$(which codex)"
+printf '%s\n' "$CODEX_PATH"
+ls -l "$CODEX_PATH"
+```
+
+If the `ls -l` target, or the `which codex` result itself, points into `/opt/homebrew/Caskroom/...` or `/usr/local/Caskroom/...`, it is installed as a Homebrew cask. In that case, update it like this:
 
 ```bash
 brew update
-brew info codex
-brew upgrade codex
+brew info --cask codex
+brew upgrade --cask codex
 codex --version
 ```
 
-Use `brew info codex` to compare the installed and available versions, then run `codex --version` again after the update. If it was installed another way, update it with that same method, then rerun `codex --version` and `codex app-server --help`.
+Use `brew info --cask codex` to compare the installed and available versions, then run `codex --version` again after the update. If it was installed another way, update it with that same method, then rerun `codex --version` and `codex app-server --help`.
 
 ### At least one `Project` is ready to open
 

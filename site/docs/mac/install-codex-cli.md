@@ -45,20 +45,28 @@ codex app-server --help
 which codex
 ```
 
-`/opt/homebrew/Caskroom/...` や `/usr/local/Caskroom/...` を指しているなら、Homebrew で入っている状態です。その場合は次で確認と更新を進めます。
+Homebrew で入れている場合でも、`which codex` は `/opt/homebrew/bin/codex` や `/usr/local/bin/codex` のような `bin` 配下の symlink を返すことがあります。まずそのパスを確認し、symlink ならリンク先も見ます。
+
+```bash
+CODEX_PATH="$(which codex)"
+printf '%s\n' "$CODEX_PATH"
+ls -l "$CODEX_PATH"
+```
+
+`ls -l` のリンク先、または `which codex` の結果そのものが `/opt/homebrew/Caskroom/...` や `/usr/local/Caskroom/...` を指していれば、Homebrew cask で入っている状態です。その場合は次で確認と更新を進めます。
 
 ```bash
 brew update
-brew info codex
-brew upgrade codex
+brew info --cask codex
+brew upgrade --cask codex
 codex --version
 codex app-server --help
 ```
 
 確認の見方は次のとおりです。
 
-- `brew info codex` でインストール済みバージョンと配布中バージョンを確認する
-- `brew upgrade codex` で更新する
+- `brew info --cask codex` でインストール済みバージョンと配布中バージョンを確認する
+- `brew upgrade --cask codex` で更新する
 - 更新後に `codex --version` をもう一度実行し、期待したバージョンになっているか確認する
 - 最後に `codex app-server --help` を実行し、CodexPocketMac が必要とする機能も問題ないことを確かめる
 

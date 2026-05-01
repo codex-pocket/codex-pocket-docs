@@ -18,7 +18,7 @@ After sending, you can stay on the same screen and follow the `Work Log` and `An
 ## What the `+` menu can do
 
 - `Images`
-  Attach an image from the photo library.
+  Attach images from the photo library. You can add up to 2 images per send, and images are automatically resized before sending.
 - `Commands`
   Pick from common slash commands.
 - `Skills`

@@ -77,7 +77,7 @@ If you installed it some other way, update it with the same method you used orig
 - if `which codex` is empty, revisit the Codex CLI installation or PATH
 - if `codex --version` works but `codex` does not launch, revisit shell setup and execution permissions
 - if `codex` launches but `codex app-server --help` fails, update the CLI and check again
-- if Terminal works but the Mac app does not detect it, restart the Mac app
+- if Terminal works but the Mac app does not detect it, the Mac app also checks `which -a codex` through your login shell and the standard standalone, Homebrew, and Codex app locations. If it is still missing, set `Codex CLI` in `Details` > `Executable Paths` to the result of `which codex` or to the executable path
 - you can also inspect the state on the `Codex CLI` row in `Details`
 - if `General` shows `Bridge prerequisites are not satisfied`, this page is the first place to look
 

@@ -32,7 +32,7 @@ In other words, if all you want is "keep reading and sending from the iPhone," y
 ## If Git is not found
 
 - install the macOS Command Line Tools
-- make sure the Git path you normally use is also visible to the Mac app
+- set the Git executable you normally use in `Details` > `Executable Paths`
 - restart the Mac app and check the `git` row in `Details`
 
 If Git is missing, Bridge itself may still work, but branch-related UI on the iPhone will be limited.

@@ -11,7 +11,7 @@ If `CodexPocketMac` is not installed yet, open [Start on Mac](./) first and choo
 
 1. Launch `CodexPocketMac`.
 2. In `General`, check `Runtime`.
-3. In `Details`, confirm that `Codex CLI` was found.
+3. In `Details`, confirm that `Codex CLI` and `Shell` were found. If either is missing, set the matching path in `Executable Paths`.
 4. In `Projects`, confirm that the workspace you want is visible.
 5. In `Pairing`, confirm that you can show the QR code.
 
@@ -44,4 +44,3 @@ This is also the fastest place when you only want to pop the pairing QR back ope
 - confirm that the workspace you use most is visible in `Projects`
 
 Once those two are in place, the Mac side usually needs very little manual attention.
-

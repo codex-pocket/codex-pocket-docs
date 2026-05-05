@@ -76,6 +76,8 @@ Use the `Logs` tab when you want to stay inside the app, and the log folder when
 
 `Details` is where you confirm the prerequisites for Bridge and the relevant file paths.
 
+In `Executable Paths`, you can set `Codex CLI`, `git`, and `Shell` separately. Saving an empty value returns that item to auto-detection.
+
 ### Dependencies
 
 - `Codex CLI`
@@ -102,11 +104,11 @@ If something works in Terminal but not in the Mac app, checking the path seen by
 
 ### A state close to `Codex CLI missing`
 
-Look at `Codex CLI` in `Details`. Even if `which codex` works in Terminal, the Mac app may see a different PATH. Restart the Mac app first, and if it still does not change, fix the PATH side.
+Look at `Codex CLI` in `Details`. The Mac app checks the PATH it can see, `which -a codex` through your login shell, and the standard standalone, Homebrew, and Codex app locations. If it is still missing, set `Codex CLI` in `Executable Paths` to the result of `which codex` or to the executable path.
 
 ### `git missing`
 
-This may not block ordinary thread use, but it does block branch creation and switching.
+This may not block ordinary thread use, but it does block branch creation and switching. If Terminal can use Git but the Mac app cannot find it, set the Git executable in `Executable Paths`.
 
 ### `Another Bridge is already running on this port`
 
@@ -131,4 +133,3 @@ Whether you are narrowing it down yourself or reporting it later, this is usuall
 - the message shown on the iPhone
 
 A few lines from just before and after the symptom are usually more useful than pasting the entire log.
-

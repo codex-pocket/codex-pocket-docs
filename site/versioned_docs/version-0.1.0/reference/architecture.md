@@ -22,7 +22,7 @@ Mac の作業環境
 ## 役割の分担
 
 - iPhone アプリ
-  Project を選ぶ、Thread を開く、Composer から依頼を送る、`作業ログ` と `回答` を読む、`Exec` やブランチ切り替えを使う
+  Project を選ぶ、Thread を開く、Composer から依頼を送る、`作業ログ` と `回答` を読む、`Fork` やブランチ切り替えを使う
 - Mac アプリ
   `Bridge` の起動と停止、`ペアリング` QR の表示、iPhone に見せる `Project` の管理、ログ確認、前提条件の確認
 - Mac 上の Codex

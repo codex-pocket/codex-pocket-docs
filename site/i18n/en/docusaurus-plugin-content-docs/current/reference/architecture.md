@@ -22,7 +22,7 @@ Mac work environment
 ## What each side is responsible for
 
 - iPhone app
-  choose a `Project`, open a `Thread`, send requests from `Composer`, read the `Work Log` and `Answer`, and use `Exec` or branch switching
+  choose a `Project`, open a `Thread`, send requests from `Composer`, read the `Work Log` and `Answer`, and use `Fork` or branch switching
 - Mac app
   start and stop `Bridge`, show the pairing QR, manage the `Projects` list shown to the iPhone, expose logs, and confirm prerequisites
 - Codex on the Mac

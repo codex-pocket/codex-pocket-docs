@@ -38,6 +38,6 @@ If the `ls -l` target, or the `which codex` result itself, points into `/opt/hom
 
 - starting Bridge
 - fetching the `Thread` list for each `Project`
-- using `Composer` and `Exec` from the iPhone
+- using `Composer` and `Fork` from the iPhone
 
 If Codex CLI is missing, the iPhone may reach the connection stage, but it will not get as far as doing real work.

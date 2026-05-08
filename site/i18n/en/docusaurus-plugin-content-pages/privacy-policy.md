@@ -39,7 +39,7 @@ Host information and bridge tokens are stored securely in Keychain. If Keychain 
 To provide the core product functionality, the App sends the content you choose to your own Mac directly. This may include:
 
 - Text you enter into threads
-- Input required for command, exec, or branch actions
+- Input required for command, branch, or fork actions
 - Identifiers needed to reference projects and threads
 - Image attachments you explicitly choose
 

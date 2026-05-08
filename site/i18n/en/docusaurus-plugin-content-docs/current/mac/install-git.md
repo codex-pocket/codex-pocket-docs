@@ -25,7 +25,7 @@ If it prints a version, Git is available.
 - open a `Project`
 - read `Threads`
 - send requests from `Composer`
-- run `Exec`
+- use `Fork`
 
 In other words, if all you want is "keep reading and sending from the iPhone," you can start without Git.
 

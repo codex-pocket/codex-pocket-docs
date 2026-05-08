@@ -1,6 +1,6 @@
 ---
 title: Thread Workflow
-description: The shared flow from Project selection to thread resume, follow-up turns, and exec.
+description: The shared flow from Project selection to thread resume and follow-up turns.
 ---
 
 # Thread Workflow
@@ -15,14 +15,7 @@ The thread workflow does not live entirely on iPhone or Mac. Projects are anchor
 2. choose the target `Project`
 3. resume an existing `Thread` or start a new one
 4. read transcript history and live output while sending follow-up turns
-5. switch branches or run `exec` when needed
-
-## When to use thread versus exec
-
-- `Thread`
-  the main path for ongoing conversational work with Codex
-- `Exec`
-  the path for one-shot runs that you want to stream separately
+5. switch branches or fork the conversation when needed
 
 ## How follow-up works
 
@@ -36,7 +29,7 @@ Anything sent with `queue` stays visible as a pending card until it runs. From t
 ## Topics to expand here
 
 - merging transcript history with live events
-- how branch switching changes the target repo context for Thread and Exec
+- how branch switching changes the target repo context for Thread
 - where review and approval UI enters the flow
 - the initialization path for workspaces that are not yet git repositories
 

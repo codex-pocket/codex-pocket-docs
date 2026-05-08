@@ -25,8 +25,6 @@ Composer は、Thread 画面の下にある入力欄です。iPhone から Codex
   この workspace で使える Skill を選びます。
 - `状態`
   いまの Host、Project、ブランチ、モデルなどを確認します。
-- `Exec`
-  1 回だけの別実行を始めます。
 
 コマンド名を全部覚える必要はありません。迷ったら `+` から選ぶほうが確実です。
 
@@ -57,8 +55,6 @@ Composer は、Thread 画面の下にある入力欄です。iPhone から Codex
   承認の動きを見直したいとき
 - `/images`
   画像を付けたいとき
-- `/exec`
-  Thread とは別に 1 回だけ実行したいとき
 - `/fork`
   現在の会話を分けて試したいとき
 

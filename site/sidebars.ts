@@ -63,7 +63,7 @@ const sidebars: SidebarsConfig = {
         'usage/open-project',
         'usage/threads',
         'usage/composer',
-        'usage/branch-skill-exec',
+        'usage/branch-skills-fork',
       ],
     },
     {

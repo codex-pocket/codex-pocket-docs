@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
   <title id="title">Thread workflow overview</title>
-  <desc id="desc">A flow diagram from Project to Thread to Composer to Work Log and Answer, with loop-back follow-up and side actions for Branch, Skills, and Exec.</desc>
+  <desc id="desc">A flow diagram from Project to Thread to Composer to Work Log and Answer, with loop-back follow-up and side actions for Branch, Skills, and Fork.</desc>
   <defs>
     <linearGradient id="surface" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#FFF9F2"/>
@@ -87,7 +87,7 @@
 
   <g filter="url(#shadow)">
     <rect x="718" y="466" width="146" height="74" rx="24" fill="#FFF5EC" stroke="#E7C6AA"/>
-    <text x="791" y="505" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Exec</text>
+    <text x="791" y="505" fill="#28170E" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Fork</text>
     <text x="791" y="526" fill="#7B5740" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">run one-off checks</text>
   </g>
 

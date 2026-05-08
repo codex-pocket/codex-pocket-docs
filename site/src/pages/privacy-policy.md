@@ -39,7 +39,7 @@ Host 情報と bridge token は Keychain に安全に保存されます。Keycha
 本アプリは、本来の機能を提供するため、ユーザーが操作した内容をユーザー自身の Mac に直接送信します。たとえば次の情報です。
 
 - thread への入力テキスト
-- command、exec、branch 操作に必要な入力
+- command、branch、fork 操作に必要な入力
 - project や thread の参照に必要な識別情報
 - ユーザーが明示的に選択した画像添付
 

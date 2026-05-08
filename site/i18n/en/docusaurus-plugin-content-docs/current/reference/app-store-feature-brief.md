@@ -11,7 +11,7 @@ description: A short editorial-facing brief that explains the value, core flow, 
 
 - Keep the real execution on the Mac, while using the iPhone to check progress and send follow-ups
 - Pair with a QR code and connect to your own Mac on the same LAN for first setup
-- Open projects and threads, send short instructions, switch branches, run one-shot exec, and review results from the phone
+- Open projects and threads, send short instructions, switch branches, fork conversations, and review results from the phone
 
 ## What this launch is trying to show
 

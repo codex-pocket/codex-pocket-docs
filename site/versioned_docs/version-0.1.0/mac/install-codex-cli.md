@@ -38,6 +38,6 @@ ls -l "$CODEX_PATH"
 
 - Bridge を開始できる
 - Project ごとに Thread 一覧を取得できる
-- iPhone から Composer や Exec を使える
+- iPhone から Composer や Fork を使える
 
 Codex CLI が見つからない状態では、iPhone 側の接続までは進めても実作業には入りません。

@@ -29,7 +29,7 @@ For first setup, the iPhone and Mac need to be on the same local network. After 
 - open an active `Thread` and read the `Answer` and `Work Log`
 - send a short follow-up or course correction from `Composer`
 - check the local branches for the current workspace from `Branch Switcher`
-- use `Exec` for one one-shot instruction
+- use `Fork` to try another direction while keeping the current conversation
 - jump back to recent workspaces from `Home` and `Projects`
 
 ## Things worth knowing first

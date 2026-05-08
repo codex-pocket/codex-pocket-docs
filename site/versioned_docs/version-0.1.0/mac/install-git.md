@@ -24,7 +24,7 @@ git --version
 - Project を開く
 - Thread を読む
 - Composer から依頼を送る
-- Exec を実行する
+- Fork を使う
 
 つまり、「iPhone から続きを読む・送る」だけなら Git はなくても始められます。
 

@@ -33,7 +33,7 @@ First setup happens while your Mac and iPhone are on the same local network. Aft
 - You want to leave your desk but still check whether a long task is moving
 - You want to add a quick follow-up like "keep going with this approach"
 - You want to read the answer or scan a diff before deciding to return to the Mac
-- You want to do lighter actions like images, Exec, or branch switching without sitting down again
+- You want to do lighter actions like images, Fork, or branch switching without sitting down again
 
 ## Fastest path
 

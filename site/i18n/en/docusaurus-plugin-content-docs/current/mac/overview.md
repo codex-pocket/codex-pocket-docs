@@ -45,7 +45,7 @@ You only need `Git` when you want branch-related features. Most people do not ne
 
 - starting and stopping Bridge
 - managing the `Project` list shown to the iPhone
-- running `Threads` and `Exec` through `codex`
+- running `Threads` through `codex`
 - showing the pairing QR
 - exposing state and logs
 

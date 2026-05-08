@@ -28,7 +28,7 @@ This is where Bridge startup failures and runtime errors appear.
 - Bridge will not start
 - initial setup after pairing does not move
 - the `Project` list cannot be fetched
-- `Thread` or `Exec` fails
+- `Thread` fails
 
 ## Errors that are often easy to spot
 

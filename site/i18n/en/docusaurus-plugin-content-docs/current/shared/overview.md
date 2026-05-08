@@ -58,7 +58,7 @@ You do not need to overthink it. The simplest mental model is: register the Mac 
 - resume an existing `Thread`
 - start a new `Thread`
 - follow the `Work Log` and `Answer`
-- use `Exec` or `Fork` when needed
+- use `Fork` or branch switching when needed
 
 ## Read these next
 

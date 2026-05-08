@@ -25,8 +25,6 @@ After sending, you can stay on the same screen and follow the `Work Log` and `An
   Choose a Skill available in that workspace.
 - `Status`
   Check the current Host, `Project`, branch, model, and related state.
-- `Exec`
-  Start a separate one-shot execution.
 
 You do not need to memorize every command name. When unsure, choosing from `+` is usually safer.
 
@@ -57,8 +55,6 @@ For normal use, starting with the defaults and changing only when needed is enou
   review the approval mode
 - `/images`
   attach images
-- `/exec`
-  run something once outside the main `Thread`
 - `/fork`
   branch the current conversation
 

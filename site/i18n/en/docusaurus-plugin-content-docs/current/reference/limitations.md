@@ -18,7 +18,7 @@ CodexPocket is not meant to replace the Mac completely. It narrows the feature s
 - follow existing `Threads`, start new ones, and `Fork`
 - send additional instructions from `Composer`
 - follow progress by reading the `Work Log` and `Answer`
-- use commands, `Skills`, and `Exec` for short operations
+- use commands, `Skills`, and `Fork` for short operations
 - check, create, and switch local branches in Git-managed workspaces
 - open source links inside answers and preview code
 

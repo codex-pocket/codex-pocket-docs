@@ -28,7 +28,7 @@ CodexPocketMac の `ログ` タブを開きます。
 - Bridge が開始できない
 - Pairing 後の初回設定が進まない
 - Project 一覧が取れない
-- Thread や Exec が失敗する
+- Thread が失敗する
 
 ## 見つけやすいエラーの例
 

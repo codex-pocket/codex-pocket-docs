@@ -85,6 +85,6 @@ If you installed it some other way, update it with the same method you used orig
 
 - starting Bridge
 - fetching the `Thread` list for each `Project`
-- using `Composer` and `Exec` from the iPhone
+- using `Composer` and `Fork` from the iPhone
 
 Even if you use Codex App, this check is still worth doing once. If the CLI cannot be found, you may get as far as connecting from the iPhone but not as far as doing real work.

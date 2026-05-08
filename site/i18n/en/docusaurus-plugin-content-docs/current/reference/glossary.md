@@ -14,7 +14,6 @@ description: This page gives short explanations for terms that appear often in t
 | Work Log | The running output that shows what Codex is doing along the way. You can collapse it while reading. |
 | Answer | The final user-facing reply from Codex. This is usually the main part you read. |
 | Status | The screen or view where you check the current connection state and settings for the `Thread`. |
-| Exec | The feature for sending one one-shot run without switching away from the current `Thread`. |
 | Command | A reusable call you can insert quickly into `Composer`. |
 | Skill | A reusable unit that packages a common procedure or role. |
 | Fork | The action that continues the current `Thread` as a separate branch of conversation while keeping the original intact. |
